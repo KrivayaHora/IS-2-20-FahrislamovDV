@@ -39,6 +39,7 @@ namespace Kursovaya_Rabota
             this.Name = "PcBuild";
             this.Text = "Конфигуратор";
             this.Load += new System.EventHandler(this.PcBuild_Load);
+            this.Leave += new System.EventHandler(this.PcBuild_Leave);
             this.ResumeLayout(false);
 
         }

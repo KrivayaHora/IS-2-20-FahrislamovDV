@@ -7,6 +7,7 @@ namespace Kursovaya_Rabota
     public partial class ManagementForm : MetroForm
     {
         MySqlConnection ConnectStaff;
+        MySqlConnection ConnectChuc;
         public ManagementForm()
         {
             InitializeComponent();
@@ -15,6 +16,8 @@ namespace Kursovaya_Rabota
         private void ManagementForm_Load(object sender, EventArgs e)
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            //ConnectChuc = new MySqlConnection("server=10.90.12.110;port=44444;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
@@ -27,6 +30,14 @@ namespace Kursovaya_Rabota
         {
             RegistrationForm f1 = new RegistrationForm();
             f1.Show();
+        }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            PcBuild pcBuild = new PcBuild();
+            pcBuild.Show();
+            this.Close();
+            
         }
     }
 }

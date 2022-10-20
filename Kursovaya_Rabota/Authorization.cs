@@ -90,6 +90,7 @@ namespace Kursovaya_Rabota
                 MessageBox.Show("Неверные данные");
 
             ConnectStaff.Close();
+            this.Visible = false;
         }
 
         private void PasswordBox_TextChanged(object sender, EventArgs e)

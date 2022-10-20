@@ -24,5 +24,10 @@ namespace Kursovaya_Rabota
         {
 
         }
+
+        private void PcBuild_Leave(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

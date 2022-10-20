@@ -38,11 +38,11 @@ namespace Kursovaya_Rabota
             // RegComponent
             // 
             this.RegComponent.Depth = 0;
-            this.RegComponent.Location = new System.Drawing.Point(8, 68);
+            this.RegComponent.Location = new System.Drawing.Point(-1, 290);
             this.RegComponent.MouseState = MaterialSkin.MouseState.HOVER;
             this.RegComponent.Name = "RegComponent";
             this.RegComponent.Primary = true;
-            this.RegComponent.Size = new System.Drawing.Size(151, 46);
+            this.RegComponent.Size = new System.Drawing.Size(183, 79);
             this.RegComponent.TabIndex = 1;
             this.RegComponent.Text = "Регистрация комплектующего";
             this.RegComponent.UseVisualStyleBackColor = true;
@@ -51,11 +51,11 @@ namespace Kursovaya_Rabota
             // ManageEmp
             // 
             this.ManageEmp.Depth = 0;
-            this.ManageEmp.Location = new System.Drawing.Point(8, 120);
+            this.ManageEmp.Location = new System.Drawing.Point(-1, 375);
             this.ManageEmp.MouseState = MaterialSkin.MouseState.HOVER;
             this.ManageEmp.Name = "ManageEmp";
             this.ManageEmp.Primary = true;
-            this.ManageEmp.Size = new System.Drawing.Size(151, 46);
+            this.ManageEmp.Size = new System.Drawing.Size(183, 77);
             this.ManageEmp.TabIndex = 3;
             this.ManageEmp.Text = "Сотрудники";
             this.ManageEmp.UseVisualStyleBackColor = true;
@@ -64,11 +64,11 @@ namespace Kursovaya_Rabota
             // ManageClientBox
             // 
             this.ManageClientBox.Depth = 0;
-            this.ManageClientBox.Location = new System.Drawing.Point(8, 172);
+            this.ManageClientBox.Location = new System.Drawing.Point(-1, 120);
             this.ManageClientBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.ManageClientBox.Name = "ManageClientBox";
             this.ManageClientBox.Primary = true;
-            this.ManageClientBox.Size = new System.Drawing.Size(151, 46);
+            this.ManageClientBox.Size = new System.Drawing.Size(183, 79);
             this.ManageClientBox.TabIndex = 4;
             this.ManageClientBox.Text = "Клиенты";
             this.ManageClientBox.UseVisualStyleBackColor = true;
@@ -76,14 +76,15 @@ namespace Kursovaya_Rabota
             // materialRaisedButton5
             // 
             this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(8, 224);
+            this.materialRaisedButton5.Location = new System.Drawing.Point(-1, 205);
             this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton5.Name = "materialRaisedButton5";
             this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(151, 46);
+            this.materialRaisedButton5.Size = new System.Drawing.Size(183, 79);
             this.materialRaisedButton5.TabIndex = 5;
             this.materialRaisedButton5.Text = "Конфиругатор ПК";
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
             // ManagementForm
             // 
