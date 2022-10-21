@@ -7,7 +7,7 @@ namespace Kursovaya_Rabota
     public partial class ManagementForm : MetroForm
     {
         MySqlConnection ConnectStaff;
-        MySqlConnection ConnectChuc;
+        //MySqlConnection ConnectChuc;
         public ManagementForm()
         {
             InitializeComponent();
@@ -28,8 +28,8 @@ namespace Kursovaya_Rabota
 
         private void ManageEmp_Click(object sender, EventArgs e)
         {
-            RegistrationForm f1 = new RegistrationForm();
-            f1.Show();
+            Staff newStaff = new Staff();
+            newStaff.ShowDialog();
         }
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
@@ -38,6 +38,12 @@ namespace Kursovaya_Rabota
             pcBuild.Show();
             this.Close();
             
+        }
+
+        private void ManageClientBox_Click(object sender, EventArgs e)
+        {
+            ClientsView clientsView = new ClientsView();
+            clientsView.ShowDialog();
         }
     }
 }

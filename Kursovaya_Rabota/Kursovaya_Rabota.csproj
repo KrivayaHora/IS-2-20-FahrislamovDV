@@ -119,6 +119,12 @@
     <Compile Include="Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsView.Designer.cs">
+      <DependentUpon>ClientsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
     </Compile>
     <Compile Include="NewComponent.Designer.cs">
       <DependentUpon>NewComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStaff.Designer.cs">
+      <DependentUpon>NewStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="PcBuild.cs">
       <SubType>Form</SubType>
@@ -149,11 +161,17 @@
     <EmbeddedResource Include="Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView.resx">
+      <DependentUpon>ClientsView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagementForm.resx">
       <DependentUpon>ManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewComponent.resx">
       <DependentUpon>NewComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStaff.resx">
+      <DependentUpon>NewStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>

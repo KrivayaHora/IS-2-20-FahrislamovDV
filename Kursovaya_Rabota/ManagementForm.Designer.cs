@@ -72,6 +72,7 @@ namespace Kursovaya_Rabota
             this.ManageClientBox.TabIndex = 4;
             this.ManageClientBox.Text = "Клиенты";
             this.ManageClientBox.UseVisualStyleBackColor = true;
+            this.ManageClientBox.Click += new System.EventHandler(this.ManageClientBox_Click);
             // 
             // materialRaisedButton5
             // 
