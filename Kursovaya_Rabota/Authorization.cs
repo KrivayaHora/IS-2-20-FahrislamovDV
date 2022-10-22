@@ -30,8 +30,7 @@ namespace Kursovaya_Rabota
         }
         public void RoleUsers()
         {
-            //ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
-            ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+
             string UserLG = LoginBox.Text;
             string sql = "SELECT `Role` FROM Employee WHERE `Login` = @LG";
             ConnectStaff.Open();
