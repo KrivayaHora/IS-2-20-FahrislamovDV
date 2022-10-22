@@ -33,7 +33,6 @@ namespace Kursovaya_Rabota
 
             string UserLG = LoginBox.Text;
             string sql = "SELECT `Role` FROM Employee WHERE `Login` = @LG";
-            ConnectStaff.Open();
             MySqlParameter Par = new MySqlParameter("LG", UserLG);
 
             MySqlCommand command = new MySqlCommand(sql, ConnectStaff);

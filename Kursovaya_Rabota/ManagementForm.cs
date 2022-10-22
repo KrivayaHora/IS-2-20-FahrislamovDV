@@ -36,7 +36,7 @@ namespace Kursovaya_Rabota
         {
             PcBuild pcBuild = new PcBuild();
             pcBuild.Show();
-            this.Close();
+            
             
         }
 
