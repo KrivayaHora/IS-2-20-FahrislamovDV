@@ -113,67 +113,67 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authorization.cs">
+    <Compile Include="Project\Forms\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authorization.Designer.cs">
+    <Compile Include="Project\Forms\Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView.cs">
+    <Compile Include="Project\Forms\ClientsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientsView.Designer.cs">
+    <Compile Include="Project\Forms\ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagementForm.cs">
+    <Compile Include="Project\Forms\ManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagementForm.Designer.cs">
+    <Compile Include="Project\Forms\ManagementForm.Designer.cs">
       <DependentUpon>ManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewComponent.cs">
+    <Compile Include="Project\Forms\NewComponent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewComponent.Designer.cs">
+    <Compile Include="Project\Forms\NewComponent.Designer.cs">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewStaff.cs">
+    <Compile Include="Project\Forms\NewStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewStaff.Designer.cs">
+    <Compile Include="Project\Forms\NewStaff.Designer.cs">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="PcBuild.cs">
+    <Compile Include="Project\Forms\PcBuild.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PcBuild.Designer.cs">
+    <Compile Include="Project\Forms\PcBuild.Designer.cs">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationForm.cs">
+    <Compile Include="Project\Forms\RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationForm.Designer.cs">
+    <Compile Include="Project\Forms\RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkClasses.cs" />
-    <EmbeddedResource Include="Authorization.resx">
+    <EmbeddedResource Include="Project\Forms\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView.resx">
+    <EmbeddedResource Include="Project\Forms\ClientsView.resx">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagementForm.resx">
+    <EmbeddedResource Include="Project\Forms\ManagementForm.resx">
       <DependentUpon>ManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewComponent.resx">
+    <EmbeddedResource Include="Project\Forms\NewComponent.resx">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewStaff.resx">
+    <EmbeddedResource Include="Project\Forms\NewStaff.resx">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PcBuild.resx">
+    <EmbeddedResource Include="Project\Forms\PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -184,8 +184,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegistrationForm.resx">
+    <EmbeddedResource Include="Project\Forms\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -213,6 +214,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project\Pics\pngegg %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project\Pics\pngegg %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project\Pics\pngegg %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project\Pics\pngegg %287%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
