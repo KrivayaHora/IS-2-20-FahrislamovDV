@@ -12,11 +12,13 @@ using MaterialSkin.Controls;
 using MySql;
 using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
+using System.Threading;
 
 namespace Kursovaya_Rabota
 {
     public partial class Autorization : MetroForm
     {
+        Thread T1;
         static string sha256(string randomString)
         {
             var crypt = new System.Security.Cryptography.SHA256Managed();
@@ -43,12 +45,24 @@ namespace Kursovaya_Rabota
             switch (Role)
             {
                 case "Администратор":
-                    ManagementForm form = new ManagementForm();
-                    form.Show();
+                     void Management(object obj)
+                    {
+                        Application.Run(new ManagementForm());
+                    }
+                    this.Close();
+                    T1 = new Thread(Management);
+                    T1.SetApartmentState(ApartmentState.STA);
+                    T1.Start();
                     break;
                 case "Сборщик":
-                    PcBuild pcform = new PcBuild();
-                    pcform.Show();
+                    void PCBuild(object obj)
+                    {
+                        Application.Run(new PcBuild());
+                    }
+                    this.Close();
+                    T1 = new Thread(PCBuild);
+                    T1.SetApartmentState(ApartmentState.STA);
+                    T1.Start();
                     break;
                 default:
                     MessageBox.Show("Пользователь неопознан");
@@ -64,8 +78,8 @@ namespace Kursovaya_Rabota
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
-            ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)

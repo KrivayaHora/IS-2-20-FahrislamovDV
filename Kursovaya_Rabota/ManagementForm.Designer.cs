@@ -101,6 +101,7 @@ namespace Kursovaya_Rabota
             this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
             this.Text = "Управление";
             this.TransparencyKey = System.Drawing.Color.SpringGreen;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ManagementForm_FormClosed);
             this.Load += new System.EventHandler(this.ManagementForm_Load);
             this.ResumeLayout(false);
 

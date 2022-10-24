@@ -22,7 +22,8 @@ namespace Kursovaya_Rabota
         MySqlConnection ConnectStaff;
         private void PcBuild_Load(object sender, EventArgs e)
         {
-            ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
         }
 
         private void PcBuild_Leave(object sender, EventArgs e)
