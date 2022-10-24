@@ -113,23 +113,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Project\Forms\Authorization.cs">
+    <Compile Include="Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\Authorization.Designer.cs">
+    <Compile Include="Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="Project\Forms\ClientsView.cs">
+    <Compile Include="ClientsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\ClientsView.Designer.cs">
+    <Compile Include="ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Project\Forms\ManagementForm.cs">
+    <Compile Include="Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\ManagementForm.Designer.cs">
-      <DependentUpon>ManagementForm.cs</DependentUpon>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Project\Forms\NewComponent.cs">
       <SubType>Form</SubType>
@@ -158,14 +158,14 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkClasses.cs" />
-    <EmbeddedResource Include="Project\Forms\Authorization.resx">
+    <EmbeddedResource Include="Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project\Forms\ClientsView.resx">
+    <EmbeddedResource Include="ClientsView.resx">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project\Forms\ManagementForm.resx">
-      <DependentUpon>ManagementForm.cs</DependentUpon>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Project\Forms\NewComponent.resx">
       <DependentUpon>NewComponent.cs</DependentUpon>
@@ -216,16 +216,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Project\Pics\pngegg %284%29.png" />
+    <None Include="Resources\pngegg %287%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Project\Pics\pngegg %285%29.png" />
+    <None Include="Resources\pngegg %285%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Project\Pics\pngegg %286%29.png" />
+    <None Include="Resources\pngegg %286%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Project\Pics\pngegg %287%29.png" />
+    <None Include="Resources\pngegg %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

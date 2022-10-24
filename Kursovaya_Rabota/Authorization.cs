@@ -13,6 +13,7 @@ using MySql;
 using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
 using System.Threading;
+using Kursovaya_Rabota.Project.Forms;
 
 namespace Kursovaya_Rabota
 {
@@ -45,12 +46,12 @@ namespace Kursovaya_Rabota
             switch (Role)
             {
                 case "Администратор":
-                     void Management(object obj)
+                     void Management1(object obj)
                     {
-                        Application.Run(new ManagementForm());
+                        Application.Run(new Managementform());
                     }
                     this.Close();
-                    T1 = new Thread(Management);
+                    T1 = new Thread(Management1);
                     T1.SetApartmentState(ApartmentState.STA);
                     T1.Start();
                     break;
