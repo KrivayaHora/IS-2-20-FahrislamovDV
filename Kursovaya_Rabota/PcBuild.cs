@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using MetroFramework.Forms;
 using MaterialSkin.Controls;
 
 namespace Kursovaya_Rabota
 {
-    public partial class PcBuild : MetroForm
+    public partial class PcBuild : Form
     {
         public PcBuild()
         {

@@ -9,12 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MetroFramework.Controls;
-using MetroFramework.Forms;
 using MaterialSkin.Controls;
 
 namespace Kursovaya_Rabota
 {
-    public partial class NewComponent : MetroForm
+    public partial class NewComponent : Form
     {
         MySqlConnection Connect = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
         public NewComponent()

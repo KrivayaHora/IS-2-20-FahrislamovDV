@@ -15,22 +15,22 @@ namespace Kursovaya_Rabota.Project.Forms
     {
         MySqlConnection ConnectStaff;
         Form activeform;
-        void ChildForm(Form Child)
-        {
-            if(activeform != null)
-            {
-                activeform.Close();
-            }
-            activeform = Child;
-            Child.TopLevel = false;
-            this.IsMdiContainer = true;
-            Child.FormBorderStyle = FormBorderStyle.None;
-            Child.Dock = DockStyle.Fill;
-            Desktop.Controls.Add(Child);
-            Desktop.Tag = Child;
-            Child.BringToFront();
-            Child.Show();
-        }
+       void ChildForm(Form Child)
+       {
+           if(activeform != null)
+           {
+               activeform.Close();
+           }
+           activeform = Child;
+           Child.TopLevel = false;
+           this.IsMdiContainer = true;
+           Child.FormBorderStyle = FormBorderStyle.None;
+           Child.Dock = DockStyle.Fill;
+           panel4.Controls.Add(Child);
+           panel4.Tag = Child;
+           Child.BringToFront();
+           Child.Show();
+       }
         public Managementform()
         {
             InitializeComponent();
@@ -47,17 +47,17 @@ namespace Kursovaya_Rabota.Project.Forms
 
         private void ConfigButton_Click(object sender, EventArgs e)
         {
-
+            ChildForm(new PcBuild());
         }
 
         private void ComponentButton_Click(object sender, EventArgs e)
         {
-
+            ChildForm(new NewComponent());
         }
 
         private void StaffButton_Click(object sender, EventArgs e)
         {
-
+            ChildForm(new Staff());
         }
 
         private void Desktop_Paint(object sender, PaintEventArgs e)

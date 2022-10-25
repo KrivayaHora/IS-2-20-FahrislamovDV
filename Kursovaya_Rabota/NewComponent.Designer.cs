@@ -50,7 +50,7 @@ namespace Kursovaya_Rabota
             "Вентиляторы для корпуса"});
             this.Selector.Location = new System.Drawing.Point(23, 77);
             this.Selector.Name = "Selector";
-            this.Selector.Size = new System.Drawing.Size(440, 29);
+            this.Selector.Size = new System.Drawing.Size(771, 29);
             this.Selector.TabIndex = 0;
             this.Selector.UseSelectable = true;
             // 
@@ -62,7 +62,7 @@ namespace Kursovaya_Rabota
             this.dataGridView1.Location = new System.Drawing.Point(23, 112);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 250);
+            this.dataGridView1.Size = new System.Drawing.Size(771, 267);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -74,7 +74,6 @@ namespace Kursovaya_Rabota
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Selector);
             this.Name = "NewComponent";
-            this.Text = "Добавление комплектующих в базу";
             this.Load += new System.EventHandler(this.NewComponent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

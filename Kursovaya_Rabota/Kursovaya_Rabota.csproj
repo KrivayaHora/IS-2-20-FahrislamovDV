@@ -131,30 +131,30 @@
     <Compile Include="Management.Designer.cs">
       <DependentUpon>Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="Project\Forms\NewComponent.cs">
+    <Compile Include="NewComponent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\NewComponent.Designer.cs">
+    <Compile Include="NewComponent.Designer.cs">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Project\Forms\NewStaff.cs">
+    <Compile Include="NewStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\NewStaff.Designer.cs">
+    <Compile Include="NewStaff.Designer.cs">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="Project\Forms\PcBuild.cs">
+    <Compile Include="PcBuild.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\PcBuild.Designer.cs">
+    <Compile Include="PcBuild.Designer.cs">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Project\Forms\RegistrationForm.cs">
+    <Compile Include="RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project\Forms\RegistrationForm.Designer.cs">
+    <Compile Include="RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkClasses.cs" />
@@ -167,13 +167,13 @@
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project\Forms\NewComponent.resx">
+    <EmbeddedResource Include="NewComponent.resx">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project\Forms\NewStaff.resx">
+    <EmbeddedResource Include="NewStaff.resx">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project\Forms\PcBuild.resx">
+    <EmbeddedResource Include="PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -186,7 +186,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Project\Forms\RegistrationForm.resx">
+    <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

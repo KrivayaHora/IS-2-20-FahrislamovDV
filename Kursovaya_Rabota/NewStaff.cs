@@ -12,7 +12,7 @@ using MetroFramework.Forms;
 
 namespace Kursovaya_Rabota
 {
-    public partial class Staff : MetroForm
+    public partial class Staff : Form
     {
         MySqlConnection ConnectStaff;
         static string sha256(string randomString)

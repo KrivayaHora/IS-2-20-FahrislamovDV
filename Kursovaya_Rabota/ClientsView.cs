@@ -13,7 +13,7 @@ using MaterialSkin.Controls;
 
 namespace Kursovaya_Rabota
 {
-    public partial class ClientsView : MetroForm
+    public partial class ClientsView : Form
     {
         MySqlConnection ConnectStaff;
         public ClientsView()

@@ -30,14 +30,14 @@ namespace Kursovaya_Rabota.Project.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.StaffButton = new System.Windows.Forms.Button();
             this.ComponentButton = new System.Windows.Forms.Button();
             this.ConfigButton = new System.Windows.Forms.Button();
             this.ClientsButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Desktop = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,8 +53,46 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 450);
+            this.panel1.Size = new System.Drawing.Size(200, 579);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 80);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(34, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "PC Configurator";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(200, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(995, 80);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 80);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(995, 499);
+            this.panel4.TabIndex = 4;
             // 
             // StaffButton
             // 
@@ -132,51 +170,12 @@ namespace Kursovaya_Rabota.Project.Forms
             this.ClientsButton.UseVisualStyleBackColor = true;
             this.ClientsButton.Click += new System.EventHandler(this.ClientsButton_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 80);
-            this.panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(34, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PC Configurator";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(200, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(655, 80);
-            this.panel3.TabIndex = 1;
-            // 
-            // Desktop
-            // 
-            this.Desktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Desktop.Location = new System.Drawing.Point(200, 80);
-            this.Desktop.Name = "Desktop";
-            this.Desktop.Size = new System.Drawing.Size(655, 370);
-            this.Desktop.TabIndex = 2;
-            this.Desktop.Paint += new System.Windows.Forms.PaintEventHandler(this.Desktop_Paint);
-            // 
             // Managementform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 450);
-            this.Controls.Add(this.Desktop);
+            this.ClientSize = new System.Drawing.Size(1195, 579);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
@@ -195,10 +194,10 @@ namespace Kursovaya_Rabota.Project.Forms
         private System.Windows.Forms.Button ClientsButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel Desktop;
         private System.Windows.Forms.Button StaffButton;
         private System.Windows.Forms.Button ComponentButton;
         private System.Windows.Forms.Button ConfigButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
     }
 }
