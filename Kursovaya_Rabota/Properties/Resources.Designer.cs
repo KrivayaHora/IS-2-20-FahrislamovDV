@@ -203,6 +203,26 @@ namespace Kursovaya_Rabota.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngegg__24_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (24)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__25_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (25)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngegg__4_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (4)", resourceCulture);
