@@ -30,24 +30,24 @@ namespace Kursovaya_Rabota
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.RoleBox = new MetroFramework.Controls.MetroComboBox();
             this.PassBox = new System.Windows.Forms.TextBox();
             this.LoginBox = new System.Windows.Forms.TextBox();
             this.EmailBox = new System.Windows.Forms.TextBox();
             this.PhoneBox = new System.Windows.Forms.TextBox();
             this.FIOBox = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,18 +55,18 @@ namespace Kursovaya_Rabota
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.materialRaisedButton3);
             this.panel1.Controls.Add(this.materialRaisedButton2);
             this.panel1.Controls.Add(this.materialRaisedButton1);
-            this.panel1.Controls.Add(this.metroLabel6);
-            this.panel1.Controls.Add(this.metroLabel5);
-            this.panel1.Controls.Add(this.metroLabel4);
-            this.panel1.Controls.Add(this.metroLabel3);
-            this.panel1.Controls.Add(this.metroLabel2);
-            this.panel1.Controls.Add(this.metroLabel1);
             this.panel1.Controls.Add(this.RoleBox);
             this.panel1.Controls.Add(this.PassBox);
             this.panel1.Controls.Add(this.LoginBox);
@@ -79,10 +79,40 @@ namespace Kursovaya_Rabota
             this.panel1.Size = new System.Drawing.Size(1031, 558);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 24);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(24, 534);
+            this.panel3.TabIndex = 34;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1031, 24);
+            this.panel2.TabIndex = 33;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 30);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(989, 302);
+            this.dataGridView1.TabIndex = 32;
+            // 
             // materialRaisedButton3
             // 
             this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(373, 380);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(373, 378);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
@@ -94,7 +124,7 @@ namespace Kursovaya_Rabota
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(373, 417);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(373, 413);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -106,7 +136,7 @@ namespace Kursovaya_Rabota
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(373, 342);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(373, 343);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -114,60 +144,7 @@ namespace Kursovaya_Rabota
             this.materialRaisedButton1.TabIndex = 29;
             this.materialRaisedButton1.Text = "Добавить";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(47, 518);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(75, 19);
-            this.metroLabel6.TabIndex = 28;
-            this.metroLabel6.Text = "Должность";
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(47, 483);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(54, 19);
-            this.metroLabel5.TabIndex = 27;
-            this.metroLabel5.Text = "Пароль";
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(47, 448);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(47, 19);
-            this.metroLabel4.TabIndex = 26;
-            this.metroLabel4.Text = "Логин";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(47, 413);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(41, 19);
-            this.metroLabel3.TabIndex = 25;
-            this.metroLabel3.Text = "Email";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(47, 378);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(112, 19);
-            this.metroLabel2.TabIndex = 24;
-            this.metroLabel2.Text = "Номер телефона";
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(49, 343);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(40, 19);
-            this.metroLabel1.TabIndex = 23;
-            this.metroLabel1.Text = "ФИО";
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
             // 
             // RoleBox
             // 
@@ -184,73 +161,103 @@ namespace Kursovaya_Rabota
             // 
             // PassBox
             // 
-            this.PassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PassBox.Location = new System.Drawing.Point(165, 483);
             this.PassBox.Name = "PassBox";
-            this.PassBox.Size = new System.Drawing.Size(191, 29);
+            this.PassBox.Size = new System.Drawing.Size(191, 26);
             this.PassBox.TabIndex = 21;
             // 
             // LoginBox
             // 
-            this.LoginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginBox.Location = new System.Drawing.Point(165, 448);
             this.LoginBox.Name = "LoginBox";
-            this.LoginBox.Size = new System.Drawing.Size(191, 29);
+            this.LoginBox.Size = new System.Drawing.Size(191, 26);
             this.LoginBox.TabIndex = 20;
             // 
             // EmailBox
             // 
-            this.EmailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EmailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EmailBox.Location = new System.Drawing.Point(165, 413);
             this.EmailBox.Name = "EmailBox";
-            this.EmailBox.Size = new System.Drawing.Size(191, 29);
+            this.EmailBox.Size = new System.Drawing.Size(191, 26);
             this.EmailBox.TabIndex = 19;
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PhoneBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PhoneBox.Location = new System.Drawing.Point(165, 378);
             this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(191, 29);
+            this.PhoneBox.Size = new System.Drawing.Size(191, 26);
             this.PhoneBox.TabIndex = 18;
             // 
             // FIOBox
             // 
-            this.FIOBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FIOBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FIOBox.Location = new System.Drawing.Point(165, 343);
             this.FIOBox.Name = "FIOBox";
-            this.FIOBox.Size = new System.Drawing.Size(191, 29);
+            this.FIOBox.Size = new System.Drawing.Size(191, 26);
             this.FIOBox.TabIndex = 17;
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(989, 302);
-            this.dataGridView1.TabIndex = 32;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(47, 339);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "ФИО";
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1031, 24);
-            this.panel2.TabIndex = 33;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(47, 378);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Номер телефона";
             // 
-            // panel3
+            // label3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(24, 534);
-            this.panel3.TabIndex = 34;
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.Location = new System.Drawing.Point(47, 413);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Email";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label4.Location = new System.Drawing.Point(47, 456);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Логин";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label5.Location = new System.Drawing.Point(47, 491);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Пароль";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label6.Location = new System.Drawing.Point(47, 521);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Должность";
             // 
             // Staff
             // 
@@ -276,12 +283,6 @@ namespace Kursovaya_Rabota
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroComboBox RoleBox;
         private System.Windows.Forms.TextBox PassBox;
         private System.Windows.Forms.TextBox LoginBox;
@@ -290,5 +291,11 @@ namespace Kursovaya_Rabota
         private System.Windows.Forms.TextBox FIOBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
