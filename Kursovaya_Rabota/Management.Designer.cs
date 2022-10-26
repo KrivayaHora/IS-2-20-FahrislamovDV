@@ -35,11 +35,11 @@ namespace Kursovaya_Rabota.Project.Forms
             this.ConfigButton = new System.Windows.Forms.Button();
             this.ClientsButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,24 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel2.Size = new System.Drawing.Size(200, 80);
             this.panel2.TabIndex = 1;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(191, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(9, 71);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 71);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 9);
+            this.panel5.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -174,24 +192,6 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1134, 608);
             this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 61);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 19);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(182, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(18, 61);
-            this.panel6.TabIndex = 2;
             // 
             // Managementform
             // 

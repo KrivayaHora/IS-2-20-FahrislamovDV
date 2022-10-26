@@ -15,6 +15,11 @@ namespace Kursovaya_Rabota
     public partial class Staff : Form
     {
         MySqlConnection ConnectStaff;
+        MySqlDataAdapter MyDA = new MySqlDataAdapter();
+        BindingSource BindingS = new BindingSource();
+        DataSet DS = new DataSet();
+        DataTable DT = new DataTable();
+        string ID_selected_rows = "0";
         static string sha256(string randomString)
         {
             var crypt = new System.Security.Cryptography.SHA256Managed();
@@ -26,6 +31,48 @@ namespace Kursovaya_Rabota
             }
             return hash.ToString();
         }
+        public void GetClients()
+        {
+            string sqlview = "SELECT ID AS `Код`, Fullname AS `Полное имя`, Phone AS `Контактный номер`, Login AS `Логин`, Password AS `Пароль`, Email AS `Адрес электронной почты` FROM Employee";
+            ConnectStaff.Open();
+
+            MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
+            MyDA.Fill(DT);
+
+            BindingS.DataSource = DT;
+
+            dataGridView1.DataSource = BindingS;
+            ConnectStaff.Close();
+
+            dataGridView1.Columns[0].Visible = true;
+            dataGridView1.Columns[1].Visible = true;
+            dataGridView1.Columns[2].Visible = true;
+            dataGridView1.Columns[3].Visible = true;
+            dataGridView1.Columns[4].Visible = true;
+
+
+            dataGridView1.Columns[0].FillWeight = 15;
+            dataGridView1.Columns[1].FillWeight = 40;
+            dataGridView1.Columns[2].FillWeight = 15;
+            dataGridView1.Columns[3].FillWeight = 15;
+            dataGridView1.Columns[4].FillWeight = 15;
+
+            dataGridView1.Columns[0].ReadOnly = true;
+            dataGridView1.Columns[1].ReadOnly = true;
+            dataGridView1.Columns[2].ReadOnly = true;
+            dataGridView1.Columns[3].ReadOnly = true;
+            dataGridView1.Columns[4].ReadOnly = true;
+
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            dataGridView1.RowHeadersVisible = false;
+
+            dataGridView1.ColumnHeadersVisible = true;
+        }
         public Staff()
         {
             InitializeComponent();
@@ -35,6 +82,7 @@ namespace Kursovaya_Rabota
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            GetClients();
         }
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
@@ -63,5 +111,6 @@ namespace Kursovaya_Rabota
 
             ConnectStaff.Close();
         }
+
     }
 }
