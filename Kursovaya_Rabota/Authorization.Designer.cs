@@ -29,10 +29,21 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
+            this.PasswordBox = new System.Windows.Forms.TextBox();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.LoginBox = new System.Windows.Forms.TextBox();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // PasswordBox
+            // 
+            this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordBox.Location = new System.Drawing.Point(46, 173);
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.Size = new System.Drawing.Size(273, 26);
+            this.PasswordBox.TabIndex = 2;
+            this.PasswordBox.Text = "root";
+            this.PasswordBox.UseSystemPasswordChar = true;
+            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
             // 
             // materialRaisedButton1
             // 
@@ -55,17 +66,8 @@ namespace Kursovaya_Rabota
             this.LoginBox.Name = "LoginBox";
             this.LoginBox.Size = new System.Drawing.Size(273, 26);
             this.LoginBox.TabIndex = 1;
+            this.LoginBox.Text = "Admin";
             this.LoginBox.TextChanged += new System.EventHandler(this.LoginBox_TextChanged);
-            // 
-            // PasswordBox
-            // 
-            this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordBox.Location = new System.Drawing.Point(46, 173);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(273, 26);
-            this.PasswordBox.TabIndex = 2;
-            this.PasswordBox.UseSystemPasswordChar = true;
-            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
             // 
             // Autorization
             // 
@@ -87,9 +89,9 @@ namespace Kursovaya_Rabota
 
         #endregion
 
+        private System.Windows.Forms.TextBox PasswordBox;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private System.Windows.Forms.TextBox LoginBox;
-        private System.Windows.Forms.TextBox PasswordBox;
     }
 }
 

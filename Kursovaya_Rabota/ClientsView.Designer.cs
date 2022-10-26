@@ -29,177 +29,208 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.FioRegBoxC = new System.Windows.Forms.TextBox();
-            this.AdressRegBoxC = new System.Windows.Forms.TextBox();
-            this.PhoneRegBoxC = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.EmailRegBoxC = new System.Windows.Forms.TextBox();
-            this.l1 = new MetroFramework.Controls.MetroLabel();
-            this.l2 = new MetroFramework.Controls.MetroLabel();
-            this.l3 = new MetroFramework.Controls.MetroLabel();
-            this.l4 = new MetroFramework.Controls.MetroLabel();
+            this.PhoneRegBoxC = new System.Windows.Forms.TextBox();
+            this.AdressRegBoxC = new System.Windows.Forms.TextBox();
+            this.FioRegBoxC = new System.Windows.Forms.TextBox();
+            this.ChangeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.EmailRegBoxC);
+            this.panel1.Controls.Add(this.PhoneRegBoxC);
+            this.panel1.Controls.Add(this.AdressRegBoxC);
+            this.panel1.Controls.Add(this.FioRegBoxC);
+            this.panel1.Controls.Add(this.ChangeButton);
+            this.panel1.Controls.Add(this.materialRaisedButton1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1031, 558);
+            this.panel1.TabIndex = 0;
+            // 
+            // EmailRegBoxC
+            // 
+            this.EmailRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EmailRegBoxC.Location = new System.Drawing.Point(264, 504);
+            this.EmailRegBoxC.Name = "EmailRegBoxC";
+            this.EmailRegBoxC.Size = new System.Drawing.Size(280, 29);
+            this.EmailRegBoxC.TabIndex = 18;
+            // 
+            // PhoneRegBoxC
+            // 
+            this.PhoneRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PhoneRegBoxC.Location = new System.Drawing.Point(264, 469);
+            this.PhoneRegBoxC.Name = "PhoneRegBoxC";
+            this.PhoneRegBoxC.Size = new System.Drawing.Size(280, 29);
+            this.PhoneRegBoxC.TabIndex = 17;
+            // 
+            // AdressRegBoxC
+            // 
+            this.AdressRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AdressRegBoxC.Location = new System.Drawing.Point(264, 434);
+            this.AdressRegBoxC.Name = "AdressRegBoxC";
+            this.AdressRegBoxC.Size = new System.Drawing.Size(280, 29);
+            this.AdressRegBoxC.TabIndex = 16;
+            // 
+            // FioRegBoxC
+            // 
+            this.FioRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FioRegBoxC.Location = new System.Drawing.Point(264, 399);
+            this.FioRegBoxC.Name = "FioRegBoxC";
+            this.FioRegBoxC.Size = new System.Drawing.Size(280, 29);
+            this.FioRegBoxC.TabIndex = 15;
+            // 
+            // ChangeButton
+            // 
+            this.ChangeButton.Depth = 0;
+            this.ChangeButton.Location = new System.Drawing.Point(603, 434);
+            this.ChangeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChangeButton.Name = "ChangeButton";
+            this.ChangeButton.Primary = true;
+            this.ChangeButton.Size = new System.Drawing.Size(201, 29);
+            this.ChangeButton.TabIndex = 14;
+            this.ChangeButton.Text = "Изменить ";
+            this.ChangeButton.UseVisualStyleBackColor = true;
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(603, 399);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(201, 29);
+            this.materialRaisedButton1.TabIndex = 12;
+            this.materialRaisedButton1.Text = "Добавить";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(750, 180);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.Size = new System.Drawing.Size(989, 340);
+            this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // materialRaisedButton1
+            // panel2
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(491, 282);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(140, 30);
-            this.materialRaisedButton1.TabIndex = 1;
-            this.materialRaisedButton1.Text = "Добавить";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1031, 24);
+            this.panel2.TabIndex = 24;
             // 
-            // materialRaisedButton2
+            // panel3
             // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(491, 318);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(140, 30);
-            this.materialRaisedButton2.TabIndex = 2;
-            this.materialRaisedButton2.Text = "Удалить";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 24);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(24, 534);
+            this.panel3.TabIndex = 25;
             // 
-            // materialRaisedButton3
+            // label1
             // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(491, 354);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(140, 30);
-            this.materialRaisedButton3.TabIndex = 3;
-            this.materialRaisedButton3.Text = "Изменить ";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(105, 404);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 18);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "ФИО";
             // 
-            // FioRegBoxC
+            // label2
             // 
-            this.FioRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FioRegBoxC.Location = new System.Drawing.Point(195, 268);
-            this.FioRegBoxC.Name = "FioRegBoxC";
-            this.FioRegBoxC.Size = new System.Drawing.Size(191, 29);
-            this.FioRegBoxC.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(105, 440);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 18);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Адрес проживания";
             // 
-            // AdressRegBoxC
+            // label3
             // 
-            this.AdressRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AdressRegBoxC.Location = new System.Drawing.Point(195, 303);
-            this.AdressRegBoxC.Name = "AdressRegBoxC";
-            this.AdressRegBoxC.Size = new System.Drawing.Size(191, 29);
-            this.AdressRegBoxC.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.Location = new System.Drawing.Point(105, 478);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Телефон";
             // 
-            // PhoneRegBoxC
+            // label4
             // 
-            this.PhoneRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneRegBoxC.Location = new System.Drawing.Point(195, 338);
-            this.PhoneRegBoxC.Name = "PhoneRegBoxC";
-            this.PhoneRegBoxC.Size = new System.Drawing.Size(191, 29);
-            this.PhoneRegBoxC.TabIndex = 6;
-            // 
-            // EmailRegBoxC
-            // 
-            this.EmailRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EmailRegBoxC.Location = new System.Drawing.Point(195, 373);
-            this.EmailRegBoxC.Name = "EmailRegBoxC";
-            this.EmailRegBoxC.Size = new System.Drawing.Size(191, 29);
-            this.EmailRegBoxC.TabIndex = 7;
-            // 
-            // l1
-            // 
-            this.l1.AutoSize = true;
-            this.l1.Location = new System.Drawing.Point(55, 268);
-            this.l1.Name = "l1";
-            this.l1.Size = new System.Drawing.Size(40, 19);
-            this.l1.TabIndex = 8;
-            this.l1.Text = "ФИО";
-            // 
-            // l2
-            // 
-            this.l2.AutoSize = true;
-            this.l2.Location = new System.Drawing.Point(55, 303);
-            this.l2.Name = "l2";
-            this.l2.Size = new System.Drawing.Size(128, 19);
-            this.l2.TabIndex = 9;
-            this.l2.Text = "Адрес проживания";
-            // 
-            // l3
-            // 
-            this.l3.AutoSize = true;
-            this.l3.Location = new System.Drawing.Point(55, 338);
-            this.l3.Name = "l3";
-            this.l3.Size = new System.Drawing.Size(62, 19);
-            this.l3.TabIndex = 10;
-            this.l3.Text = "Телефон";
-            // 
-            // l4
-            // 
-            this.l4.AutoSize = true;
-            this.l4.Location = new System.Drawing.Point(55, 373);
-            this.l4.Name = "l4";
-            this.l4.Size = new System.Drawing.Size(41, 19);
-            this.l4.TabIndex = 11;
-            this.l4.Text = "Email";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label4.Location = new System.Drawing.Point(105, 513);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 18);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Email";
             // 
             // ClientsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 465);
-            this.Controls.Add(this.l4);
-            this.Controls.Add(this.l3);
-            this.Controls.Add(this.l2);
-            this.Controls.Add(this.l1);
-            this.Controls.Add(this.EmailRegBoxC);
-            this.Controls.Add(this.PhoneRegBoxC);
-            this.Controls.Add(this.AdressRegBoxC);
-            this.Controls.Add(this.FioRegBoxC);
-            this.Controls.Add(this.materialRaisedButton3);
-            this.Controls.Add(this.materialRaisedButton2);
-            this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.dataGridView1);
-            this.MaximumSize = new System.Drawing.Size(800, 465);
-            this.MinimumSize = new System.Drawing.Size(800, 465);
+            this.ClientSize = new System.Drawing.Size(1031, 558);
+            this.Controls.Add(this.panel1);
             this.Name = "ClientsView";
             this.Load += new System.EventHandler(this.ClientsView_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
-        private System.Windows.Forms.TextBox FioRegBoxC;
-        private System.Windows.Forms.TextBox AdressRegBoxC;
-        private System.Windows.Forms.TextBox PhoneRegBoxC;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox EmailRegBoxC;
-        private MetroFramework.Controls.MetroLabel l1;
-        private MetroFramework.Controls.MetroLabel l2;
-        private MetroFramework.Controls.MetroLabel l3;
-        private MetroFramework.Controls.MetroLabel l4;
+        private System.Windows.Forms.TextBox PhoneRegBoxC;
+        private System.Windows.Forms.TextBox AdressRegBoxC;
+        private System.Windows.Forms.TextBox FioRegBoxC;
+        private MaterialSkin.Controls.MaterialRaisedButton ChangeButton;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -30,11 +30,10 @@ namespace Kursovaya_Rabota
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@ namespace Kursovaya_Rabota
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,12 +71,28 @@ namespace Kursovaya_Rabota
             this.panel1.Size = new System.Drawing.Size(1164, 619);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // label1
             // 
-            this.panel2.Location = new System.Drawing.Point(532, 31);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(607, 561);
-            this.panel2.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(30, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(230, 42);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "PC Engineer";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 24);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(24, 595);
+            this.panel4.TabIndex = 12;
             // 
             // panel3
             // 
@@ -87,28 +103,12 @@ namespace Kursovaya_Rabota
             this.panel3.Size = new System.Drawing.Size(1164, 24);
             this.panel3.TabIndex = 11;
             // 
-            // panel4
+            // panel2
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(16, 595);
-            this.panel4.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(27, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 42);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "PC Engineer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.Location = new System.Drawing.Point(532, 31);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(607, 561);
+            this.panel2.TabIndex = 10;
             // 
             // button10
             // 
@@ -117,7 +117,7 @@ namespace Kursovaya_Rabota
             this.button10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button10.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__23_;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(359, 210);
+            this.button10.Location = new System.Drawing.Point(362, 210);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(164, 110);
             this.button10.TabIndex = 9;
@@ -132,7 +132,7 @@ namespace Kursovaya_Rabota
             this.button9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button9.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__20_;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(359, 98);
+            this.button9.Location = new System.Drawing.Point(362, 98);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(164, 110);
             this.button9.TabIndex = 8;
@@ -146,7 +146,7 @@ namespace Kursovaya_Rabota
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button8.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__18_;
-            this.button8.Location = new System.Drawing.Point(193, 434);
+            this.button8.Location = new System.Drawing.Point(196, 434);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(164, 110);
             this.button8.TabIndex = 7;
@@ -161,7 +161,7 @@ namespace Kursovaya_Rabota
             this.button7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button7.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__15_;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(193, 322);
+            this.button7.Location = new System.Drawing.Point(196, 322);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(164, 110);
             this.button7.TabIndex = 6;
@@ -175,7 +175,7 @@ namespace Kursovaya_Rabota
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button6.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__14_;
-            this.button6.Location = new System.Drawing.Point(193, 210);
+            this.button6.Location = new System.Drawing.Point(196, 210);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(164, 110);
             this.button6.TabIndex = 5;
@@ -190,7 +190,7 @@ namespace Kursovaya_Rabota
             this.button5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button5.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__13_;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(193, 98);
+            this.button5.Location = new System.Drawing.Point(196, 98);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 110);
             this.button5.TabIndex = 4;
@@ -205,7 +205,7 @@ namespace Kursovaya_Rabota
             this.button4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button4.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__11_;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(27, 434);
+            this.button4.Location = new System.Drawing.Point(30, 434);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(164, 110);
             this.button4.TabIndex = 3;
@@ -220,7 +220,7 @@ namespace Kursovaya_Rabota
             this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button3.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__10_;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(27, 322);
+            this.button3.Location = new System.Drawing.Point(30, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(164, 110);
             this.button3.TabIndex = 2;
@@ -234,7 +234,7 @@ namespace Kursovaya_Rabota
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button2.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__9_;
-            this.button2.Location = new System.Drawing.Point(27, 210);
+            this.button2.Location = new System.Drawing.Point(30, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 110);
             this.button2.TabIndex = 1;
@@ -249,7 +249,7 @@ namespace Kursovaya_Rabota
             this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__8_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(27, 98);
+            this.button1.Location = new System.Drawing.Point(30, 98);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 110);
             this.button1.TabIndex = 0;

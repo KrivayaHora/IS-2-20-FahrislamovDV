@@ -47,9 +47,9 @@ namespace Kursovaya_Rabota
             {
                 case "Администратор":
                      void Management1(object obj)
-                    {
+                     {
                         Application.Run(new Managementform());
-                    }
+                     }
                     this.Close();
                     T1 = new Thread(Management1);
                     T1.SetApartmentState(ApartmentState.STA);
@@ -115,14 +115,6 @@ namespace Kursovaya_Rabota
         private void LoginBox_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-       
-
-        private void materialRaisedButton2_Click_1(object sender, EventArgs e)
-        {
-            RegistrationForm form = new RegistrationForm();
-            form.Show();
         }
     }
 }
