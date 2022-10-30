@@ -39,8 +39,8 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -187,15 +187,6 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel3.Size = new System.Drawing.Size(1134, 80);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 80);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1134, 608);
-            this.panel4.TabIndex = 4;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -207,6 +198,15 @@ namespace Kursovaya_Rabota.Project.Forms
             this.label2.TabIndex = 0;
             this.label2.Text = "Текст";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 80);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1134, 608);
+            this.panel4.TabIndex = 4;
+            // 
             // Managementform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,7 +215,6 @@ namespace Kursovaya_Rabota.Project.Forms
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "Managementform";
             this.Load += new System.EventHandler(this.Management_Load);

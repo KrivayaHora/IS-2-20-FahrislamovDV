@@ -66,7 +66,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1031, 558);
+            this.panel1.Size = new System.Drawing.Size(1118, 569);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -119,7 +119,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 546);
+            this.panel3.Size = new System.Drawing.Size(12, 557);
             this.panel3.TabIndex = 25;
             // 
             // panel2
@@ -128,7 +128,7 @@ namespace Kursovaya_Rabota
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1031, 12);
+            this.panel2.Size = new System.Drawing.Size(1118, 12);
             this.panel2.TabIndex = 24;
             // 
             // dataGridView1
@@ -140,7 +140,7 @@ namespace Kursovaya_Rabota
             this.dataGridView1.Location = new System.Drawing.Point(18, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1001, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 340);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -205,7 +205,7 @@ namespace Kursovaya_Rabota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 558);
+            this.ClientSize = new System.Drawing.Size(1118, 569);
             this.Controls.Add(this.panel1);
             this.Name = "ClientsView";
             this.Load += new System.EventHandler(this.ClientsView_Load);

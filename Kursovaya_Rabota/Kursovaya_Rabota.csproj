@@ -51,8 +51,14 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.21.8.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.21.8\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer, Version=2.8.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Humanizer.Core.2.8.26\lib\netstandard2.0\Humanizer.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.2.16.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.2.16\lib\net46\K4os.Compression.LZ4.dll</HintPath>
@@ -77,6 +83,12 @@
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlKata, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlKata.3.0.0-beta\lib\netstandard2.0\SqlKata.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlKata.Execution, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlKata.Execution.3.0.0-beta\lib\netstandard2.0\SqlKata.Execution.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -113,73 +125,74 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authorization.cs">
+    <Compile Include="DBFGrid.cs" />
+    <Compile Include="EmployeeView.cs" />
+    <Compile Include="FormsDB\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authorization.Designer.cs">
+    <Compile Include="FormsDB\Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView.cs">
+    <Compile Include="FormsDB\ClientsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientsView.Designer.cs">
+    <Compile Include="FormsDB\ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Management.cs">
+    <Compile Include="FormsDB\Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Management.Designer.cs">
+    <Compile Include="FormsDB\Management.Designer.cs">
       <DependentUpon>Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewComponent.cs">
+    <Compile Include="FormsDB\NewComponent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewComponent.Designer.cs">
+    <Compile Include="FormsDB\NewComponent.Designer.cs">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewStaff.cs">
+    <Compile Include="FormsDB\NewStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewStaff.Designer.cs">
+    <Compile Include="FormsDB\NewStaff.Designer.cs">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="PcBuild.cs">
+    <Compile Include="FormsPC\PcBuild.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PcBuild.Designer.cs">
+    <Compile Include="FormsPC\PcBuild.Designer.cs">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationForm.cs">
+    <Compile Include="FormsDB\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationForm.Designer.cs">
-      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    <Compile Include="FormsDB\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewCPU.cs">
+    <Compile Include="FormsPC\ViewCPU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewCPU.Designer.cs">
+    <Compile Include="FormsPC\ViewCPU.Designer.cs">
       <DependentUpon>ViewCPU.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkClasses.cs" />
-    <EmbeddedResource Include="Authorization.resx">
+    <EmbeddedResource Include="FormsDB\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView.resx">
+    <EmbeddedResource Include="FormsDB\ClientsView.resx">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Management.resx">
+    <EmbeddedResource Include="FormsDB\Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewComponent.resx">
+    <EmbeddedResource Include="FormsDB\NewComponent.resx">
       <DependentUpon>NewComponent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewStaff.resx">
+    <EmbeddedResource Include="FormsDB\NewStaff.resx">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PcBuild.resx">
+    <EmbeddedResource Include="FormsPC\PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -192,10 +205,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegistrationForm.resx">
-      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormsDB\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewCPU.resx">
+    <EmbeddedResource Include="FormsPC\ViewCPU.resx">
       <DependentUpon>ViewCPU.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -289,6 +302,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngegg %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2828%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
