@@ -31,7 +31,7 @@ namespace Kursovaya_Rabota
             }
             return hash.ToString();
         }
-        public void GetClients()
+        public void GetEmployee()
         {
             string sqlview = "SELECT ID AS `Код`, Fullname AS `Полное имя`, Phone AS `Контактный номер`, Login AS `Логин`, Password AS `Пароль`, Email AS `Адрес электронной почты` FROM Employee";
             ConnectStaff.Open();
@@ -82,7 +82,7 @@ namespace Kursovaya_Rabota
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
-            GetClients();
+            GetEmployee();
         }
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
@@ -108,7 +108,7 @@ namespace Kursovaya_Rabota
                 MessageBox.Show("Пользователь добавлен");
             else
                 MessageBox.Show("Ошибка добавления");
-
+            dataGridView1.Update();
             ConnectStaff.Close();
         }
 
