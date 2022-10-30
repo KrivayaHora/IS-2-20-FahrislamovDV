@@ -107,7 +107,7 @@ namespace Kursovaya_Rabota
             // 
             this.panel2.Location = new System.Drawing.Point(532, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(607, 561);
+            this.panel2.Size = new System.Drawing.Size(610, 560);
             this.panel2.TabIndex = 10;
             // 
             // button10
