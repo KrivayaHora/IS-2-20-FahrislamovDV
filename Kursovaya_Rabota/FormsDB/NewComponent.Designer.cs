@@ -29,10 +29,11 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewComponent));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Selector = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,15 @@ namespace Kursovaya_Rabota
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(856, 483);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 483);
+            this.panel3.TabIndex = 26;
             // 
             // Selector
             // 
@@ -76,15 +86,6 @@ namespace Kursovaya_Rabota
             this.panel2.Size = new System.Drawing.Size(856, 12);
             this.panel2.TabIndex = 25;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 483);
-            this.panel3.TabIndex = 26;
-            // 
             // NewComponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +93,7 @@ namespace Kursovaya_Rabota
             this.ClientSize = new System.Drawing.Size(856, 483);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewComponent";
             this.Load += new System.EventHandler(this.NewComponent_Load);
             this.panel1.ResumeLayout(false);

@@ -309,5 +309,14 @@
   <ItemGroup>
     <None Include="Resources\pngegg %2828%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3709738-client-customer-male-request-service_108090.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

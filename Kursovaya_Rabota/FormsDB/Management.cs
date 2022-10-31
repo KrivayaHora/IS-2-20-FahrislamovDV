@@ -43,21 +43,25 @@ namespace Kursovaya_Rabota.Project.Forms
         private void ClientsButton_Click(object sender, EventArgs e)
         {
             ChildForm(new ClientsView());
+            label2.Text = "Вкладка клиенты";
         }
 
         private void ConfigButton_Click(object sender, EventArgs e)
         {
             ChildForm(new PcBuild());
+            label2.Text = "Вкладка конфигуратор";
         }
 
         private void ComponentButton_Click(object sender, EventArgs e)
         {
             ChildForm(new NewComponent());
+            label2.Text = "Вкладка учёт комплектующих";
         }
 
         private void StaffButton_Click(object sender, EventArgs e)
         {
             ChildForm(new Staff());
+            label2.Text = "Вкладка сотрудники";
         }
 
         private void Desktop_Paint(object sender, PaintEventArgs e)

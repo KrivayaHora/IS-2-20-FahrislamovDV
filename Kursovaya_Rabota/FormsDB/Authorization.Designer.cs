@@ -29,6 +29,7 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autorization));
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.LoginBox = new System.Windows.Forms.TextBox();
@@ -77,6 +78,7 @@ namespace Kursovaya_Rabota
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.LoginBox);
             this.Controls.Add(this.materialRaisedButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(360, 360);
             this.MinimumSize = new System.Drawing.Size(360, 360);
             this.Name = "Autorization";
