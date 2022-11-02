@@ -67,5 +67,10 @@ namespace Kursovaya_Rabota
         {
             GetEmployee();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

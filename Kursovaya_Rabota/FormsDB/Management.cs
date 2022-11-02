@@ -42,7 +42,7 @@ namespace Kursovaya_Rabota.Project.Forms
         }
         private void ClientsButton_Click(object sender, EventArgs e)
         {
-            ChildForm(new ClientsView());
+            ChildForm(new ClientsV());
             label2.Text = "Вкладка клиенты";
         }
 

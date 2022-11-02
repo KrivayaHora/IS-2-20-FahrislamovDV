@@ -1,7 +1,7 @@
 ﻿
 namespace Kursovaya_Rabota
 {
-    partial class ClientsView
+    partial class ClientsV
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,22 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsView));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsV));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.RegB = new System.Windows.Forms.Button();
+            this.Reload = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.EmailRegBoxC = new System.Windows.Forms.TextBox();
-            this.PhoneRegBoxC = new System.Windows.Forms.TextBox();
-            this.AdressRegBoxC = new System.Windows.Forms.TextBox();
-            this.FioRegBoxC = new System.Windows.Forms.TextBox();
-            this.ChangeButton = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.IDClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullNameClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AdressClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmailClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -51,68 +52,63 @@ namespace Kursovaya_Rabota
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.RegB);
+            this.panel1.Controls.Add(this.Reload);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.Search);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.EmailRegBoxC);
-            this.panel1.Controls.Add(this.PhoneRegBoxC);
-            this.panel1.Controls.Add(this.AdressRegBoxC);
-            this.panel1.Controls.Add(this.FioRegBoxC);
-            this.panel1.Controls.Add(this.ChangeButton);
-            this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1118, 569);
             this.panel1.TabIndex = 0;
             // 
-            // label4
+            // RegB
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(33, 505);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 18);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Email";
+            this.RegB.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RegB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.RegB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RegB.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
+            this.RegB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RegB.Location = new System.Drawing.Point(974, 24);
+            this.RegB.Name = "RegB";
+            this.RegB.Size = new System.Drawing.Size(132, 40);
+            this.RegB.TabIndex = 40;
+            this.RegB.Text = "Регистрация";
+            this.RegB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RegB.UseVisualStyleBackColor = true;
+            this.RegB.Click += new System.EventHandler(this.RegB_Click);
             // 
-            // label3
+            // Reload
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label3.Location = new System.Drawing.Point(33, 470);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 18);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Телефон";
+            this.Reload.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__30_;
+            this.Reload.Location = new System.Drawing.Point(928, 25);
+            this.Reload.Name = "Reload";
+            this.Reload.Size = new System.Drawing.Size(40, 40);
+            this.Reload.TabIndex = 39;
+            this.Reload.UseVisualStyleBackColor = true;
+            this.Reload.Click += new System.EventHandler(this.Reload_Click);
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label2.Location = new System.Drawing.Point(33, 432);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 18);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Адрес проживания";
+            this.button1.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__28_;
+            this.button1.Location = new System.Drawing.Point(295, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 26);
+            this.button1.TabIndex = 37;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // Search
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(33, 396);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 18);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "ФИО";
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Search.Location = new System.Drawing.Point(18, 39);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(271, 26);
+            this.Search.TabIndex = 36;
             // 
             // panel3
             // 
@@ -136,80 +132,90 @@ namespace Kursovaya_Rabota
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 18);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDClient,
+            this.FullNameClient,
+            this.AdressClient,
+            this.PhoneClient,
+            this.EmailClient});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1088, 340);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 476);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // EmailRegBoxC
+            // IDClient
             // 
-            this.EmailRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EmailRegBoxC.Location = new System.Drawing.Point(192, 496);
-            this.EmailRegBoxC.Name = "EmailRegBoxC";
-            this.EmailRegBoxC.Size = new System.Drawing.Size(280, 29);
-            this.EmailRegBoxC.TabIndex = 18;
+            this.IDClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.IDClient.HeaderText = "Код";
+            this.IDClient.Name = "IDClient";
+            this.IDClient.ReadOnly = true;
+            this.IDClient.Visible = false;
             // 
-            // PhoneRegBoxC
+            // FullNameClient
             // 
-            this.PhoneRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneRegBoxC.Location = new System.Drawing.Point(192, 461);
-            this.PhoneRegBoxC.Name = "PhoneRegBoxC";
-            this.PhoneRegBoxC.Size = new System.Drawing.Size(280, 29);
-            this.PhoneRegBoxC.TabIndex = 17;
+            this.FullNameClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.FullNameClient.HeaderText = "Полное имя";
+            this.FullNameClient.Name = "FullNameClient";
+            this.FullNameClient.ReadOnly = true;
+            this.FullNameClient.Width = 272;
             // 
-            // AdressRegBoxC
+            // AdressClient
             // 
-            this.AdressRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AdressRegBoxC.Location = new System.Drawing.Point(192, 426);
-            this.AdressRegBoxC.Name = "AdressRegBoxC";
-            this.AdressRegBoxC.Size = new System.Drawing.Size(280, 29);
-            this.AdressRegBoxC.TabIndex = 16;
+            this.AdressClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.AdressClient.HeaderText = "Адрес проживания";
+            this.AdressClient.Name = "AdressClient";
+            this.AdressClient.ReadOnly = true;
+            this.AdressClient.Width = 272;
             // 
-            // FioRegBoxC
+            // PhoneClient
             // 
-            this.FioRegBoxC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FioRegBoxC.Location = new System.Drawing.Point(192, 391);
-            this.FioRegBoxC.Name = "FioRegBoxC";
-            this.FioRegBoxC.Size = new System.Drawing.Size(280, 29);
-            this.FioRegBoxC.TabIndex = 15;
+            this.PhoneClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.PhoneClient.HeaderText = "Номер телефона";
+            this.PhoneClient.Name = "PhoneClient";
+            this.PhoneClient.ReadOnly = true;
+            this.PhoneClient.Width = 271;
             // 
-            // ChangeButton
+            // EmailClient
             // 
-            this.ChangeButton.Depth = 0;
-            this.ChangeButton.Location = new System.Drawing.Point(531, 426);
-            this.ChangeButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ChangeButton.Name = "ChangeButton";
-            this.ChangeButton.Primary = true;
-            this.ChangeButton.Size = new System.Drawing.Size(201, 29);
-            this.ChangeButton.TabIndex = 14;
-            this.ChangeButton.Text = "Изменить ";
-            this.ChangeButton.UseVisualStyleBackColor = true;
+            this.EmailClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.EmailClient.HeaderText = "Электронная почта";
+            this.EmailClient.Name = "EmailClient";
+            this.EmailClient.ReadOnly = true;
+            this.EmailClient.Width = 272;
             // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(531, 391);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(201, 29);
-            this.materialRaisedButton1.TabIndex = 12;
-            this.materialRaisedButton1.Text = "Добавить";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
-            // 
-            // ClientsView
+            // ClientsV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 569);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ClientsView";
+            this.Name = "ClientsV";
             this.Load += new System.EventHandler(this.ClientsView_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -221,18 +227,17 @@ namespace Kursovaya_Rabota
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox EmailRegBoxC;
-        private System.Windows.Forms.TextBox PhoneRegBoxC;
-        private System.Windows.Forms.TextBox AdressRegBoxC;
-        private System.Windows.Forms.TextBox FioRegBoxC;
-        private MaterialSkin.Controls.MaterialRaisedButton ChangeButton;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullNameClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdressClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmailClient;
+        private System.Windows.Forms.TextBox Search;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Reload;
+        private System.Windows.Forms.Button RegB;
     }
 }

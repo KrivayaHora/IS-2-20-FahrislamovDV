@@ -125,8 +125,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientV.cs" />
     <Compile Include="DBFGrid.cs" />
-    <Compile Include="EmployeeView.cs" />
+    <Compile Include="EmployeeV.cs" />
     <Compile Include="FormsDB\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +157,12 @@
     </Compile>
     <Compile Include="FormsDB\NewStaff.Designer.cs">
       <DependentUpon>NewStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\RegisterFormC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\RegisterFormC.Designer.cs">
+      <DependentUpon>RegisterFormC.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsPC\PcBuild.cs">
       <SubType>Form</SubType>
@@ -191,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\NewStaff.resx">
       <DependentUpon>NewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\RegisterFormC.resx">
+      <DependentUpon>RegisterFormC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsPC\PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>

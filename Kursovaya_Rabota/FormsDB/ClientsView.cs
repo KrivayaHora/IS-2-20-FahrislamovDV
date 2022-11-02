@@ -10,60 +10,43 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
 using MaterialSkin.Controls;
+using SqlKata;
+using SqlKata.Execution;
+using Kursovaya_Rabota.FormsDB;
 
 namespace Kursovaya_Rabota
 {
-    public partial class ClientsView : Form
+    public partial class ClientsV : Form
     {
         MySqlConnection ConnectStaff;
-        MySqlDataAdapter MyDA = new MySqlDataAdapter();
-        BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
-        DataTable DT = new DataTable();
-        string ID_selected_rows = "0";
         public void GetClients()
         {
-            string sqlview = "SELECT ID AS `Код`, Fullname AS `Полное имя`, Adress AS `Адрес проживания`, Phone AS `Контактный номер`, Email AS `Адрес электронной почты` FROM Clients";
-            ConnectStaff.Open();
+            dataGridView1.Rows.Clear();
+            var DB = DBFGrid.DataBase();
 
-            MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
-            MyDA.Fill(DT);
+            IEnumerable<ClientV> res = DB.Query("Clients").Get<ClientV>();
 
-            BindingS.DataSource = DT;
-
-            dataGridView1.DataSource = BindingS;
-            ConnectStaff.Close();
-
-            dataGridView1.Columns[0].Visible = true;
-            dataGridView1.Columns[1].Visible = true;
-            dataGridView1.Columns[2].Visible = true;
-            dataGridView1.Columns[3].Visible = true;
-            dataGridView1.Columns[4].Visible = true;
-
-            
-            dataGridView1.Columns[0].FillWeight = 15;
-            dataGridView1.Columns[1].FillWeight = 40;
-            dataGridView1.Columns[2].FillWeight = 15;
-            dataGridView1.Columns[3].FillWeight = 15;
-            dataGridView1.Columns[4].FillWeight = 15;
-            
-            dataGridView1.Columns[0].ReadOnly = true;
-            dataGridView1.Columns[1].ReadOnly = true;
-            dataGridView1.Columns[2].ReadOnly = true;
-            dataGridView1.Columns[3].ReadOnly = true;
-            dataGridView1.Columns[4].ReadOnly = true;
-            
-            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-            dataGridView1.RowHeadersVisible = false;
-           
-            dataGridView1.ColumnHeadersVisible = true;
+            foreach (var client in res)
+            {
+                dataGridView1.Rows.Add(new object[]
+                {
+                    client.ID, client.FullName, client.Adress, client.Phone, client.Email
+                });
+            }
         }
-        public ClientsView()
+        public void SearchCli()
+        {
+            dataGridView1.Rows.Clear();
+            var DB = DBFGrid.DataBase();
+            Query q = DB.Query("Clients");
+            if (Search.Text.Trim().Length > 0)
+            {
+                q = q.Where("FullName", Search.Text.Trim());
+            }
+        }
+
+        
+        public ClientsV()
         {
             InitializeComponent();
         }
@@ -75,36 +58,25 @@ namespace Kursovaya_Rabota
             GetClients();
         }
 
-        
-
-        private void materialRaisedButton1_Click_1(object sender, EventArgs e)
-        {
-            ConnectStaff.Open();
-
-            string fio = FioRegBoxC.Text;
-            string adress = AdressRegBoxC.Text;
-            string phone = PhoneRegBoxC.Text;
-            string email = EmailRegBoxC.Text;
-
-            string sql = "INSERT INTO `Clients`(Fullname, Adress, Phone, Email) VALUES (@fio, @adress, @phone, @email)";
-
-            MySqlCommand CMD = new MySqlCommand(sql, ConnectStaff);
-            CMD.Parameters.Add("@fio", MySqlDbType.VarChar).Value = FioRegBoxC.Text;
-            CMD.Parameters.Add("@adress", MySqlDbType.VarChar).Value = AdressRegBoxC.Text;
-            CMD.Parameters.Add("@phone", MySqlDbType.VarChar).Value = PhoneRegBoxC.Text;
-            CMD.Parameters.Add("@email", MySqlDbType.VarChar).Value = EmailRegBoxC.Text;
-
-            if (CMD.ExecuteNonQuery() == 1)
-                MessageBox.Show("Клиент добавлен");
-            else
-                MessageBox.Show("Ошибка добавления");
-
-            ConnectStaff.Close();
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SearchCli();
+        }
+
+        private void RegB_Click(object sender, EventArgs e)
+        {
+            Form form = new RegisterFormC();
+            form.ShowDialog();
+        }
+
+        private void Reload_Click(object sender, EventArgs e)
+        {
+            GetClients();
         }
     }
 }
