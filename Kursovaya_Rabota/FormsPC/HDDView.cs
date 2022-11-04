@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
-namespace Kursovaya_Rabota
+namespace Kursovaya_Rabota.FormsPC
 {
-    public partial class ViewCPU : Form
+    public partial class HDDView : Form
     {
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
@@ -19,9 +19,10 @@ namespace Kursovaya_Rabota
         DataSet DS = new DataSet();
         DataTable DT = new DataTable();
         string ID_selected_rows = "0";
-        public void GetCPU()
+
+        public void GetHDD()
         {
-            string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 2";
+            string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 6";
             ConnectStaff.Open();
 
             MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
@@ -61,21 +62,16 @@ namespace Kursovaya_Rabota
 
             dataGridView1.ColumnHeadersVisible = true;
         }
-        public ViewCPU()
+        public HDDView()
         {
             InitializeComponent();
         }
 
-        private void ViewCPU_Load(object sender, EventArgs e)
+        private void HDDView_Load(object sender, EventArgs e)
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
-            GetCPU();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            GetHDD();
         }
     }
 }

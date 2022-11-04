@@ -32,6 +32,9 @@ namespace Kursovaya_Rabota
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Reload = new System.Windows.Forms.Button();
+            this.RegB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Search = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,9 +46,6 @@ namespace Kursovaya_Rabota
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Reload = new System.Windows.Forms.Button();
-            this.RegB = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,43 @@ namespace Kursovaya_Rabota
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1118, 569);
             this.panel1.TabIndex = 0;
+            // 
+            // Reload
+            // 
+            this.Reload.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__30_;
+            this.Reload.Location = new System.Drawing.Point(928, 27);
+            this.Reload.Name = "Reload";
+            this.Reload.Size = new System.Drawing.Size(40, 40);
+            this.Reload.TabIndex = 38;
+            this.Reload.UseVisualStyleBackColor = true;
+            this.Reload.Click += new System.EventHandler(this.Reload_Click);
+            // 
+            // RegB
+            // 
+            this.RegB.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RegB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.RegB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RegB.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
+            this.RegB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RegB.Location = new System.Drawing.Point(974, 27);
+            this.RegB.Name = "RegB";
+            this.RegB.Size = new System.Drawing.Size(132, 40);
+            this.RegB.TabIndex = 37;
+            this.RegB.Text = "Регистрация";
+            this.RegB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RegB.UseVisualStyleBackColor = true;
+            this.RegB.Click += new System.EventHandler(this.RegB_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__28_;
+            this.button1.Location = new System.Drawing.Point(295, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 26);
+            this.button1.TabIndex = 36;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Search
             // 
@@ -109,7 +146,7 @@ namespace Kursovaya_Rabota
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 30;
+            this.dataGridView1.ColumnHeadersHeight = 19;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -180,43 +217,6 @@ namespace Kursovaya_Rabota
             this.Role.HeaderText = "Должность";
             this.Role.Name = "Role";
             this.Role.ReadOnly = true;
-            // 
-            // Reload
-            // 
-            this.Reload.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__30_;
-            this.Reload.Location = new System.Drawing.Point(928, 27);
-            this.Reload.Name = "Reload";
-            this.Reload.Size = new System.Drawing.Size(40, 40);
-            this.Reload.TabIndex = 38;
-            this.Reload.UseVisualStyleBackColor = true;
-            this.Reload.Click += new System.EventHandler(this.Reload_Click);
-            // 
-            // RegB
-            // 
-            this.RegB.Cursor = System.Windows.Forms.Cursors.Default;
-            this.RegB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.RegB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RegB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RegB.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
-            this.RegB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RegB.Location = new System.Drawing.Point(974, 27);
-            this.RegB.Name = "RegB";
-            this.RegB.Size = new System.Drawing.Size(132, 40);
-            this.RegB.TabIndex = 37;
-            this.RegB.Text = "Регистрация";
-            this.RegB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.RegB.UseVisualStyleBackColor = true;
-            this.RegB.Click += new System.EventHandler(this.RegB_Click);
-            // 
-            // button1
-            // 
-            this.button1.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__28_;
-            this.button1.Location = new System.Drawing.Point(295, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 26);
-            this.button1.TabIndex = 36;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Staff
             // 

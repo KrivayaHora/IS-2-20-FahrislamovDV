@@ -39,6 +39,7 @@ namespace Kursovaya_Rabota.Project.Forms
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
+            
         }
         private void ClientsButton_Click(object sender, EventArgs e)
         {

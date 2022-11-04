@@ -1,7 +1,7 @@
 ﻿
-namespace Kursovaya_Rabota
+namespace Kursovaya_Rabota.FormsPC
 {
-    partial class ViewCPU
+    partial class BodyFunView
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@ namespace Kursovaya_Rabota
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -50,25 +51,23 @@ namespace Kursovaya_Rabota
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(415, 553);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.TabIndex = 6;
             // 
-            // ViewCPU
+            // BodyFunView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(754, 556);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(770, 595);
             this.MinimumSize = new System.Drawing.Size(770, 595);
-            this.Name = "ViewCPU";
-            this.Text = "ViewCPU";
-            this.Load += new System.EventHandler(this.ViewCPU_Load);
+            this.Name = "BodyFunView";
+            this.Text = "BodyFunView";
+            this.Load += new System.EventHandler(this.BodyFunView_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

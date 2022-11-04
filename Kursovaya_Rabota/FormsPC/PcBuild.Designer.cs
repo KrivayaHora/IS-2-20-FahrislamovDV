@@ -29,21 +29,23 @@ namespace Kursovaya_Rabota
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PcBuild));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.CoolerForCPUButtom = new System.Windows.Forms.Button();
+            this.BodyFunButton = new System.Windows.Forms.Button();
+            this.PSBody = new System.Windows.Forms.Button();
+            this.BodyButton = new System.Windows.Forms.Button();
+            this.SSDButtom = new System.Windows.Forms.Button();
+            this.HDDButtom = new System.Windows.Forms.Button();
+            this.RAMButton = new System.Windows.Forms.Button();
+            this.MotherButtom = new System.Windows.Forms.Button();
+            this.GPUButtom = new System.Windows.Forms.Button();
+            this.CPUButtom = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,16 +55,16 @@ namespace Kursovaya_Rabota
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CoolerForCPUButtom);
+            this.panel1.Controls.Add(this.BodyFunButton);
+            this.panel1.Controls.Add(this.PSBody);
+            this.panel1.Controls.Add(this.BodyButton);
+            this.panel1.Controls.Add(this.SSDButtom);
+            this.panel1.Controls.Add(this.HDDButtom);
+            this.panel1.Controls.Add(this.RAMButton);
+            this.panel1.Controls.Add(this.MotherButtom);
+            this.panel1.Controls.Add(this.GPUButtom);
+            this.panel1.Controls.Add(this.CPUButtom);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -95,153 +97,173 @@ namespace Kursovaya_Rabota
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button10
+            // CoolerForCPUButtom
             // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button10.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__23_;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(193, 480);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(164, 110);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Кулер для процессора";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseVisualStyleBackColor = true;
+            this.CoolerForCPUButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CoolerForCPUButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CoolerForCPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CoolerForCPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__23_;
+            this.CoolerForCPUButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CoolerForCPUButtom.Location = new System.Drawing.Point(193, 480);
+            this.CoolerForCPUButtom.Name = "CoolerForCPUButtom";
+            this.CoolerForCPUButtom.Size = new System.Drawing.Size(164, 110);
+            this.CoolerForCPUButtom.TabIndex = 9;
+            this.CoolerForCPUButtom.Text = "Кулер для процессора";
+            this.CoolerForCPUButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CoolerForCPUButtom.UseVisualStyleBackColor = true;
+            this.CoolerForCPUButtom.Click += new System.EventHandler(this.CoolerForCPUButtom_Click);
             // 
-            // button9
+            // BodyFunButton
             // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button9.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__20_;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(193, 367);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(164, 110);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Корпусные вентиляторы";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseVisualStyleBackColor = true;
+            this.BodyFunButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BodyFunButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BodyFunButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BodyFunButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__20_;
+            this.BodyFunButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BodyFunButton.Location = new System.Drawing.Point(193, 367);
+            this.BodyFunButton.Name = "BodyFunButton";
+            this.BodyFunButton.Size = new System.Drawing.Size(164, 110);
+            this.BodyFunButton.TabIndex = 8;
+            this.BodyFunButton.Text = "Корпусные вентиляторы";
+            this.BodyFunButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BodyFunButton.UseVisualStyleBackColor = true;
+            this.BodyFunButton.Click += new System.EventHandler(this.BodyFunButton_Click);
             // 
-            // button8
+            // PSBody
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button8.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__18_;
-            this.button8.Location = new System.Drawing.Point(193, 255);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(164, 110);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Блок питания ";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = true;
+            this.PSBody.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PSBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PSBody.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PSBody.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__18_;
+            this.PSBody.Location = new System.Drawing.Point(193, 255);
+            this.PSBody.Name = "PSBody";
+            this.PSBody.Size = new System.Drawing.Size(164, 110);
+            this.PSBody.TabIndex = 7;
+            this.PSBody.Text = "Блок питания ";
+            this.PSBody.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.PSBody.UseVisualStyleBackColor = true;
+            this.PSBody.Click += new System.EventHandler(this.PSBody_Click);
             // 
-            // button7
+            // BodyButton
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button7.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__15_;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(193, 143);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(164, 110);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Корпус";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
+            this.BodyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BodyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BodyButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BodyButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__15_;
+            this.BodyButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BodyButton.Location = new System.Drawing.Point(193, 143);
+            this.BodyButton.Name = "BodyButton";
+            this.BodyButton.Size = new System.Drawing.Size(164, 110);
+            this.BodyButton.TabIndex = 6;
+            this.BodyButton.Text = "Корпус";
+            this.BodyButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BodyButton.UseVisualStyleBackColor = true;
+            this.BodyButton.Click += new System.EventHandler(this.BodyButton_Click);
             // 
-            // button6
+            // SSDButtom
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button6.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__14_;
-            this.button6.Location = new System.Drawing.Point(193, 31);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 110);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "SSD";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.SSDButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SSDButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SSDButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.SSDButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__14_;
+            this.SSDButtom.Location = new System.Drawing.Point(193, 31);
+            this.SSDButtom.Name = "SSDButtom";
+            this.SSDButtom.Size = new System.Drawing.Size(164, 110);
+            this.SSDButtom.TabIndex = 5;
+            this.SSDButtom.Text = "SSD";
+            this.SSDButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.SSDButtom.UseVisualStyleBackColor = true;
+            this.SSDButtom.Click += new System.EventHandler(this.SSDButtom_Click);
             // 
-            // button5
+            // HDDButtom
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button5.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__13_;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(27, 480);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(164, 110);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "HDD";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.HDDButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HDDButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HDDButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.HDDButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__13_;
+            this.HDDButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.HDDButtom.Location = new System.Drawing.Point(27, 480);
+            this.HDDButtom.Name = "HDDButtom";
+            this.HDDButtom.Size = new System.Drawing.Size(164, 110);
+            this.HDDButtom.TabIndex = 4;
+            this.HDDButtom.Text = "HDD";
+            this.HDDButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.HDDButtom.UseVisualStyleBackColor = true;
+            this.HDDButtom.Click += new System.EventHandler(this.HDDButtom_Click);
             // 
-            // button4
+            // RAMButton
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button4.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__11_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(27, 367);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 110);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Оперативная память";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.RAMButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RAMButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RAMButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RAMButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__11_;
+            this.RAMButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.RAMButton.Location = new System.Drawing.Point(27, 367);
+            this.RAMButton.Name = "RAMButton";
+            this.RAMButton.Size = new System.Drawing.Size(164, 110);
+            this.RAMButton.TabIndex = 3;
+            this.RAMButton.Text = "Оперативная память";
+            this.RAMButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.RAMButton.UseVisualStyleBackColor = true;
+            this.RAMButton.Click += new System.EventHandler(this.RAMButton_Click);
             // 
-            // button3
+            // MotherButtom
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button3.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__10_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(27, 255);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 110);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Материнская плата";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.MotherButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MotherButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MotherButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.MotherButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__10_;
+            this.MotherButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MotherButtom.Location = new System.Drawing.Point(27, 255);
+            this.MotherButtom.Name = "MotherButtom";
+            this.MotherButtom.Size = new System.Drawing.Size(164, 110);
+            this.MotherButtom.TabIndex = 2;
+            this.MotherButtom.Text = "Материнская плата";
+            this.MotherButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.MotherButtom.UseVisualStyleBackColor = true;
+            this.MotherButtom.Click += new System.EventHandler(this.MotherButtom_Click);
             // 
-            // button2
+            // GPUButtom
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button2.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__9_;
-            this.button2.Location = new System.Drawing.Point(27, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 110);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Видеокарта";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.GPUButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GPUButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.GPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__9_;
+            this.GPUButtom.Location = new System.Drawing.Point(27, 143);
+            this.GPUButtom.Name = "GPUButtom";
+            this.GPUButtom.Size = new System.Drawing.Size(164, 110);
+            this.GPUButtom.TabIndex = 1;
+            this.GPUButtom.Text = "Видеокарта";
+            this.GPUButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.GPUButtom.UseVisualStyleBackColor = true;
+            this.GPUButtom.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // CPUButtom
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__8_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(27, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 110);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Процессор";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CPUButtom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CPUButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__8_;
+            this.CPUButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CPUButtom.Location = new System.Drawing.Point(27, 31);
+            this.CPUButtom.Name = "CPUButtom";
+            this.CPUButtom.Size = new System.Drawing.Size(164, 110);
+            this.CPUButtom.TabIndex = 0;
+            this.CPUButtom.Text = "Процессор";
+            this.CPUButtom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CPUButtom.UseVisualStyleBackColor = true;
+            this.CPUButtom.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // PcBuild
             // 
@@ -260,19 +282,20 @@ namespace Kursovaya_Rabota
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CoolerForCPUButtom;
+        private System.Windows.Forms.Button BodyFunButton;
+        private System.Windows.Forms.Button PSBody;
+        private System.Windows.Forms.Button BodyButton;
+        private System.Windows.Forms.Button SSDButtom;
+        private System.Windows.Forms.Button HDDButtom;
+        private System.Windows.Forms.Button RAMButton;
+        private System.Windows.Forms.Button MotherButtom;
+        private System.Windows.Forms.Button GPUButtom;
+        private System.Windows.Forms.Button CPUButtom;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

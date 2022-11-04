@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MaterialSkin.Controls;
+using Kursovaya_Rabota.FormsPC;
 
 namespace Kursovaya_Rabota
 {
@@ -54,6 +55,56 @@ namespace Kursovaya_Rabota
         private void button1_Click(object sender, EventArgs e)
         {
             ChildForm(new ViewCPU());
+        }
+
+        private void MotherButtom_Click(object sender, EventArgs e)
+        {
+            ChildForm(new MotherView());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ChildForm(new GPUView());
+        }
+
+        private void RAMButton_Click(object sender, EventArgs e)
+        {
+            ChildForm(new RAMView());
+        }
+
+        private void HDDButtom_Click(object sender, EventArgs e)
+        {
+            ChildForm(new HDDView());
+        }
+
+        private void SSDButtom_Click(object sender, EventArgs e)
+        {
+            ChildForm(new SSDView());
+        }
+
+        private void BodyButton_Click(object sender, EventArgs e)
+        {
+            ChildForm(new BodyView());
+        }
+
+        private void PSBody_Click(object sender, EventArgs e)
+        {
+            ChildForm(new PowerView());
+        }
+
+        private void BodyFunButton_Click(object sender, EventArgs e)
+        {
+            ChildForm(new BodyFunView());
+        }
+
+        private void CoolerForCPUButtom_Click(object sender, EventArgs e)
+        {
+            ChildForm(new CoolerCPUView());
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

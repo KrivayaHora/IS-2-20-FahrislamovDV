@@ -82,6 +82,7 @@ namespace Kursovaya_Rabota
             this.MaximumSize = new System.Drawing.Size(360, 360);
             this.MinimumSize = new System.Drawing.Size(360, 360);
             this.Name = "Autorization";
+            this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -164,11 +164,65 @@
     <Compile Include="FormsDB\RegisterFormC.Designer.cs">
       <DependentUpon>RegisterFormC.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsPC\BodyFunView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\BodyFunView.Designer.cs">
+      <DependentUpon>BodyFunView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\BodyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\BodyView.Designer.cs">
+      <DependentUpon>BodyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\CoolerCPUView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\CoolerCPUView.Designer.cs">
+      <DependentUpon>CoolerCPUView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\GPUView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\GPUView.Designer.cs">
+      <DependentUpon>GPUView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\HDDView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\HDDView.Designer.cs">
+      <DependentUpon>HDDView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\MotherView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\MotherView.Designer.cs">
+      <DependentUpon>MotherView.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsPC\PcBuild.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsPC\PcBuild.Designer.cs">
       <DependentUpon>PcBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\PowerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\PowerView.Designer.cs">
+      <DependentUpon>PowerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\RAMView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\RAMView.Designer.cs">
+      <DependentUpon>RAMView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPC\SSDView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\SSDView.Designer.cs">
+      <DependentUpon>SSDView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -202,8 +256,35 @@
     <EmbeddedResource Include="FormsDB\RegisterFormC.resx">
       <DependentUpon>RegisterFormC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\BodyFunView.resx">
+      <DependentUpon>BodyFunView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\BodyView.resx">
+      <DependentUpon>BodyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\CoolerCPUView.resx">
+      <DependentUpon>CoolerCPUView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\GPUView.resx">
+      <DependentUpon>GPUView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\HDDView.resx">
+      <DependentUpon>HDDView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\MotherView.resx">
+      <DependentUpon>MotherView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsPC\PcBuild.resx">
       <DependentUpon>PcBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\PowerView.resx">
+      <DependentUpon>PowerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\RAMView.resx">
+      <DependentUpon>RAMView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\SSDView.resx">
+      <DependentUpon>SSDView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
