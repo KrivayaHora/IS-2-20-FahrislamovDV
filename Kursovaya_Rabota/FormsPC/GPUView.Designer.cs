@@ -42,7 +42,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 556);
+            this.panel1.Size = new System.Drawing.Size(684, 541);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -62,10 +62,10 @@ namespace Kursovaya_Rabota.FormsPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 556);
+            this.ClientSize = new System.Drawing.Size(684, 541);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(770, 595);
-            this.MinimumSize = new System.Drawing.Size(770, 595);
+            this.MaximumSize = new System.Drawing.Size(700, 580);
+            this.MinimumSize = new System.Drawing.Size(700, 580);
             this.Name = "GPUView";
             this.Text = "GPUView";
             this.Load += new System.EventHandler(this.GPUView_Load);

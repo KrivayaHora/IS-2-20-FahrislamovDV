@@ -238,6 +238,7 @@
     <Compile Include="FormsPC\ViewCPU.Designer.cs">
       <DependentUpon>ViewCPU.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkBD.cs" />
     <EmbeddedResource Include="FormsDB\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>

@@ -34,18 +34,20 @@ namespace Kursovaya_Rabota
             this.panel3 = new System.Windows.Forms.Panel();
             this.Selector = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.Selector);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 483);
+            this.panel1.Size = new System.Drawing.Size(1164, 619);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -54,7 +56,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 483);
+            this.panel3.Size = new System.Drawing.Size(12, 619);
             this.panel3.TabIndex = 26;
             // 
             // Selector
@@ -63,7 +65,7 @@ namespace Kursovaya_Rabota
             this.Selector.FormattingEnabled = true;
             this.Selector.ItemHeight = 23;
             this.Selector.Items.AddRange(new object[] {
-            "Процессор ",
+            "Процессор",
             "Видеокарта",
             "Материнская плата",
             "Блок питания",
@@ -71,11 +73,12 @@ namespace Kursovaya_Rabota
             "Оперативная память",
             "Кулер для процессора ",
             "Вентиляторы для корпуса"});
-            this.Selector.Location = new System.Drawing.Point(34, 28);
+            this.Selector.Location = new System.Drawing.Point(38, 28);
             this.Selector.Name = "Selector";
-            this.Selector.Size = new System.Drawing.Size(771, 29);
+            this.Selector.Size = new System.Drawing.Size(371, 29);
             this.Selector.TabIndex = 1;
             this.Selector.UseSelectable = true;
+            this.Selector.SelectedIndexChanged += new System.EventHandler(this.Selector_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -83,17 +86,26 @@ namespace Kursovaya_Rabota
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(856, 12);
+            this.panel2.Size = new System.Drawing.Size(1164, 12);
             this.panel2.TabIndex = 25;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(455, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(700, 580);
+            this.panel4.TabIndex = 27;
             // 
             // NewComponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 483);
+            this.ClientSize = new System.Drawing.Size(1164, 619);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1180, 658);
+            this.MinimumSize = new System.Drawing.Size(1180, 658);
             this.Name = "NewComponent";
             this.Load += new System.EventHandler(this.NewComponent_Load);
             this.panel1.ResumeLayout(false);
@@ -107,5 +119,6 @@ namespace Kursovaya_Rabota
         private MetroFramework.Controls.MetroComboBox Selector;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

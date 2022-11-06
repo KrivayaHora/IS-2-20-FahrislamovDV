@@ -41,7 +41,7 @@ namespace Kursovaya_Rabota.FormsPC
 
 
             dataGridView1.Columns[0].FillWeight = 15;
-            dataGridView1.Columns[1].FillWeight = 40;
+            dataGridView1.Columns[1].FillWeight = 15;
             dataGridView1.Columns[2].FillWeight = 15;
             dataGridView1.Columns[3].FillWeight = 15;
             dataGridView1.Columns[4].FillWeight = 15;

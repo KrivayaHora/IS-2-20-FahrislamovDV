@@ -34,7 +34,6 @@ namespace Kursovaya_Rabota
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.CoolerForCPUButtom = new System.Windows.Forms.Button();
             this.BodyFunButton = new System.Windows.Forms.Button();
             this.PSBody = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@ namespace Kursovaya_Rabota
             this.MotherButtom = new System.Windows.Forms.Button();
             this.GPUButtom = new System.Windows.Forms.Button();
             this.CPUButtom = new System.Windows.Forms.Button();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -271,6 +271,8 @@ namespace Kursovaya_Rabota
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 619);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1180, 658);
+            this.MinimumSize = new System.Drawing.Size(1180, 658);
             this.Name = "PcBuild";
             this.Load += new System.EventHandler(this.PcBuild_Load);
             this.Leave += new System.EventHandler(this.PcBuild_Leave);

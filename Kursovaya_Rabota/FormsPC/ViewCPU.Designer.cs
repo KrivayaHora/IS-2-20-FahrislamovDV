@@ -41,7 +41,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 556);
+            this.panel1.Size = new System.Drawing.Size(684, 541);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -50,7 +50,7 @@ namespace Kursovaya_Rabota
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(415, 553);
@@ -62,10 +62,10 @@ namespace Kursovaya_Rabota
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(754, 556);
+            this.ClientSize = new System.Drawing.Size(684, 541);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(770, 595);
-            this.MinimumSize = new System.Drawing.Size(770, 595);
+            this.MaximumSize = new System.Drawing.Size(700, 580);
+            this.MinimumSize = new System.Drawing.Size(700, 580);
             this.Name = "ViewCPU";
             this.Text = "ViewCPU";
             this.Load += new System.EventHandler(this.ViewCPU_Load);
