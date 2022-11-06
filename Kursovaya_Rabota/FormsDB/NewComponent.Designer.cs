@@ -31,10 +31,10 @@ namespace Kursovaya_Rabota
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewComponent));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Selector = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,13 @@ namespace Kursovaya_Rabota
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1164, 619);
             this.panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(406, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(746, 580);
+            this.panel4.TabIndex = 27;
             // 
             // panel3
             // 
@@ -73,7 +80,7 @@ namespace Kursovaya_Rabota
             "Оперативная память",
             "Кулер для процессора ",
             "Вентиляторы для корпуса"});
-            this.Selector.Location = new System.Drawing.Point(38, 28);
+            this.Selector.Location = new System.Drawing.Point(18, 28);
             this.Selector.Name = "Selector";
             this.Selector.Size = new System.Drawing.Size(371, 29);
             this.Selector.TabIndex = 1;
@@ -88,13 +95,6 @@ namespace Kursovaya_Rabota
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1164, 12);
             this.panel2.TabIndex = 25;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(455, 28);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(700, 580);
-            this.panel4.TabIndex = 27;
             // 
             // NewComponent
             // 

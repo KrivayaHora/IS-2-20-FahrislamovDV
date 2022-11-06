@@ -140,6 +140,12 @@
     <Compile Include="FormsDB\ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsDB\Components\Mother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\Mother.Designer.cs">
+      <DependentUpon>Mother.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsDB\Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\ClientsView.resx">
       <DependentUpon>ClientsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\Mother.resx">
+      <DependentUpon>Mother.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
@@ -410,5 +419,6 @@
   <ItemGroup>
     <None Include="Resources\3709738-client-customer-male-request-service_108090.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

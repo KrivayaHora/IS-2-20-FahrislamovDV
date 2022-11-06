@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 using MetroFramework.Controls;
 using MaterialSkin.Controls;
 using Kursovaya_Rabota.FormsPC;
+using Kursovaya_Rabota.FormsDB.Components;
 
 namespace Kursovaya_Rabota
 {
@@ -58,9 +59,9 @@ namespace Kursovaya_Rabota
 
         private void Selector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Selector.Text == "Процессор")
+            if (Selector.Text == "Материнская плата")
             {
-                ChildForm(new ViewCPU());
+                ChildForm(new Mother());
             }
             else if(Selector.Text == "Видеокарта")
             {
