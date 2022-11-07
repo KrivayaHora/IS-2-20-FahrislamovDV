@@ -65,7 +65,31 @@ namespace Kursovaya_Rabota
             }
             else if(Selector.Text == "Видеокарта")
             {
-                ChildForm(new GPUView());
+                ChildForm(new GPU());
+            }
+            else if (Selector.Text == "Процессор")
+            {
+                ChildForm(new CPU());
+            }
+            else if (Selector.Text == "Блок питания")
+            {
+                ChildForm(new PowerSupply());
+            }
+            else if (Selector.Text == "Корпус")
+            {
+                ChildForm(new Body());
+            }
+            else if (Selector.Text == "Оперативная память")
+            {
+                ChildForm(new RAM());
+            }
+            else if (Selector.Text == "Кулер для процессора")
+            {
+                ChildForm(new Cooler());
+            }
+            else if (Selector.Text == "Вентиляторы для корпуса")
+            {
+                ChildForm(new FunBody());
             }
         }
     }

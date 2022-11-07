@@ -140,12 +140,60 @@
     <Compile Include="FormsDB\ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsDB\Components\Body.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\Body.Designer.cs">
+      <DependentUpon>Body.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\Cooler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\Cooler.Designer.cs">
+      <DependentUpon>Cooler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\CPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\CPU.Designer.cs">
+      <DependentUpon>CPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\FunBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\FunBody.Designer.cs">
+      <DependentUpon>FunBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\GPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\GPU.Designer.cs">
+      <DependentUpon>GPU.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsDB\Components\Items.cs" />
     <Compile Include="FormsDB\Components\Mother.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsDB\Components\Mother.Designer.cs">
       <DependentUpon>Mother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\PowerSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\PowerSupply.Designer.cs">
+      <DependentUpon>PowerSupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RAM.Designer.cs">
+      <DependentUpon>RAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents.Designer.cs">
+      <DependentUpon>RegisterComponents.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsDB\Management.cs">
       <SubType>Form</SubType>
@@ -252,8 +300,32 @@
     <EmbeddedResource Include="FormsDB\ClientsView.resx">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\Body.resx">
+      <DependentUpon>Body.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\Cooler.resx">
+      <DependentUpon>Cooler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\CPU.resx">
+      <DependentUpon>CPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\FunBody.resx">
+      <DependentUpon>FunBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\GPU.resx">
+      <DependentUpon>GPU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Components\Mother.resx">
       <DependentUpon>Mother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\PowerSupply.resx">
+      <DependentUpon>PowerSupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RAM.resx">
+      <DependentUpon>RAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents.resx">
+      <DependentUpon>RegisterComponents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
@@ -420,6 +492,50 @@
   <ItemGroup>
     <None Include="Resources\3709738-client-customer-male-request-service_108090.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %287%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %288%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %289%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2810%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2811%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2812%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2813%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2814%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

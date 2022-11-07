@@ -78,7 +78,7 @@ namespace Kursovaya_Rabota
             "Блок питания",
             "Корпус",
             "Оперативная память",
-            "Кулер для процессора ",
+            "Кулер для процессора",
             "Вентиляторы для корпуса"});
             this.Selector.Location = new System.Drawing.Point(18, 28);
             this.Selector.Name = "Selector";

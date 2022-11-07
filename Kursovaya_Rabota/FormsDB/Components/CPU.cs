@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,21 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using SqlKata.Execution;
 
 namespace Kursovaya_Rabota.FormsDB.Components
 {
-    public partial class Mother : Form
+    public partial class CPU : Form
     {
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
         DataTable DT = new DataTable();
-        public void GetMother()
+        public void GetCPU()
         {
-            
-            string sqlview = "SELECT Items.ID AS `Код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
+
+            string sqlview = "SELECT Items.ID AS `Код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 2";
             ConnectStaff.Open();
 
             MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
@@ -60,16 +59,16 @@ namespace Kursovaya_Rabota.FormsDB.Components
 
             dataGridView1.RowHeadersVisible = false;
 
-            dataGridView1.SelectionMode=DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
             dataGridView1.ColumnHeadersVisible = true;
         }
         void Delete(string ID)
         {
             string sql = "DELETE FROM Items Where ID = @ID";
-            
+
             ConnectStaff.Open();
-                
+
             MySqlCommand cmd = new MySqlCommand(sql, ConnectStaff);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("@ID", MySqlDbType.VarChar).Value = ID;
@@ -78,49 +77,29 @@ namespace Kursovaya_Rabota.FormsDB.Components
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Удалено успешно!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
-                MessageBox.Show($"Удаление не произошло\n{ex.Message}","Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Удаление не произошло\n{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             ConnectStaff.Close();
         }
-        public Mother()
+        public CPU()
         {
             InitializeComponent();
         }
 
-        private void Mother_Load(object sender, EventArgs e)
+        private void CPU_Load(object sender, EventArgs e)
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
-            GetMother();
-        }
-
-        private void изменитьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
-        {
-
+            GetCPU();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 0)
+            if (e.ColumnIndex == 0)
             {
-                if(MessageBox.Show("Вы желаете удалить выбранную комплектующую?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("Вы желаете удалить выбранную комплетующую?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     Delete(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
                 }

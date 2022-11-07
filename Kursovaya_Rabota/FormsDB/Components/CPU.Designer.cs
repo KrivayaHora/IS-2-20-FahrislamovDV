@@ -1,6 +1,6 @@
 ﻿namespace Kursovaya_Rabota.FormsDB.Components
 {
-    partial class Mother
+    partial class CPU
     {
         /// <summary>
         /// Required designer variable.
@@ -75,10 +75,8 @@
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.Size = new System.Drawing.Size(530, 541);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
-            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
             // Col
             // 
@@ -95,15 +93,17 @@
             this.Col.Text = "Удалить";
             this.Col.UseColumnTextForButtonValue = true;
             // 
-            // Mother
+            // CPU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 541);
             this.Controls.Add(this.panel1);
-            this.Name = "Mother";
-            this.Text = "Mother";
-            this.Load += new System.EventHandler(this.Mother_Load);
+            this.MaximumSize = new System.Drawing.Size(746, 580);
+            this.MinimumSize = new System.Drawing.Size(746, 580);
+            this.Name = "CPU";
+            this.Text = "CPU";
+            this.Load += new System.EventHandler(this.CPU_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
