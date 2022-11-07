@@ -23,7 +23,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
         public void GetMother()
         {
             
-            string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
+            string sqlview = "SELECT Items.ID AS `Код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
             ConnectStaff.Open();
 
             MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
@@ -34,21 +34,13 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.DataSource = BindingS;
             ConnectStaff.Close();
 
-            dataGridView1.Columns[0].Visible = true;
-            dataGridView1.Columns[1].Visible = true;
-            dataGridView1.Columns[2].Visible = true;
-            dataGridView1.Columns[3].Visible = true;
-            dataGridView1.Columns[4].Visible = true;
-            dataGridView1.Columns[5].Visible = true;
-
-
-
             dataGridView1.Columns[0].FillWeight = 15;
-            dataGridView1.Columns[1].FillWeight = 15;
-            dataGridView1.Columns[2].FillWeight = 15;
+            dataGridView1.Columns[1].FillWeight = 10;
+            dataGridView1.Columns[2].FillWeight = 20;
             dataGridView1.Columns[3].FillWeight = 15;
             dataGridView1.Columns[4].FillWeight = 15;
             dataGridView1.Columns[5].FillWeight = 15;
+            dataGridView1.Columns[6].FillWeight = 15;
 
 
 
@@ -57,6 +49,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.Columns[3].ReadOnly = true;
             dataGridView1.Columns[4].ReadOnly = true;
             dataGridView1.Columns[5].ReadOnly = true;
+            dataGridView1.Columns[6].ReadOnly = true;
 
 
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -65,6 +58,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             dataGridView1.RowHeadersVisible = false;
 
@@ -72,23 +66,25 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.MultiSelect = false;
             dataGridView1.ColumnHeadersVisible = true;
         }
-        void Delete(int ID)
+        void Delete(string ID)
         {
-            string sql = "DELETE FROM Items Where ID=" + ID;
-            MySqlCommand cmd = new MySqlCommand(sql, ConnectStaff);
-
+            string sql = "DELETE FROM Items Where ID = @ID";
             
-                ConnectStaff.Open();
+            ConnectStaff.Open();
                 
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-
-                adapter.DeleteCommand = ConnectStaff.CreateCommand();
-
-                adapter.DeleteCommand.CommandText = sql;
-
-                ConnectStaff.Close();
-                GetMother();
-            
+            MySqlCommand cmd = new MySqlCommand(sql, ConnectStaff);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@ID", MySqlDbType.VarChar).Value = ID;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Удалено успешно!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(MySqlException ex)
+            {
+                MessageBox.Show($"Удаление не произошло\n{ex.Message}","Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            ConnectStaff.Close();
         }
         public Mother()
         {
@@ -109,9 +105,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String select = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            int ID = Convert.ToInt32(select);
-            Delete(ID);
+            
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
@@ -122,6 +116,18 @@ namespace Kursovaya_Rabota.FormsDB.Components
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == 0)
+            {
+                if(MessageBox.Show("Вы желаете удалить выбранную комплетующую?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    Delete(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+                }
+                return;
+            }
         }
     }
 }

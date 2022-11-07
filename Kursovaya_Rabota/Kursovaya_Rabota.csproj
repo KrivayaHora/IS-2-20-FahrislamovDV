@@ -140,6 +140,7 @@
     <Compile Include="FormsDB\ClientsView.Designer.cs">
       <DependentUpon>ClientsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsDB\Components\Items.cs" />
     <Compile Include="FormsDB\Components\Mother.cs">
       <SubType>Form</SubType>
     </Compile>
