@@ -170,7 +170,6 @@
     <Compile Include="FormsDB\Components\GPU.Designer.cs">
       <DependentUpon>GPU.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsDB\Components\Items.cs" />
     <Compile Include="FormsDB\Components\Mother.cs">
       <SubType>Form</SubType>
     </Compile>
