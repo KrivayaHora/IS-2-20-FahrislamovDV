@@ -38,27 +38,33 @@ namespace Kursovaya_Rabota
         private void button1_Click(object sender, EventArgs e)
         {
             ConnectStaff.Open();
+            if (FIOBox.Text != "" && PhoneBox.Text != "" && EmailBox.Text != "" && LoginBox.Text != "" && PassBox.Text != "" && RoleBox.Text != "")
+            {
 
-            string fio = FIOBox.Text;
-            string phone = PhoneBox.Text;
-            string reglog = LoginBox.Text;
-            string passlog = PassBox.Text;
-            string email = EmailBox.Text;
 
-            string sql = "INSERT INTO `Employee`(Fullname, Phone, Login, Password, Email, Role) VALUES (@fio, @phone, @reglog, @passlog, @email, @role)";
+                string fio = FIOBox.Text;
+                string phone = PhoneBox.Text;
+                string reglog = LoginBox.Text;
+                string passlog = PassBox.Text;
+                string email = EmailBox.Text;
 
-            MySqlCommand CMD = new MySqlCommand(sql, ConnectStaff);
-            CMD.Parameters.Add("@fio", MySqlDbType.VarChar).Value = FIOBox.Text;
-            CMD.Parameters.Add("@phone", MySqlDbType.VarChar).Value = PhoneBox.Text;
-            CMD.Parameters.Add("@email", MySqlDbType.VarChar).Value = EmailBox.Text;
-            CMD.Parameters.Add("@reglog", MySqlDbType.VarChar).Value = LoginBox.Text;
-            CMD.Parameters.Add("@passlog", MySqlDbType.VarChar).Value = sha256(PassBox.Text);
-            CMD.Parameters.Add("@role", MySqlDbType.VarChar).Value = RoleBox.Text;
+                string sql = "INSERT INTO `Employee`(Fullname, Phone, Login, Password, Email, Role) VALUES (@fio, @phone, @reglog, @passlog, @email, @role)";
 
-            if (CMD.ExecuteNonQuery() == 1)
-                MessageBox.Show("Пользователь добавлен");
+                MySqlCommand CMD = new MySqlCommand(sql, ConnectStaff);
+                CMD.Parameters.Add("@fio", MySqlDbType.VarChar).Value = FIOBox.Text;
+                CMD.Parameters.Add("@phone", MySqlDbType.VarChar).Value = PhoneBox.Text;
+                CMD.Parameters.Add("@email", MySqlDbType.VarChar).Value = EmailBox.Text;
+                CMD.Parameters.Add("@reglog", MySqlDbType.VarChar).Value = LoginBox.Text;
+                CMD.Parameters.Add("@passlog", MySqlDbType.VarChar).Value = sha256(PassBox.Text);
+                CMD.Parameters.Add("@role", MySqlDbType.VarChar).Value = RoleBox.Text;
+
+                if (CMD.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Пользователь добавлен");
+                else
+                    MessageBox.Show("Ошибка добавления");
+            }
             else
-                MessageBox.Show("Ошибка добавления");
+                MessageBox.Show("Проверьте одну из строк на пустоту", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             ConnectStaff.Close();
         }
     }

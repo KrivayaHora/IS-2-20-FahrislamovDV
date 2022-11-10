@@ -27,25 +27,28 @@ namespace Kursovaya_Rabota.FormsDB
         private void button1_Click(object sender, EventArgs e)
         {
             ConnectStaff.Open();
+            if (FioRegBoxC.Text != "" && AdressRegBoxC.Text != "" && PhoneRegBoxC.Text != "" && EmailRegBoxC.Text != "")
+            {
+                string fio = FioRegBoxC.Text;
+                string adress = AdressRegBoxC.Text;
+                string phone = PhoneRegBoxC.Text;
+                string email = EmailRegBoxC.Text;
 
-            string fio = FioRegBoxC.Text;
-            string adress = AdressRegBoxC.Text;
-            string phone = PhoneRegBoxC.Text;
-            string email = EmailRegBoxC.Text;
+                string sql = "INSERT INTO `Clients`(Fullname, Adress, Phone, Email) VALUES (@fio, @adress, @phone, @email)";
 
-            string sql = "INSERT INTO `Clients`(Fullname, Adress, Phone, Email) VALUES (@fio, @adress, @phone, @email)";
+                MySqlCommand CMD = new MySqlCommand(sql, ConnectStaff);
+                CMD.Parameters.Add("@fio", MySqlDbType.VarChar).Value = FioRegBoxC.Text;
+                CMD.Parameters.Add("@adress", MySqlDbType.VarChar).Value = AdressRegBoxC.Text;
+                CMD.Parameters.Add("@phone", MySqlDbType.VarChar).Value = PhoneRegBoxC.Text;
+                CMD.Parameters.Add("@email", MySqlDbType.VarChar).Value = EmailRegBoxC.Text;
 
-            MySqlCommand CMD = new MySqlCommand(sql, ConnectStaff);
-            CMD.Parameters.Add("@fio", MySqlDbType.VarChar).Value = FioRegBoxC.Text;
-            CMD.Parameters.Add("@adress", MySqlDbType.VarChar).Value = AdressRegBoxC.Text;
-            CMD.Parameters.Add("@phone", MySqlDbType.VarChar).Value = PhoneRegBoxC.Text;
-            CMD.Parameters.Add("@email", MySqlDbType.VarChar).Value = EmailRegBoxC.Text;
-
-            if (CMD.ExecuteNonQuery() == 1)
-                MessageBox.Show("Клиент добавлен");
+                if (CMD.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Клиент добавлен");
+                else
+                    MessageBox.Show("Ошибка добавления");
+            }
             else
-                MessageBox.Show("Ошибка добавления");
-
+                MessageBox.Show("Проверьте одну из строк на пустоту", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             ConnectStaff.Close();
         }
 
