@@ -151,6 +151,9 @@
   <data name="pngegg (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngegg (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pngegg (14)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngegg (14)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngegg (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngegg (12).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,7 +244,7 @@
   <data name="pngegg (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngegg (27).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngegg (14)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngegg (14)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngegg (15)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngegg (15)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

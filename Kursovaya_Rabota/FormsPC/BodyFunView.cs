@@ -13,6 +13,7 @@ namespace Kursovaya_Rabota.FormsPC
 {
     public partial class BodyFunView : Form
     {
+        
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
@@ -62,6 +63,7 @@ namespace Kursovaya_Rabota.FormsPC
 
             dataGridView1.ColumnHeadersVisible = true;
         }
+        
         public BodyFunView()
         {
             InitializeComponent();
@@ -72,6 +74,11 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetBF();
+        }
+
+        private void SearchBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
