@@ -68,7 +68,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1164, 619);
+            this.panel1.Size = new System.Drawing.Size(1119, 619);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -86,14 +86,14 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1164, 12);
+            this.panel3.Size = new System.Drawing.Size(1119, 12);
             this.panel3.TabIndex = 11;
             // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(382, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(770, 560);
+            this.panel2.Size = new System.Drawing.Size(720, 580);
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -104,7 +104,7 @@ namespace Kursovaya_Rabota
             this.CoolerForCPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.CoolerForCPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__23_;
             this.CoolerForCPUButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CoolerForCPUButtom.Location = new System.Drawing.Point(193, 480);
+            this.CoolerForCPUButtom.Location = new System.Drawing.Point(200, 490);
             this.CoolerForCPUButtom.Name = "CoolerForCPUButtom";
             this.CoolerForCPUButtom.Size = new System.Drawing.Size(164, 110);
             this.CoolerForCPUButtom.TabIndex = 9;
@@ -120,7 +120,7 @@ namespace Kursovaya_Rabota
             this.BodyFunButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.BodyFunButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__20_;
             this.BodyFunButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BodyFunButton.Location = new System.Drawing.Point(193, 367);
+            this.BodyFunButton.Location = new System.Drawing.Point(200, 378);
             this.BodyFunButton.Name = "BodyFunButton";
             this.BodyFunButton.Size = new System.Drawing.Size(164, 110);
             this.BodyFunButton.TabIndex = 8;
@@ -135,7 +135,7 @@ namespace Kursovaya_Rabota
             this.PSBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PSBody.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.PSBody.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__18_;
-            this.PSBody.Location = new System.Drawing.Point(193, 255);
+            this.PSBody.Location = new System.Drawing.Point(200, 266);
             this.PSBody.Name = "PSBody";
             this.PSBody.Size = new System.Drawing.Size(164, 110);
             this.PSBody.TabIndex = 7;
@@ -151,7 +151,7 @@ namespace Kursovaya_Rabota
             this.BodyButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.BodyButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__15_;
             this.BodyButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BodyButton.Location = new System.Drawing.Point(193, 143);
+            this.BodyButton.Location = new System.Drawing.Point(200, 154);
             this.BodyButton.Name = "BodyButton";
             this.BodyButton.Size = new System.Drawing.Size(164, 110);
             this.BodyButton.TabIndex = 6;
@@ -166,7 +166,7 @@ namespace Kursovaya_Rabota
             this.SSDButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SSDButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.SSDButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__14_;
-            this.SSDButtom.Location = new System.Drawing.Point(193, 31);
+            this.SSDButtom.Location = new System.Drawing.Point(200, 42);
             this.SSDButtom.Name = "SSDButtom";
             this.SSDButtom.Size = new System.Drawing.Size(164, 110);
             this.SSDButtom.TabIndex = 5;
@@ -182,7 +182,7 @@ namespace Kursovaya_Rabota
             this.HDDButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.HDDButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__13_;
             this.HDDButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.HDDButtom.Location = new System.Drawing.Point(27, 480);
+            this.HDDButtom.Location = new System.Drawing.Point(34, 490);
             this.HDDButtom.Name = "HDDButtom";
             this.HDDButtom.Size = new System.Drawing.Size(164, 110);
             this.HDDButtom.TabIndex = 4;
@@ -198,7 +198,7 @@ namespace Kursovaya_Rabota
             this.RAMButton.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.RAMButton.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__11_;
             this.RAMButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.RAMButton.Location = new System.Drawing.Point(27, 367);
+            this.RAMButton.Location = new System.Drawing.Point(34, 378);
             this.RAMButton.Name = "RAMButton";
             this.RAMButton.Size = new System.Drawing.Size(164, 110);
             this.RAMButton.TabIndex = 3;
@@ -214,7 +214,7 @@ namespace Kursovaya_Rabota
             this.MotherButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.MotherButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__10_;
             this.MotherButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.MotherButtom.Location = new System.Drawing.Point(27, 255);
+            this.MotherButtom.Location = new System.Drawing.Point(34, 266);
             this.MotherButtom.Name = "MotherButtom";
             this.MotherButtom.Size = new System.Drawing.Size(164, 110);
             this.MotherButtom.TabIndex = 2;
@@ -229,7 +229,7 @@ namespace Kursovaya_Rabota
             this.GPUButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.GPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.GPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__9_;
-            this.GPUButtom.Location = new System.Drawing.Point(27, 143);
+            this.GPUButtom.Location = new System.Drawing.Point(34, 154);
             this.GPUButtom.Name = "GPUButtom";
             this.GPUButtom.Size = new System.Drawing.Size(164, 110);
             this.GPUButtom.TabIndex = 1;
@@ -245,7 +245,7 @@ namespace Kursovaya_Rabota
             this.CPUButtom.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.CPUButtom.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__8_;
             this.CPUButtom.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CPUButtom.Location = new System.Drawing.Point(27, 31);
+            this.CPUButtom.Location = new System.Drawing.Point(34, 42);
             this.CPUButtom.Name = "CPUButtom";
             this.CPUButtom.Size = new System.Drawing.Size(164, 110);
             this.CPUButtom.TabIndex = 0;
@@ -269,10 +269,8 @@ namespace Kursovaya_Rabota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 619);
+            this.ClientSize = new System.Drawing.Size(1119, 619);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(1180, 658);
-            this.MinimumSize = new System.Drawing.Size(1180, 658);
             this.Name = "PcBuild";
             this.Load += new System.EventHandler(this.PcBuild_Load);
             this.Leave += new System.EventHandler(this.PcBuild_Leave);
