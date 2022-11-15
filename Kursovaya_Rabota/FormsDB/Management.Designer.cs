@@ -38,6 +38,7 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ComparisonBtn = new System.Windows.Forms.Button();
             this.StaffButton = new System.Windows.Forms.Button();
             this.ComponentButton = new System.Windows.Forms.Button();
             this.ConfigButton = new System.Windows.Forms.Button();
@@ -50,6 +51,7 @@ namespace Kursovaya_Rabota.Project.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.panel1.Controls.Add(this.ComparisonBtn);
             this.panel1.Controls.Add(this.StaffButton);
             this.panel1.Controls.Add(this.ComponentButton);
             this.panel1.Controls.Add(this.ConfigButton);
@@ -58,7 +60,7 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 688);
+            this.panel1.Size = new System.Drawing.Size(200, 743);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -109,7 +111,7 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1134, 80);
+            this.panel3.Size = new System.Drawing.Size(1475, 80);
             this.panel3.TabIndex = 1;
             // 
             // label2
@@ -128,8 +130,25 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(200, 80);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1134, 608);
+            this.panel4.Size = new System.Drawing.Size(1475, 663);
             this.panel4.TabIndex = 4;
+            // 
+            // ComparisonBtn
+            // 
+            this.ComparisonBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ComparisonBtn.FlatAppearance.BorderSize = 0;
+            this.ComparisonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComparisonBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComparisonBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ComparisonBtn.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__20_1;
+            this.ComparisonBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComparisonBtn.Location = new System.Drawing.Point(0, 344);
+            this.ComparisonBtn.Name = "ComparisonBtn";
+            this.ComparisonBtn.Size = new System.Drawing.Size(200, 66);
+            this.ComparisonBtn.TabIndex = 7;
+            this.ComparisonBtn.Text = "Сравнение товаров";
+            this.ComparisonBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ComparisonBtn.UseVisualStyleBackColor = true;
             // 
             // StaffButton
             // 
@@ -207,15 +226,13 @@ namespace Kursovaya_Rabota.Project.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 688);
+            this.ClientSize = new System.Drawing.Size(1675, 743);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1350, 727);
-            this.MinimumSize = new System.Drawing.Size(1350, 727);
             this.Name = "Managementform";
             this.Load += new System.EventHandler(this.Management_Load);
             this.panel1.ResumeLayout(false);
@@ -241,5 +258,6 @@ namespace Kursovaya_Rabota.Project.Forms
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button ComparisonBtn;
     }
 }

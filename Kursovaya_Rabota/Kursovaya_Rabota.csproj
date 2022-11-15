@@ -170,6 +170,12 @@
     <Compile Include="FormsDB\Components\GPU.Designer.cs">
       <DependentUpon>GPU.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsDB\Components\HDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\HDD.Designer.cs">
+      <DependentUpon>HDD.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsDB\Components\Mother.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,12 @@
     </Compile>
     <Compile Include="FormsDB\Components\RegisterComponents.Designer.cs">
       <DependentUpon>RegisterComponents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\SSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\SSD.Designer.cs">
+      <DependentUpon>SSD.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsDB\Management.cs">
       <SubType>Form</SubType>
@@ -314,6 +326,9 @@
     <EmbeddedResource Include="FormsDB\Components\GPU.resx">
       <DependentUpon>GPU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\HDD.resx">
+      <DependentUpon>HDD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Components\Mother.resx">
       <DependentUpon>Mother.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Components\RegisterComponents.resx">
       <DependentUpon>RegisterComponents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\SSD.resx">
+      <DependentUpon>SSD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
@@ -538,6 +556,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngegg %2815%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_price_comparison_icon_181870.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2816%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2817%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2818%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2819%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2820%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

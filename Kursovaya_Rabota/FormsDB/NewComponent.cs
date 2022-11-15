@@ -91,6 +91,14 @@ namespace Kursovaya_Rabota
             {
                 ChildForm(new FunBody());
             }
+            else if (Selector.Text == "Жесткий диск")
+            {
+                ChildForm(new HDD());
+            }
+            else if (Selector.Text == "Твердотельный накопитель")
+            {
+                ChildForm(new SSD());
+            }
         }
     }
 }

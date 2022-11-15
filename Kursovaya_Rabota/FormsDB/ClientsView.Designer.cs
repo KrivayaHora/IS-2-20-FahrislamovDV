@@ -62,7 +62,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1118, 569);
+            this.panel1.Size = new System.Drawing.Size(1459, 624);
             this.panel1.TabIndex = 0;
             // 
             // RegB
@@ -73,7 +73,7 @@ namespace Kursovaya_Rabota
             this.RegB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RegB.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
             this.RegB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RegB.Location = new System.Drawing.Point(974, 24);
+            this.RegB.Location = new System.Drawing.Point(1307, 18);
             this.RegB.Name = "RegB";
             this.RegB.Size = new System.Drawing.Size(132, 40);
             this.RegB.TabIndex = 40;
@@ -85,7 +85,7 @@ namespace Kursovaya_Rabota
             // Reload
             // 
             this.Reload.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__30_;
-            this.Reload.Location = new System.Drawing.Point(928, 25);
+            this.Reload.Location = new System.Drawing.Point(1261, 18);
             this.Reload.Name = "Reload";
             this.Reload.Size = new System.Drawing.Size(40, 40);
             this.Reload.TabIndex = 39;
@@ -116,7 +116,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 557);
+            this.panel3.Size = new System.Drawing.Size(12, 612);
             this.panel3.TabIndex = 25;
             // 
             // panel2
@@ -125,7 +125,7 @@ namespace Kursovaya_Rabota
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1118, 12);
+            this.panel2.Size = new System.Drawing.Size(1459, 12);
             this.panel2.TabIndex = 24;
             // 
             // dataGridView1
@@ -160,17 +160,18 @@ namespace Kursovaya_Rabota
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 84);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1088, 476);
+            this.dataGridView1.Size = new System.Drawing.Size(1422, 476);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // IDClient
             // 
             this.IDClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.IDClient.Frozen = true;
             this.IDClient.HeaderText = "Код";
             this.IDClient.Name = "IDClient";
             this.IDClient.ReadOnly = true;
@@ -179,40 +180,38 @@ namespace Kursovaya_Rabota
             // FullNameClient
             // 
             this.FullNameClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.FullNameClient.Frozen = true;
             this.FullNameClient.HeaderText = "Полное имя";
             this.FullNameClient.Name = "FullNameClient";
             this.FullNameClient.ReadOnly = true;
-            this.FullNameClient.Width = 272;
+            this.FullNameClient.Width = 355;
             // 
             // AdressClient
             // 
-            this.AdressClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.AdressClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.AdressClient.HeaderText = "Адрес проживания";
             this.AdressClient.Name = "AdressClient";
             this.AdressClient.ReadOnly = true;
-            this.AdressClient.Width = 272;
             // 
             // PhoneClient
             // 
-            this.PhoneClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.PhoneClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.PhoneClient.HeaderText = "Номер телефона";
             this.PhoneClient.Name = "PhoneClient";
             this.PhoneClient.ReadOnly = true;
-            this.PhoneClient.Width = 271;
             // 
             // EmailClient
             // 
-            this.EmailClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.EmailClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.EmailClient.HeaderText = "Электронная почта";
             this.EmailClient.Name = "EmailClient";
             this.EmailClient.ReadOnly = true;
-            this.EmailClient.Width = 272;
             // 
             // ClientsV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 569);
+            this.ClientSize = new System.Drawing.Size(1459, 624);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClientsV";
@@ -230,14 +229,14 @@ namespace Kursovaya_Rabota
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox Search;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Reload;
+        private System.Windows.Forms.Button RegB;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullNameClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdressClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmailClient;
-        private System.Windows.Forms.TextBox Search;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Reload;
-        private System.Windows.Forms.Button RegB;
     }
 }

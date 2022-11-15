@@ -41,11 +41,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.RegisterComp);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(730, 541);
+            this.panel1.Size = new System.Drawing.Size(948, 541);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -75,7 +76,7 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(530, 541);
+            this.dataGridView1.Size = new System.Drawing.Size(796, 541);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -99,7 +100,7 @@
             this.RegisterComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegisterComp.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
             this.RegisterComp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RegisterComp.Location = new System.Drawing.Point(562, 0);
+            this.RegisterComp.Location = new System.Drawing.Point(817, 0);
             this.RegisterComp.Name = "RegisterComp";
             this.RegisterComp.Size = new System.Drawing.Size(131, 36);
             this.RegisterComp.TabIndex = 3;
@@ -112,11 +113,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 541);
-            this.Controls.Add(this.RegisterComp);
+            this.ClientSize = new System.Drawing.Size(948, 541);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(746, 580);
-            this.MinimumSize = new System.Drawing.Size(746, 580);
             this.Name = "CPU";
             this.Text = "CPU";
             this.Load += new System.EventHandler(this.CPU_Load);

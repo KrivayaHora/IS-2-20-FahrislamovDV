@@ -68,7 +68,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1119, 619);
+            this.panel1.Size = new System.Drawing.Size(1459, 624);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -77,7 +77,7 @@ namespace Kursovaya_Rabota
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(12, 607);
+            this.panel4.Size = new System.Drawing.Size(12, 612);
             this.panel4.TabIndex = 12;
             // 
             // panel3
@@ -86,7 +86,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1119, 12);
+            this.panel3.Size = new System.Drawing.Size(1459, 12);
             this.panel3.TabIndex = 11;
             // 
             // panel2
@@ -269,7 +269,7 @@ namespace Kursovaya_Rabota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 619);
+            this.ClientSize = new System.Drawing.Size(1459, 624);
             this.Controls.Add(this.panel1);
             this.Name = "PcBuild";
             this.Load += new System.EventHandler(this.PcBuild_Load);
