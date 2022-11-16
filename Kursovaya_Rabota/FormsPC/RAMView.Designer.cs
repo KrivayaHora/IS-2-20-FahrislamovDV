@@ -30,7 +30,6 @@ namespace Kursovaya_Rabota.FormsPC
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelStruct = new System.Windows.Forms.Panel();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
@@ -62,8 +61,8 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.PriceBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panelStruct.SuspendLayout();
             this.panelBit.SuspendLayout();
@@ -71,6 +70,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelStorage.SuspendLayout();
             this.panelManuf.SuspendLayout();
             this.panelPrice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,18 +83,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(704, 541);
             this.panel1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(468, 541);
-            this.dataGridView1.TabIndex = 2;
             // 
             // panel3
             // 
@@ -477,6 +465,18 @@ namespace Kursovaya_Rabota.FormsPC
             this.PriceBtn.Text = "Цена";
             this.PriceBtn.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(236, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(468, 541);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // RAMView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,7 +489,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.Text = "RAMView";
             this.Load += new System.EventHandler(this.RAMView_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panelStruct.ResumeLayout(false);
             this.panelStruct.PerformLayout();
@@ -503,6 +502,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelManuf.PerformLayout();
             this.panelPrice.ResumeLayout(false);
             this.panelPrice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

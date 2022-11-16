@@ -16,7 +16,6 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
         DataTable DT = new DataTable();
 
         public void GetSSD()

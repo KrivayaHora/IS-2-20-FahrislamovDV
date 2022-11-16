@@ -16,9 +16,8 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
         DataTable DT = new DataTable();
-        string ID_selected_rows = "0";
+
 
         public void GetHDD()
         {

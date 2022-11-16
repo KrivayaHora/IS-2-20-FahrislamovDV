@@ -40,11 +40,11 @@ namespace Kursovaya_Rabota.FormsPC
             dataGridView1.Columns[4].Visible = true;
 
 
-            dataGridView1.Columns[0].FillWeight = 15;
-            dataGridView1.Columns[1].FillWeight = 15;
-            dataGridView1.Columns[2].FillWeight = 15;
-            dataGridView1.Columns[3].FillWeight = 15;
-            dataGridView1.Columns[4].FillWeight = 15;
+            dataGridView1.Columns[0].FillWeight = 119;
+            dataGridView1.Columns[1].FillWeight = 119;
+            dataGridView1.Columns[2].FillWeight = 119;
+            dataGridView1.Columns[3].FillWeight = 119;
+            dataGridView1.Columns[4].FillWeight = 119;
 
             dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
@@ -72,6 +72,11 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetPS();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
