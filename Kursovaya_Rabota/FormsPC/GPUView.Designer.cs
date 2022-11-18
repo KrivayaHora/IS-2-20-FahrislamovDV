@@ -30,7 +30,6 @@ namespace Kursovaya_Rabota.FormsPC
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelTDP = new System.Windows.Forms.Panel();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
@@ -63,8 +62,8 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.PriceBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panelTDP.SuspendLayout();
             this.panelCore.SuspendLayout();
@@ -72,6 +71,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelSocket.SuspendLayout();
             this.panelManuf.SuspendLayout();
             this.panelPrice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,19 +84,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(704, 541);
             this.panel1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(468, 541);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel3
             // 
@@ -369,7 +356,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.SocketBtn.Name = "SocketBtn";
             this.SocketBtn.Size = new System.Drawing.Size(213, 37);
             this.SocketBtn.TabIndex = 41;
-            this.SocketBtn.Text = "Сокет";
+            this.SocketBtn.Text = "Модель чипа";
             this.SocketBtn.UseVisualStyleBackColor = true;
             // 
             // panelManuf
@@ -389,9 +376,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkBox2.Location = new System.Drawing.Point(12, 31);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(50, 19);
+            this.checkBox2.Size = new System.Drawing.Size(60, 19);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Intel";
+            this.checkBox2.Text = "Nvidia";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -401,9 +388,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkBox3.Location = new System.Drawing.Point(12, 8);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(54, 19);
+            this.checkBox3.Size = new System.Drawing.Size(97, 19);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "AMD";
+            this.checkBox3.Text = "AMD Radeon";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // ManufBtn
@@ -438,9 +425,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkBox1.Location = new System.Drawing.Point(12, 72);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 19);
+            this.checkBox1.Size = new System.Drawing.Size(107, 19);
             this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "25000-60000";
+            this.checkBox1.Text = "25000 и более";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox17
@@ -492,6 +479,19 @@ namespace Kursovaya_Rabota.FormsPC
             this.PriceBtn.Text = "Цена";
             this.PriceBtn.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(236, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(468, 541);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // GPUView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -504,7 +504,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.Text = "GPUView";
             this.Load += new System.EventHandler(this.GPUView_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panelTDP.ResumeLayout(false);
             this.panelTDP.PerformLayout();
@@ -518,6 +517,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelManuf.PerformLayout();
             this.panelPrice.ResumeLayout(false);
             this.panelPrice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
