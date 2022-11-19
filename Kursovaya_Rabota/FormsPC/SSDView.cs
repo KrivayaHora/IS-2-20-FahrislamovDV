@@ -125,5 +125,10 @@ namespace Kursovaya_Rabota.FormsPC
             else
                 panelStruct.Visible = false;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

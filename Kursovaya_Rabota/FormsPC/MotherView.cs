@@ -71,6 +71,59 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetMother();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelSocket.Visible = false;
+            panelMem.Visible = false;
+            panelCore.Visible = false;
+            panelTDP.Visible = false;
+            panel2.Visible = false;
+            panel4.Visible = false;
+        }
+
+        private void panelManuf_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChipsetBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FactorBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SocketBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TypeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PowerCPUBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SATABtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

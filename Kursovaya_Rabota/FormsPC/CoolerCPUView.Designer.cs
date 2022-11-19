@@ -32,25 +32,27 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelTDP = new System.Windows.Forms.Panel();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panelCore = new System.Windows.Forms.Panel();
+            this.TDP = new System.Windows.Forms.Button();
+            this.panelConnect = new System.Windows.Forms.Panel();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.CoreBtn = new System.Windows.Forms.Button();
-            this.panelMem = new System.Windows.Forms.Panel();
+            this.ConnectBtn = new System.Windows.Forms.Button();
+            this.panelType = new System.Windows.Forms.Panel();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.MemBtn = new System.Windows.Forms.Button();
+            this.TypeBtn = new System.Windows.Forms.Button();
             this.panelSocket = new System.Windows.Forms.Panel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.SocketBtn = new System.Windows.Forms.Button();
             this.panelManuf = new System.Windows.Forms.Panel();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.ManufBtn = new System.Windows.Forms.Button();
@@ -61,13 +63,11 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.PriceBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelTDP.SuspendLayout();
-            this.panelCore.SuspendLayout();
-            this.panelMem.SuspendLayout();
+            this.panelConnect.SuspendLayout();
+            this.panelType.SuspendLayout();
             this.panelSocket.SuspendLayout();
             this.panelManuf.SuspendLayout();
             this.panelPrice.SuspendLayout();
@@ -89,11 +89,11 @@ namespace Kursovaya_Rabota.FormsPC
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.panelTDP);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.panelCore);
-            this.panel3.Controls.Add(this.CoreBtn);
-            this.panel3.Controls.Add(this.panelMem);
-            this.panel3.Controls.Add(this.MemBtn);
+            this.panel3.Controls.Add(this.TDP);
+            this.panel3.Controls.Add(this.panelConnect);
+            this.panel3.Controls.Add(this.ConnectBtn);
+            this.panel3.Controls.Add(this.panelType);
+            this.panel3.Controls.Add(this.TypeBtn);
             this.panel3.Controls.Add(this.panelSocket);
             this.panel3.Controls.Add(this.SocketBtn);
             this.panel3.Controls.Add(this.panelManuf);
@@ -118,6 +118,18 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelTDP.Name = "panelTDP";
             this.panelTDP.Size = new System.Drawing.Size(213, 132);
             this.panelTDP.TabIndex = 48;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox8.Location = new System.Drawing.Point(7, 105);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(93, 19);
+            this.checkBox8.TabIndex = 4;
+            this.checkBox8.Text = "250 и более";
+            this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox13
             // 
@@ -167,29 +179,30 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox16.Text = "Меньше 70";
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // TDP
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 544);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 33);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "Рассеиваемая мощность TDP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.TDP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TDP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TDP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TDP.Location = new System.Drawing.Point(0, 544);
+            this.TDP.Name = "TDP";
+            this.TDP.Size = new System.Drawing.Size(213, 33);
+            this.TDP.TabIndex = 47;
+            this.TDP.Text = "Рассеиваемая мощность TDP";
+            this.TDP.UseVisualStyleBackColor = true;
+            this.TDP.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panelCore
+            // panelConnect
             // 
-            this.panelCore.Controls.Add(this.checkBox10);
-            this.panelCore.Controls.Add(this.checkBox11);
-            this.panelCore.Controls.Add(this.checkBox20);
-            this.panelCore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCore.Location = new System.Drawing.Point(0, 463);
-            this.panelCore.Name = "panelCore";
-            this.panelCore.Size = new System.Drawing.Size(213, 81);
-            this.panelCore.TabIndex = 46;
+            this.panelConnect.Controls.Add(this.checkBox10);
+            this.panelConnect.Controls.Add(this.checkBox11);
+            this.panelConnect.Controls.Add(this.checkBox20);
+            this.panelConnect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelConnect.Location = new System.Drawing.Point(0, 463);
+            this.panelConnect.Name = "panelConnect";
+            this.panelConnect.Size = new System.Drawing.Size(213, 81);
+            this.panelConnect.TabIndex = 46;
             // 
             // checkBox10
             // 
@@ -227,28 +240,29 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox20.Text = "2 pin";
             this.checkBox20.UseVisualStyleBackColor = true;
             // 
-            // CoreBtn
+            // ConnectBtn
             // 
-            this.CoreBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CoreBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CoreBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CoreBtn.Location = new System.Drawing.Point(0, 430);
-            this.CoreBtn.Name = "CoreBtn";
-            this.CoreBtn.Size = new System.Drawing.Size(213, 33);
-            this.CoreBtn.TabIndex = 45;
-            this.CoreBtn.Text = "Разъем подключения";
-            this.CoreBtn.UseVisualStyleBackColor = true;
+            this.ConnectBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ConnectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConnectBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConnectBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ConnectBtn.Location = new System.Drawing.Point(0, 430);
+            this.ConnectBtn.Name = "ConnectBtn";
+            this.ConnectBtn.Size = new System.Drawing.Size(213, 33);
+            this.ConnectBtn.TabIndex = 45;
+            this.ConnectBtn.Text = "Разъем подключения";
+            this.ConnectBtn.UseVisualStyleBackColor = true;
+            this.ConnectBtn.Click += new System.EventHandler(this.CoreBtn_Click);
             // 
-            // panelMem
+            // panelType
             // 
-            this.panelMem.Controls.Add(this.checkBox6);
-            this.panelMem.Controls.Add(this.checkBox7);
-            this.panelMem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMem.Location = new System.Drawing.Point(0, 375);
-            this.panelMem.Name = "panelMem";
-            this.panelMem.Size = new System.Drawing.Size(213, 55);
-            this.panelMem.TabIndex = 44;
+            this.panelType.Controls.Add(this.checkBox6);
+            this.panelType.Controls.Add(this.checkBox7);
+            this.panelType.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelType.Location = new System.Drawing.Point(0, 375);
+            this.panelType.Name = "panelType";
+            this.panelType.Size = new System.Drawing.Size(213, 55);
+            this.panelType.TabIndex = 44;
             // 
             // checkBox6
             // 
@@ -274,18 +288,19 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox7.Text = "Башенный";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
-            // MemBtn
+            // TypeBtn
             // 
-            this.MemBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MemBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MemBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MemBtn.Location = new System.Drawing.Point(0, 342);
-            this.MemBtn.Name = "MemBtn";
-            this.MemBtn.Size = new System.Drawing.Size(213, 33);
-            this.MemBtn.TabIndex = 43;
-            this.MemBtn.Text = "Тип конструкции";
-            this.MemBtn.UseVisualStyleBackColor = true;
+            this.TypeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TypeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TypeBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TypeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TypeBtn.Location = new System.Drawing.Point(0, 342);
+            this.TypeBtn.Name = "TypeBtn";
+            this.TypeBtn.Size = new System.Drawing.Size(213, 33);
+            this.TypeBtn.TabIndex = 43;
+            this.TypeBtn.Text = "Тип конструкции";
+            this.TypeBtn.UseVisualStyleBackColor = true;
+            this.TypeBtn.Click += new System.EventHandler(this.MemBtn_Click);
             // 
             // panelSocket
             // 
@@ -333,6 +348,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.SocketBtn.TabIndex = 41;
             this.SocketBtn.Text = "Сокет";
             this.SocketBtn.UseVisualStyleBackColor = true;
+            this.SocketBtn.Click += new System.EventHandler(this.SocketBtn_Click);
             // 
             // panelManuf
             // 
@@ -345,6 +361,18 @@ namespace Kursovaya_Rabota.FormsPC
             this.panelManuf.Size = new System.Drawing.Size(213, 82);
             this.panelManuf.TabIndex = 40;
             // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox12.Location = new System.Drawing.Point(12, 56);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(95, 19);
+            this.checkBox12.TabIndex = 4;
+            this.checkBox12.Text = "Thermalright";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
@@ -352,9 +380,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkBox2.Location = new System.Drawing.Point(12, 6);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(74, 19);
+            this.checkBox2.Size = new System.Drawing.Size(84, 19);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Aerocool";
+            this.checkBox2.Text = "PCCOOLER";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -381,6 +409,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.ManufBtn.TabIndex = 39;
             this.ManufBtn.Text = "Производитель";
             this.ManufBtn.UseVisualStyleBackColor = true;
+            this.ManufBtn.Click += new System.EventHandler(this.ManufBtn_Click);
             // 
             // panelPrice
             // 
@@ -454,6 +483,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.PriceBtn.TabIndex = 37;
             this.PriceBtn.Text = "Цена";
             this.PriceBtn.UseVisualStyleBackColor = true;
+            this.PriceBtn.Click += new System.EventHandler(this.PriceBtn_Click);
             // 
             // dataGridView1
             // 
@@ -466,30 +496,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(468, 541);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox12.Location = new System.Drawing.Point(12, 56);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(95, 19);
-            this.checkBox12.TabIndex = 4;
-            this.checkBox12.Text = "Thermalright";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox8.Location = new System.Drawing.Point(7, 105);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(93, 19);
-            this.checkBox8.TabIndex = 4;
-            this.checkBox8.Text = "250 и более";
-            this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // CoolerCPUView
             // 
@@ -506,10 +512,10 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel3.ResumeLayout(false);
             this.panelTDP.ResumeLayout(false);
             this.panelTDP.PerformLayout();
-            this.panelCore.ResumeLayout(false);
-            this.panelCore.PerformLayout();
-            this.panelMem.ResumeLayout(false);
-            this.panelMem.PerformLayout();
+            this.panelConnect.ResumeLayout(false);
+            this.panelConnect.PerformLayout();
+            this.panelType.ResumeLayout(false);
+            this.panelType.PerformLayout();
             this.panelSocket.ResumeLayout(false);
             this.panelSocket.PerformLayout();
             this.panelManuf.ResumeLayout(false);
@@ -531,16 +537,16 @@ namespace Kursovaya_Rabota.FormsPC
         private System.Windows.Forms.CheckBox checkBox14;
         private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panelCore;
+        private System.Windows.Forms.Button TDP;
+        private System.Windows.Forms.Panel panelConnect;
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.Button CoreBtn;
-        private System.Windows.Forms.Panel panelMem;
+        private System.Windows.Forms.Button ConnectBtn;
+        private System.Windows.Forms.Panel panelType;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.Button MemBtn;
+        private System.Windows.Forms.Button TypeBtn;
         private System.Windows.Forms.Panel panelSocket;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;

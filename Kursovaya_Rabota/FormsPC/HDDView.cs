@@ -71,6 +71,63 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetHDD();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelCash.Visible = false;
+            panelSpeed.Visible = false;
+            panelSizeMem.Visible = false;
+            
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPrice.Visible == false)
+            {   
+                panelPrice.Visible = true;
+            }   
+            else
+                panelPrice.Visible = false;
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+            if (panelManuf.Visible == false)
+            {   
+                panelManuf.Visible = true;
+            }   
+            else
+                panelManuf.Visible = false;
+        }
+
+        private void SocketBtn_Click(object sender, EventArgs e)
+        {
+            if (panelSizeMem.Visible == false)
+            {
+                panelSizeMem.Visible = true;
+            }
+            else
+                panelSizeMem.Visible = false;
+        }
+
+        private void MemBtn_Click(object sender, EventArgs e)
+        {
+            if (panelSpeed.Visible == false)
+            {   
+                panelSpeed.Visible = true;
+            }   
+            else
+                panelSpeed.Visible = false;
+        }
+
+        private void CoreBtn_Click(object sender, EventArgs e)
+        {
+            if (panelCash.Visible == false)
+            {
+                panelCash.Visible = true;
+            }
+            else
+                panelCash.Visible = false;
+            
         }
     }
 }

@@ -16,9 +16,7 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
         DataTable DT = new DataTable();
-        string ID_selected_rows = "0";
 
         public void GetCooler()
         {
@@ -72,6 +70,60 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetCooler();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelSocket.Visible = false;
+            panelType.Visible = false;
+            panelConnect.Visible = false;
+            panelTDP.Visible = false;
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPrice.Visible == false)
+                panelPrice.Visible = true;
+            else
+                panelPrice.Visible = false;
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+            if (panelManuf.Visible == false)
+                panelManuf.Visible = true;
+            else
+                panelManuf.Visible = false;
+        }
+
+        private void SocketBtn_Click(object sender, EventArgs e)
+        {
+            if (panelSocket.Visible == false)
+                panelSocket.Visible = true;
+            else
+                panelSocket.Visible = false;
+        }
+
+        private void MemBtn_Click(object sender, EventArgs e)
+        {
+            if (panelType.Visible == false)
+                panelType.Visible = true;
+            else
+                panelType.Visible = false;
+        }
+
+        private void CoreBtn_Click(object sender, EventArgs e)
+        {
+            if (panelConnect.Visible == false)
+                panelConnect.Visible = true;
+            else
+                panelConnect.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panelTDP.Visible == false)
+                panelTDP.Visible = true;
+            else
+                panelTDP.Visible = false;
         }
     }
 }

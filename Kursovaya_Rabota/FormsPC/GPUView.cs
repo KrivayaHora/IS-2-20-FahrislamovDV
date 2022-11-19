@@ -21,9 +21,7 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
         DataTable DT = new DataTable();
-        string ID_selected_rows = "0";
 
         public void GetGPU()
         {
@@ -77,6 +75,60 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetGPU();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelModel.Visible = false;
+            panelMem.Visible = false;
+            panelSizeMem.Visible = false;
+            panelBusBit.Visible = false;
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPrice.Visible == false)
+                panelPrice.Visible = true;
+            else
+                panelPrice.Visible = false;
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+            if (panelManuf.Visible == false)
+                panelManuf.Visible = true;
+            else
+                panelManuf.Visible = false;
+        }
+
+        private void SocketBtn_Click(object sender, EventArgs e)
+        {
+            if (panelModel.Visible == false)
+                panelModel.Visible = true;
+            else
+                panelModel.Visible = false;
+        }
+
+        private void MemBtn_Click(object sender, EventArgs e)
+        {
+            if (panelMem.Visible == false)
+                panelMem.Visible = true;
+            else
+                panelMem.Visible = false;
+        }
+
+        private void CoreBtn_Click(object sender, EventArgs e)
+        {
+            if (panelSizeMem.Visible == false)
+                panelSizeMem.Visible = true;
+            else
+                panelSizeMem.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panelBusBit.Visible == false)
+                panelBusBit.Visible = true;
+            else
+                panelBusBit.Visible = false;
         }
     }
 }

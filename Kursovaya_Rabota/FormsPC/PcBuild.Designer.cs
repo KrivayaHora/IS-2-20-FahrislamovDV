@@ -95,7 +95,7 @@ namespace Kursovaya_Rabota
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(720, 580);
             this.panel2.TabIndex = 10;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+
             // 
             // CoolerForCPUButtom
             // 
@@ -273,7 +273,6 @@ namespace Kursovaya_Rabota
             this.Controls.Add(this.panel1);
             this.Name = "PcBuild";
             this.Load += new System.EventHandler(this.PcBuild_Load);
-            this.Leave += new System.EventHandler(this.PcBuild_Leave);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

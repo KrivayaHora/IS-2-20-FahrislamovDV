@@ -16,9 +16,7 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlConnection ConnectStaff;
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
-        DataSet DS = new DataSet();
         DataTable DT = new DataTable();
-        string ID_selected_rows = "0";
 
         public void GetRAM()
         {
@@ -72,6 +70,54 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetRAM();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelStorage.Visible = false;
+            panelType.Visible = false;
+            panelFreq.Visible = false;
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPrice.Visible == false)
+                panelPrice.Visible = true;
+            else
+                panelPrice.Visible = false;
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+            if (panelManuf.Visible == false)
+                panelManuf.Visible = true;
+            else
+                panelManuf.Visible = false;
+        }
+
+        private void StorageBtn_Click(object sender, EventArgs e)
+        {
+            if (panelStorage.Visible == false)
+                panelStorage.Visible = true;
+            else
+                panelStorage.Visible = false;
+            
+        }
+
+        private void TypeBtn_Click(object sender, EventArgs e)
+        {
+            if (panelType.Visible == false)
+                panelType.Visible = true;
+            else
+                panelType.Visible = false;
+            
+        }
+
+        private void BitBtn_Click(object sender, EventArgs e)
+        {
+            if (panelFreq.Visible == false)
+                panelFreq.Visible = true;
+            else
+                panelFreq.Visible = false;
+            
         }
     }
 }
