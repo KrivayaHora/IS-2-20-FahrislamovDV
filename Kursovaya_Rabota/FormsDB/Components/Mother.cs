@@ -130,8 +130,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
 
         private void RegisterComp_Click(object sender, EventArgs e)
         {
-            Form form = new RegisterComponents();
-            form.ShowDialog();
+            
         }
     }
 }

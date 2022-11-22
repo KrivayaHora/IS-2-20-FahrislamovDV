@@ -194,11 +194,65 @@
     <Compile Include="FormsDB\Components\RAM.Designer.cs">
       <DependentUpon>RAM.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsDB\Components\RegisterComponents.cs">
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterBody.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsDB\Components\RegisterComponents.Designer.cs">
-      <DependentUpon>RegisterComponents.cs</DependentUpon>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterBody.Designer.cs">
+      <DependentUpon>RegisterBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterCooler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterCooler.Designer.cs">
+      <DependentUpon>RegisterCooler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterFunBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterFunBody.Designer.cs">
+      <DependentUpon>RegisterFunBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterHDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterHDD.Designer.cs">
+      <DependentUpon>RegisterHDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterRAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterRAM.Designer.cs">
+      <DependentUpon>RegisterRAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterCPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterCPU.Designer.cs">
+      <DependentUpon>RegisterCPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterGPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterGPU.Designer.cs">
+      <DependentUpon>RegisterGPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterMother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterMother.Designer.cs">
+      <DependentUpon>RegisterMother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterPS.Designer.cs">
+      <DependentUpon>RegisterPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterSSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Components\RegisterComponents1\RegisterSSD.Designer.cs">
+      <DependentUpon>RegisterSSD.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsDB\Components\SSD.cs">
       <SubType>Form</SubType>
@@ -338,8 +392,35 @@
     <EmbeddedResource Include="FormsDB\Components\RAM.resx">
       <DependentUpon>RAM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsDB\Components\RegisterComponents.resx">
-      <DependentUpon>RegisterComponents.cs</DependentUpon>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterBody.resx">
+      <DependentUpon>RegisterBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterCooler.resx">
+      <DependentUpon>RegisterCooler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterCPU.resx">
+      <DependentUpon>RegisterCPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterFunBody.resx">
+      <DependentUpon>RegisterFunBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterGPU.resx">
+      <DependentUpon>RegisterGPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterHDD.resx">
+      <DependentUpon>RegisterHDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterMother.resx">
+      <DependentUpon>RegisterMother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterPS.resx">
+      <DependentUpon>RegisterPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterRAM.resx">
+      <DependentUpon>RegisterRAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Components\RegisterComponents1\RegisterSSD.resx">
+      <DependentUpon>RegisterSSD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Components\SSD.resx">
       <DependentUpon>SSD.cs</DependentUpon>

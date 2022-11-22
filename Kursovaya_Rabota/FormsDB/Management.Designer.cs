@@ -214,6 +214,8 @@ namespace Kursovaya_Rabota.Project.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1691, 782);
+            this.MinimumSize = new System.Drawing.Size(1691, 782);
             this.Name = "Managementform";
             this.Load += new System.EventHandler(this.Management_Load);
             this.panel1.ResumeLayout(false);

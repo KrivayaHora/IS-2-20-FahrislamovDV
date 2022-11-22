@@ -69,6 +69,72 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetBody();
+            panelPrice.Visible = false;
+            panelManuf.Visible = false;
+            panelTypeS.Visible = false;
+            panelPS.Visible = false;
+            panelWindow.Visible = false;
+            panelHeight.Visible = false;
+        }
+
+        private void PriceBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPrice.Visible == false)
+            {
+                panelPrice.Visible = true;
+            }
+            else
+                panelPrice.Visible = false;
+        }
+
+        private void ManufBtn_Click(object sender, EventArgs e)
+        {
+            if (panelManuf.Visible == false)
+            {
+                panelManuf.Visible = true;
+            }
+            else
+                panelManuf.Visible = false;
+        }
+
+        private void SocketBtn_Click(object sender, EventArgs e)
+        {
+            if (panelTypeS.Visible == false)
+            {
+                panelTypeS.Visible = true;
+            }
+            else
+                panelTypeS.Visible = false;
+        }
+
+        private void MemBtn_Click(object sender, EventArgs e)
+        {
+            if (panelPS.Visible == false)
+            {
+                panelPS.Visible = true;
+            }
+            else
+                panelPS.Visible = false;
+        }
+
+        private void CoreBtn_Click(object sender, EventArgs e)
+        {
+            if (panelWindow.Visible == false)
+            {
+                panelWindow.Visible = true;
+            }
+            else
+                panelWindow.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panelHeight.Visible == false)
+            {
+                panelHeight.Visible = true;
+            }
+            else
+                panelHeight.Visible = false;
         }
     }
 }

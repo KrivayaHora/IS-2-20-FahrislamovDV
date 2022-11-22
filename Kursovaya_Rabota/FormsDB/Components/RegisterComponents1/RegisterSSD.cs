@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kursovaya_Rabota.FormsDB.Components
+namespace Kursovaya_Rabota.FormsDB.Components.RegisterComponents
 {
-    public partial class RegisterComponents : Form
+    public partial class RegisterSSD : Form
     {
-        public RegisterComponents()
+        public RegisterSSD()
         {
             InitializeComponent();
         }

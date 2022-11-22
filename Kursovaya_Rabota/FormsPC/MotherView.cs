@@ -88,42 +88,82 @@ namespace Kursovaya_Rabota.FormsPC
 
         private void PriceBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelPrice.Visible == false)
+            {
+                panelPrice.Visible = true;
+            }
+            else
+                panelPrice.Visible = false;
         }
 
         private void ManufBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelManuf.Visible == false)
+            {
+                panelManuf.Visible = true;
+            }
+            else
+                panelManuf.Visible = false;
         }
 
         private void ChipsetBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelSocket.Visible == false)
+            {
+                panelSocket.Visible = true;
+            }
+            else
+                panelSocket.Visible = false;
         }
 
         private void FactorBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelMem.Visible == false)
+            {
+                panelMem.Visible = true;
+            }
+            else
+                panelMem.Visible = false;
         }
 
         private void SocketBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelCore.Visible == false)
+            {
+                panelCore.Visible = true;
+            }
+            else
+                panelCore.Visible = false;
         }
 
         private void TypeBtn_Click(object sender, EventArgs e)
         {
-
+            if (panelTDP.Visible == false)
+            {
+                panelTDP.Visible = true;
+            }
+            else
+                panelTDP.Visible = false;
         }
 
         private void PowerCPUBtn_Click(object sender, EventArgs e)
         {
-
+            if (panel2.Visible == false)
+            {
+                panel2.Visible = true;
+            }
+            else
+                panel2.Visible = false;
         }
 
         private void SATABtn_Click(object sender, EventArgs e)
         {
-
+            if (panel4.Visible == false)
+            {
+                panel4.Visible = true;
+            }
+            else
+                panel4.Visible = false;
         }
     }
 }
