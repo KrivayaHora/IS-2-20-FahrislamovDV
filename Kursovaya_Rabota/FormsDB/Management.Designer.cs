@@ -31,10 +31,6 @@ namespace Kursovaya_Rabota.Project.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Managementform));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.StaffButton = new System.Windows.Forms.Button();
-            this.ComponentButton = new System.Windows.Forms.Button();
-            this.ConfigButton = new System.Windows.Forms.Button();
-            this.ClientsButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -42,6 +38,11 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Cfg = new System.Windows.Forms.Button();
+            this.StaffButton = new System.Windows.Forms.Button();
+            this.ComponentButton = new System.Windows.Forms.Button();
+            this.ConfigButton = new System.Windows.Forms.Button();
+            this.ClientsButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -50,6 +51,7 @@ namespace Kursovaya_Rabota.Project.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.panel1.Controls.Add(this.Cfg);
             this.panel1.Controls.Add(this.StaffButton);
             this.panel1.Controls.Add(this.ComponentButton);
             this.panel1.Controls.Add(this.ConfigButton);
@@ -60,6 +62,94 @@ namespace Kursovaya_Rabota.Project.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 743);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 80);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(191, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(9, 71);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 71);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 9);
+            this.panel5.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(9, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Панель администратора";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(200, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1475, 80);
+            this.panel3.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.Location = new System.Drawing.Point(6, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 33);
+            this.label2.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 80);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1475, 663);
+            this.panel4.TabIndex = 4;
+            // 
+            // Cfg
+            // 
+            this.Cfg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Cfg.FlatAppearance.BorderSize = 0;
+            this.Cfg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cfg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Cfg.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Cfg.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__23_1;
+            this.Cfg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Cfg.Location = new System.Drawing.Point(0, 344);
+            this.Cfg.Name = "Cfg";
+            this.Cfg.Size = new System.Drawing.Size(200, 66);
+            this.Cfg.TabIndex = 7;
+            this.Cfg.Text = "Сборка";
+            this.Cfg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Cfg.UseVisualStyleBackColor = true;
+            this.Cfg.Click += new System.EventHandler(this.button1_Click);
             // 
             // StaffButton
             // 
@@ -133,76 +223,6 @@ namespace Kursovaya_Rabota.Project.Forms
             this.ClientsButton.UseVisualStyleBackColor = true;
             this.ClientsButton.Click += new System.EventHandler(this.ClientsButton_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 80);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(191, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(9, 71);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 71);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 9);
-            this.panel5.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(9, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Панель администратора";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(200, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1475, 80);
-            this.panel3.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(6, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 33);
-            this.label2.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 80);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1475, 663);
-            this.panel4.TabIndex = 4;
-            // 
             // Managementform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,5 +261,6 @@ namespace Kursovaya_Rabota.Project.Forms
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Cfg;
     }
 }

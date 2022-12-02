@@ -296,6 +296,12 @@
     <Compile Include="FormsPC\BodyView.Designer.cs">
       <DependentUpon>BodyView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsPC\Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPC\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsPC\CoolerCPUView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -442,6 +448,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsPC\BodyView.resx">
       <DependentUpon>BodyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPC\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsPC\CoolerCPUView.resx">
       <DependentUpon>CoolerCPUView.cs</DependentUpon>
@@ -655,6 +664,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngegg %2820%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2821%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2822%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2823%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,11 +32,12 @@ namespace Kursovaya_Rabota.FormsPC
             dataGridView1.DataSource = BindingS;
             ConnectStaff.Close();
 
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = true;
+            dataGridView1.Columns[0].Visible = true;
+            dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[2].Visible = true;
             dataGridView1.Columns[3].Visible = true;
             dataGridView1.Columns[4].Visible = true;
+            dataGridView1.Columns[5].Visible = true;
 
 
             dataGridView1.Columns[0].FillWeight = 15;
@@ -44,18 +45,20 @@ namespace Kursovaya_Rabota.FormsPC
             dataGridView1.Columns[2].FillWeight = 15;
             dataGridView1.Columns[3].FillWeight = 15;
             dataGridView1.Columns[4].FillWeight = 15;
+            dataGridView1.Columns[5].FillWeight = 15;
 
-            dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
             dataGridView1.Columns[2].ReadOnly = true;
             dataGridView1.Columns[3].ReadOnly = true;
             dataGridView1.Columns[4].ReadOnly = true;
+            dataGridView1.Columns[5].ReadOnly = true;
 
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             dataGridView1.RowHeadersVisible = false;
 

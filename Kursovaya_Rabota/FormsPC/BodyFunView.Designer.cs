@@ -69,6 +69,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.PriceBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ADD = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelMaxSpeed.SuspendLayout();
@@ -89,7 +90,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(704, 541);
+            this.panel1.Size = new System.Drawing.Size(894, 541);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -574,20 +575,28 @@ namespace Kursovaya_Rabota.FormsPC
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ADD});
             this.dataGridView1.Location = new System.Drawing.Point(236, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(468, 541);
+            this.dataGridView1.Size = new System.Drawing.Size(658, 541);
             this.dataGridView1.TabIndex = 6;
+            // 
+            // ADD
+            // 
+            this.ADD.HeaderText = "Добавить к сборке";
+            this.ADD.Name = "ADD";
+            this.ADD.ReadOnly = true;
             // 
             // BodyFunView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 541);
+            this.ClientSize = new System.Drawing.Size(894, 541);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(720, 580);
-            this.MinimumSize = new System.Drawing.Size(720, 580);
+            this.MaximumSize = new System.Drawing.Size(910, 580);
+            this.MinimumSize = new System.Drawing.Size(910, 580);
             this.Name = "BodyFunView";
             this.Text = "BodyFunView";
             this.Load += new System.EventHandler(this.BodyFunView_Load);
@@ -654,5 +663,6 @@ namespace Kursovaya_Rabota.FormsPC
         private System.Windows.Forms.CheckBox checkBox17;
         private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridViewButtonColumn ADD;
     }
 }

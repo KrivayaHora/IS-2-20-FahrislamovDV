@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Kursovaya_Rabota.FormsPC;
 using MySql.Data.MySqlClient;
 
 namespace Kursovaya_Rabota.Project.Forms
@@ -65,9 +66,10 @@ namespace Kursovaya_Rabota.Project.Forms
             label2.Text = "Вкладка сотрудники";
         }
 
-        private void Desktop_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            ChildForm(new Config());
+            label2.Text = "Вкладка сборки";
         }
     }
 }

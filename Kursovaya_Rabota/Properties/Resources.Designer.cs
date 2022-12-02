@@ -333,6 +333,16 @@ namespace Kursovaya_Rabota.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngegg__21_1 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (21)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngegg__22_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (22)", resourceCulture);
@@ -343,9 +353,29 @@ namespace Kursovaya_Rabota.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngegg__22_1 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (22)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngegg__23_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (23)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__23_1 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (23)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -77,7 +77,7 @@ namespace Kursovaya_Rabota.FormsPC
             GetGPU();
             panelPrice.Visible = false;
             panelManuf.Visible = false;
-            panelModel.Visible = false;
+            
             panelMem.Visible = false;
             panelSizeMem.Visible = false;
             panelBusBit.Visible = false;
@@ -101,10 +101,7 @@ namespace Kursovaya_Rabota.FormsPC
 
         private void SocketBtn_Click(object sender, EventArgs e)
         {
-            if (panelModel.Visible == false)
-                panelModel.Visible = true;
-            else
-                panelModel.Visible = false;
+            
         }
 
         private void MemBtn_Click(object sender, EventArgs e)

@@ -34,6 +34,8 @@ namespace Kursovaya_Rabota
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.CoolerForCPUButtom = new System.Windows.Forms.Button();
             this.BodyFunButton = new System.Windows.Forms.Button();
             this.PSBody = new System.Windows.Forms.Button();
@@ -44,8 +46,6 @@ namespace Kursovaya_Rabota
             this.MotherButtom = new System.Windows.Forms.Button();
             this.GPUButtom = new System.Windows.Forms.Button();
             this.CPUButtom = new System.Windows.Forms.Button();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1459, 624);
+            this.panel1.Size = new System.Drawing.Size(1313, 624);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -86,16 +86,26 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1459, 12);
+            this.panel3.Size = new System.Drawing.Size(1313, 12);
             this.panel3.TabIndex = 11;
             // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(382, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(720, 580);
+            this.panel2.Size = new System.Drawing.Size(910, 580);
             this.panel2.TabIndex = 10;
-
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // CoolerForCPUButtom
             // 
@@ -254,22 +264,11 @@ namespace Kursovaya_Rabota
             this.CPUButtom.UseVisualStyleBackColor = true;
             this.CPUButtom.Click += new System.EventHandler(this.button1_Click);
             // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
-            // 
             // PcBuild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1459, 624);
+            this.ClientSize = new System.Drawing.Size(1313, 624);
             this.Controls.Add(this.panel1);
             this.Name = "PcBuild";
             this.Load += new System.EventHandler(this.PcBuild_Load);
