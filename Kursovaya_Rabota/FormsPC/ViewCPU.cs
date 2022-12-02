@@ -22,7 +22,7 @@ namespace Kursovaya_Rabota
         public void GetCPU()
         {
             DT.Clear();
-            string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 2";
+            string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 2";
             ConnectStaff.Open();
 
             MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
@@ -83,43 +83,11 @@ namespace Kursovaya_Rabota
             
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-        private void PriceBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ManufBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void SocketBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void MemBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void CoreBtn_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }
