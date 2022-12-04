@@ -1,12 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
 using System.Windows.Forms;
 
 namespace Kursovaya_Rabota.FormsPC
@@ -18,7 +14,13 @@ namespace Kursovaya_Rabota.FormsPC
         BindingSource BindingS = new BindingSource();
         DataTable DT = new DataTable();
 
-
+        void LoadImage(string a)
+        {
+            var rec = WebRequest.Create(a);
+            using (var res = rec.GetResponse())
+            using (var stream = res.GetResponseStream())
+                pictureBox1.Image = Bitmap.FromStream(stream);
+        }
         public void GetMother()
         {
             string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
@@ -32,30 +34,37 @@ namespace Kursovaya_Rabota.FormsPC
             dataGridView1.DataSource = BindingS;
             ConnectStaff.Close();
 
-            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[0].Visible = true;
             dataGridView1.Columns[1].Visible = true;
-            dataGridView1.Columns[2].Visible = true;
+            dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[3].Visible = true;
             dataGridView1.Columns[4].Visible = true;
+            dataGridView1.Columns[5].Visible = true;
+            dataGridView1.Columns[6].Visible = true;
 
 
-            dataGridView1.Columns[0].FillWeight = 15;
+            dataGridView1.Columns[0].FillWeight = 20;
             dataGridView1.Columns[1].FillWeight = 15;
             dataGridView1.Columns[2].FillWeight = 15;
             dataGridView1.Columns[3].FillWeight = 15;
-            dataGridView1.Columns[4].FillWeight = 15;
+            dataGridView1.Columns[4].FillWeight = 25;
+            dataGridView1.Columns[5].FillWeight = 15;
+            dataGridView1.Columns[6].FillWeight = 15;
 
-            dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
             dataGridView1.Columns[2].ReadOnly = true;
             dataGridView1.Columns[3].ReadOnly = true;
             dataGridView1.Columns[4].ReadOnly = true;
+            dataGridView1.Columns[5].ReadOnly = true;
+            dataGridView1.Columns[6].ReadOnly = true;
 
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             dataGridView1.RowHeadersVisible = false;
 
@@ -71,99 +80,84 @@ namespace Kursovaya_Rabota.FormsPC
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetMother();
-            panelPrice.Visible = false;
-            panelManuf.Visible = false;
-            panelSocket.Visible = false;
-            panelMem.Visible = false;
-            panelCore.Visible = false;
-            panelTDP.Visible = false;
-            panel2.Visible = false;
-            panel4.Visible = false;
+            
         }
 
-        private void panelManuf_Paint(object sender, PaintEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void PriceBtn_Click(object sender, EventArgs e)
-        {
-            if (panelPrice.Visible == false)
+            try
             {
-                panelPrice.Visible = true;
-            }
-            else
-                panelPrice.Visible = false;
-        }
+                string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string socket;
+                string chipset;
+                string typemem;
+                string ssdm;
+                string sata;
+                string video;
+                string powercpu;
+                string powermother;
+                string Name;
 
-        private void ManufBtn_Click(object sender, EventArgs e)
-        {
-            if (panelManuf.Visible == false)
-            {
-                panelManuf.Visible = true;
-            }
-            else
-                panelManuf.Visible = false;
-        }
+                ConnectStaff.Open();
+                string sqlSocket = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 1 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmd1 = new MySqlCommand(sqlSocket, ConnectStaff);
+                socket = cmd1.ExecuteScalar().ToString();
+                label12.Text = socket;
 
-        private void ChipsetBtn_Click(object sender, EventArgs e)
-        {
-            if (panelSocket.Visible == false)
-            {
-                panelSocket.Visible = true;
-            }
-            else
-                panelSocket.Visible = false;
-        }
+                string sqlchipset = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 3 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdchipset = new MySqlCommand(sqlchipset, ConnectStaff);
+                chipset = cmdchipset.ExecuteScalar().ToString();
+                label13.Text = chipset;
 
-        private void FactorBtn_Click(object sender, EventArgs e)
-        {
-            if (panelMem.Visible == false)
-            {
-                panelMem.Visible = true;
-            }
-            else
-                panelMem.Visible = false;
-        }
+                string sqltypemem = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 4 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdtypemem = new MySqlCommand(sqltypemem, ConnectStaff);
+                typemem = cmdtypemem.ExecuteScalar().ToString();
+                label14.Text = typemem;
 
-        private void SocketBtn_Click(object sender, EventArgs e)
-        {
-            if (panelCore.Visible == false)
-            {
-                panelCore.Visible = true;
-            }
-            else
-                panelCore.Visible = false;
-        }
+                string sqlssdm = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 6 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdThread = new MySqlCommand(sqlssdm, ConnectStaff);
+                ssdm = cmdThread.ExecuteScalar().ToString();
+                label15.Text = ssdm;
 
-        private void TypeBtn_Click(object sender, EventArgs e)
-        {
-            if (panelTDP.Visible == false)
-            {
-                panelTDP.Visible = true;
-            }
-            else
-                panelTDP.Visible = false;
-        }
+                string sqlsata = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 7 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdTDP = new MySqlCommand(sqlsata, ConnectStaff);
+                sata = cmdTDP.ExecuteScalar().ToString();
+                label17.Text = sata;
 
-        private void PowerCPUBtn_Click(object sender, EventArgs e)
-        {
-            if (panel2.Visible == false)
-            {
-                panel2.Visible = true;
-            }
-            else
-                panel2.Visible = false;
-        }
+                string sqlvideo = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 10 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdvideo = new MySqlCommand(sqlvideo, ConnectStaff);
+                video = cmdvideo.ExecuteScalar().ToString();
+                label16.Text = video;
 
-        private void SATABtn_Click(object sender, EventArgs e)
-        {
-            if (panel4.Visible == false)
-            {
-                panel4.Visible = true;
+                string sqlpowercpu = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 11 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdpowercpu = new MySqlCommand(sqlpowercpu, ConnectStaff);
+                powercpu = cmdpowercpu.ExecuteScalar().ToString();
+                label19.Text = powercpu;
+
+                string sqlpowermother = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 12 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdpowermother = new MySqlCommand(sqlpowermother, ConnectStaff);
+                powermother = cmdpowermother.ExecuteScalar().ToString();
+                label18.Text = powermother;
+
+                string sqlImage = "SELECT Items.URLphoto FROM Items where Items.ID = " + id;
+                MySqlCommand cmdpic = new MySqlCommand(sqlImage, ConnectStaff);
+                string pic = cmdpic.ExecuteScalar().ToString();
+                LoadImage(pic);
+
+                string sqlName = "SELECT Items.Title FROM Items where Items.ID = " + id;
+                MySqlCommand cmdName = new MySqlCommand(sqlName, ConnectStaff);
+                Name = cmdName.ExecuteScalar().ToString();
+                label1.Text = Name;
             }
-            else
-                panel4.Visible = false;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
         }
     }
+    
 }
