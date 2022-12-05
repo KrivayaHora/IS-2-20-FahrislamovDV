@@ -674,5 +674,8 @@
   <ItemGroup>
     <None Include="Resources\pngegg %2823%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

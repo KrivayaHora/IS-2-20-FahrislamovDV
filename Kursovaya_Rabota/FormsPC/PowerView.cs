@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,13 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
         DataTable DT = new DataTable();
+        void LoadImage(string a)
+        {
+            var rec = WebRequest.Create(a);
+            using (var res = rec.GetResponse())
+            using (var stream = res.GetResponseStream())
+                pictureBox1.Image = Bitmap.FromStream(stream);
+        }
         public void GetPS()
         {
             string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 4";
@@ -76,9 +84,6 @@ namespace Kursovaya_Rabota.FormsPC
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetPS();  
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

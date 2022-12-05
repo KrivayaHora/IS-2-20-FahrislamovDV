@@ -198,9 +198,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(792, 266);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 17);
+            this.label8.Size = new System.Drawing.Size(94, 17);
             this.label8.TabIndex = 9;
-            this.label8.Text = "Год релиза";
+            this.label8.Text = "Форм-фактор";
             // 
             // label7
             // 
@@ -253,9 +253,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(792, 239);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Сокет";
+            this.label3.Text = "Мощность";
             // 
             // label2
             // 

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,7 +23,13 @@ namespace Kursovaya_Rabota.FormsPC
         MySqlDataAdapter MyDA = new MySqlDataAdapter();
         BindingSource BindingS = new BindingSource();
         DataTable DT = new DataTable();
-
+        void LoadImage(string a)
+        {
+            var rec = WebRequest.Create(a);
+            using (var res = rec.GetResponse())
+            using (var stream = res.GetResponseStream())
+                pictureBox1.Image = Bitmap.FromStream(stream);
+        }
         public void GetGPU()
         {
             string sqlview = "SELECT Items.ID AS `код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 3";
@@ -72,17 +79,76 @@ namespace Kursovaya_Rabota.FormsPC
 
             dataGridView1.ColumnHeadersVisible = true;
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void GPUView_Load(object sender, EventArgs e)
         {
             ConnectStaff = new MySqlConnection("server=chuc.caseum.ru;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             //ConnectStaff = new MySqlConnection("server=10.90.12.110;port=33333;username=st_2_20_24;password=54843478;database=is_2_20_st24_KURS");
             GetGPU();
-            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string chip;
+                string sizemem;
+                string busmem;
+                string typemem;
+                string freq;
+                string video;
+                
+                string Name;
+
+                ConnectStaff.Open();
+                string sqlSocket = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 30 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmd1 = new MySqlCommand(sqlSocket, ConnectStaff);
+                chip = cmd1.ExecuteScalar().ToString();
+                label12.Text = chip;
+
+                string sqlchipset = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 31 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdchipset = new MySqlCommand(sqlchipset, ConnectStaff);
+                sizemem = cmdchipset.ExecuteScalar().ToString();
+                label14.Text = sizemem;
+
+                string sqltypemem = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 32 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdtypemem = new MySqlCommand(sqltypemem, ConnectStaff);
+                busmem = cmdtypemem.ExecuteScalar().ToString();
+                label15.Text = busmem;
+
+                string sqlssdm = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 33 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdThread = new MySqlCommand(sqlssdm, ConnectStaff);
+                typemem = cmdThread.ExecuteScalar().ToString();
+                label17.Text = typemem;
+
+                string sqlsata = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 34 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdTDP = new MySqlCommand(sqlsata, ConnectStaff);
+                freq = cmdTDP.ExecuteScalar().ToString();
+                label16.Text = freq;
+
+                string sqlvideo = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 35 AND Properties_value.Item_ID = " + id;
+                MySqlCommand cmdvideo = new MySqlCommand(sqlvideo, ConnectStaff);
+                video = cmdvideo.ExecuteScalar().ToString();
+                label13.Text = video;
+
+                string sqlImage = "SELECT Items.URLphoto FROM Items where Items.ID = " + id;
+                MySqlCommand cmdpic = new MySqlCommand(sqlImage, ConnectStaff);
+                string pic = cmdpic.ExecuteScalar().ToString();
+                LoadImage(pic);
+
+                string sqlName = "SELECT Items.Title FROM Items where Items.ID = " + id;
+                MySqlCommand cmdName = new MySqlCommand(sqlName, ConnectStaff);
+                Name = cmdName.ExecuteScalar().ToString();
+                label1.Text = Name;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
         }
     }
 }
