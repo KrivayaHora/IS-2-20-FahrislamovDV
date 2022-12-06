@@ -32,7 +32,6 @@ namespace Kursovaya_Rabota.FormsPC
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -62,7 +60,6 @@ namespace Kursovaya_Rabota.FormsPC
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label14);
@@ -71,7 +68,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -87,16 +83,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1202, 615);
             this.panel1.TabIndex = 3;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(1040, 425);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 17);
-            this.label19.TabIndex = 19;
             // 
             // label16
             // 
@@ -180,17 +166,6 @@ namespace Kursovaya_Rabota.FormsPC
             this.label10.TabIndex = 11;
             this.label10.Text = "Общие параметры";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(792, 425);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 17);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Тип памяти";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -198,9 +173,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(792, 266);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 17);
+            this.label8.Size = new System.Drawing.Size(223, 17);
             this.label8.TabIndex = 9;
-            this.label8.Text = "Год релиза";
+            this.label8.Text = "Совместимые материнские платы";
             // 
             // label7
             // 
@@ -209,9 +184,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(792, 399);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 17);
+            this.label7.Size = new System.Drawing.Size(219, 17);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Теплопакет";
+            this.label7.Text = "Число вентиляторов в комплекте";
             // 
             // label6
             // 
@@ -220,9 +195,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(792, 373);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 17);
+            this.label6.Size = new System.Drawing.Size(126, 17);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Количество потоков";
+            this.label6.Text = "Число отсеков SSD";
             // 
             // label5
             // 
@@ -231,9 +206,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(792, 347);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 17);
+            this.label5.Size = new System.Drawing.Size(131, 17);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Количество ядер";
+            this.label5.Text = "Число отсеков HDD";
             // 
             // label4
             // 
@@ -242,9 +217,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(792, 321);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.Size = new System.Drawing.Size(193, 17);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Частота ядер";
+            this.label4.Text = "Совместимые блоки питания";
             // 
             // label3
             // 
@@ -253,9 +228,9 @@ namespace Kursovaya_Rabota.FormsPC
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(792, 239);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(139, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Сокет";
+            this.label3.Text = "Типоразмер корпуса";
             // 
             // label2
             // 
@@ -313,6 +288,7 @@ namespace Kursovaya_Rabota.FormsPC
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Size = new System.Drawing.Size(786, 615);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ADD
             // 
@@ -353,7 +329,6 @@ namespace Kursovaya_Rabota.FormsPC
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
@@ -362,7 +337,6 @@ namespace Kursovaya_Rabota.FormsPC
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
