@@ -89,14 +89,17 @@ namespace Kursovaya_Rabota.FormsPC
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
+            if (e.ColumnIndex == 1)
+            {
+
+                try
             {
                 string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 string socket;
                 string chipset;
                 string typemem;
                 string ssdm;
-                string sata;
+                
                 string video;
                 string Name;
 
@@ -144,6 +147,8 @@ namespace Kursovaya_Rabota.FormsPC
             finally
             {
                 ConnectStaff.Close();
+            }
+
             }
         }
     }
