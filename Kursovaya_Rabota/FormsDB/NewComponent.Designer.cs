@@ -47,14 +47,14 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1459, 624);
+            this.panel1.Size = new System.Drawing.Size(1631, 697);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Location = new System.Drawing.Point(406, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1041, 580);
+            this.panel4.Size = new System.Drawing.Size(1213, 657);
             this.panel4.TabIndex = 27;
             // 
             // panel3
@@ -63,7 +63,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 624);
+            this.panel3.Size = new System.Drawing.Size(12, 697);
             this.panel3.TabIndex = 26;
             // 
             // Selector
@@ -95,19 +95,19 @@ namespace Kursovaya_Rabota
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1459, 12);
+            this.panel2.Size = new System.Drawing.Size(1631, 12);
             this.panel2.TabIndex = 25;
             // 
             // NewComponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1459, 624);
+            this.ClientSize = new System.Drawing.Size(1631, 697);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1475, 663);
-            this.MinimumSize = new System.Drawing.Size(1475, 663);
+            this.MaximumSize = new System.Drawing.Size(1647, 736);
+            this.MinimumSize = new System.Drawing.Size(1647, 736);
             this.Name = "NewComponent";
             this.Load += new System.EventHandler(this.NewComponent_Load);
             this.panel1.ResumeLayout(false);

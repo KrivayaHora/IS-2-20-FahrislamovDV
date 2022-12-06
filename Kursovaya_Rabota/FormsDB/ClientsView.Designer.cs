@@ -62,7 +62,7 @@ namespace Kursovaya_Rabota
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1459, 624);
+            this.panel1.Size = new System.Drawing.Size(1631, 697);
             this.panel1.TabIndex = 0;
             // 
             // RegB
@@ -73,7 +73,7 @@ namespace Kursovaya_Rabota
             this.RegB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RegB.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__29_;
             this.RegB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RegB.Location = new System.Drawing.Point(1307, 18);
+            this.RegB.Location = new System.Drawing.Point(1487, 32);
             this.RegB.Name = "RegB";
             this.RegB.Size = new System.Drawing.Size(132, 40);
             this.RegB.TabIndex = 40;
@@ -85,7 +85,7 @@ namespace Kursovaya_Rabota
             // Reload
             // 
             this.Reload.Image = global::Kursovaya_Rabota.Properties.Resources.pngegg__30_;
-            this.Reload.Location = new System.Drawing.Point(1261, 18);
+            this.Reload.Location = new System.Drawing.Point(1441, 32);
             this.Reload.Name = "Reload";
             this.Reload.Size = new System.Drawing.Size(40, 40);
             this.Reload.TabIndex = 39;
@@ -116,7 +116,7 @@ namespace Kursovaya_Rabota
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 612);
+            this.panel3.Size = new System.Drawing.Size(12, 685);
             this.panel3.TabIndex = 25;
             // 
             // panel2
@@ -125,7 +125,7 @@ namespace Kursovaya_Rabota
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1459, 12);
+            this.panel2.Size = new System.Drawing.Size(1631, 12);
             this.panel2.TabIndex = 24;
             // 
             // dataGridView1
@@ -164,7 +164,7 @@ namespace Kursovaya_Rabota
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1422, 476);
+            this.dataGridView1.Size = new System.Drawing.Size(1602, 587);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -211,7 +211,7 @@ namespace Kursovaya_Rabota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1459, 624);
+            this.ClientSize = new System.Drawing.Size(1631, 697);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClientsV";

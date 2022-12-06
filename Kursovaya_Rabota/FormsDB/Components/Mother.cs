@@ -21,7 +21,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
         public void GetMother()
         {
             
-            string sqlview = "SELECT Items.ID AS `Код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`,Items.In_storage AS `На хранении`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
+            string sqlview = "SELECT Items.ID AS `Код`, Manufacture.title AS `Производитель`, Items.Title AS `Название`, Type.title AS `Тип товара`, Items.Price AS `Цена` FROM Items JOIN Type ON Items.Type_id = Type.id JOIN Manufacture ON Items.Manufacture_id = Manufacture.id WHERE Type.id = 1";
             ConnectStaff.Open();
 
             MyDA.SelectCommand = new MySqlCommand(sqlview, ConnectStaff);
@@ -38,7 +38,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.Columns[3].FillWeight = 15;
             dataGridView1.Columns[4].FillWeight = 15;
             dataGridView1.Columns[5].FillWeight = 15;
-            dataGridView1.Columns[6].FillWeight = 15;
+
 
 
 
@@ -47,7 +47,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.Columns[3].ReadOnly = true;
             dataGridView1.Columns[4].ReadOnly = true;
             dataGridView1.Columns[5].ReadOnly = true;
-            dataGridView1.Columns[6].ReadOnly = true;
+
 
 
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -56,7 +56,7 @@ namespace Kursovaya_Rabota.FormsDB.Components
             dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
 
             dataGridView1.RowHeadersVisible = false;
 
