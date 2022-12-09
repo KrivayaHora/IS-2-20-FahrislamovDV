@@ -30,56 +30,68 @@
         {
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.CoolerPrice = new System.Windows.Forms.Label();
+            this.CoolerString = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.PSPrice = new System.Windows.Forms.Label();
+            this.PSString = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.BFPrice = new System.Windows.Forms.Label();
+            this.BFString = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.BodyPrice = new System.Windows.Forms.Label();
+            this.BodyString = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.RAMPrice = new System.Windows.Forms.Label();
+            this.RAMString = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.SSDPrice = new System.Windows.Forms.Label();
+            this.SSDString = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.HDDPrice = new System.Windows.Forms.Label();
+            this.HDDString = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.GPUPrice = new System.Windows.Forms.Label();
+            this.GPUString = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.MotherPrice = new System.Windows.Forms.Label();
+            this.MotherString = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.CPUPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.CPUProp = new System.Windows.Forms.Label();
+            this.CPUPrice = new System.Windows.Forms.Label();
+            this.CPUString = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.DeleteALL = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -101,6 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.CPUPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel5
@@ -135,7 +148,8 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label10);
+            this.panel10.Controls.Add(this.CoolerPrice);
+            this.panel10.Controls.Add(this.CoolerString);
             this.panel10.Controls.Add(this.pictureBox10);
             this.panel10.Controls.Add(this.button19);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -144,22 +158,33 @@
             this.panel10.Size = new System.Drawing.Size(972, 73);
             this.panel10.TabIndex = 19;
             // 
-            // label10
+            // CoolerPrice
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(96, 6);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "label10";
+            this.CoolerPrice.AutoSize = true;
+            this.CoolerPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CoolerPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.CoolerPrice.Location = new System.Drawing.Point(898, 36);
+            this.CoolerPrice.Name = "CoolerPrice";
+            this.CoolerPrice.Size = new System.Drawing.Size(0, 21);
+            this.CoolerPrice.TabIndex = 11;
+            // 
+            // CoolerString
+            // 
+            this.CoolerString.AutoSize = true;
+            this.CoolerString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.CoolerString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.CoolerString.Location = new System.Drawing.Point(96, 6);
+            this.CoolerString.Name = "CoolerString";
+            this.CoolerString.Size = new System.Drawing.Size(56, 20);
+            this.CoolerString.TabIndex = 4;
+            this.CoolerString.Text = "label10";
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox10.Location = new System.Drawing.Point(3, 0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox10.Size = new System.Drawing.Size(89, 70);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 2;
             this.pictureBox10.TabStop = false;
             // 
@@ -169,7 +194,7 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button19.ForeColor = System.Drawing.Color.Firebrick;
-            this.button19.Location = new System.Drawing.Point(902, 6);
+            this.button19.Location = new System.Drawing.Point(902, 0);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(70, 28);
             this.button19.TabIndex = 1;
@@ -192,7 +217,8 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.PSPrice);
+            this.panel9.Controls.Add(this.PSString);
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Controls.Add(this.button17);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
@@ -201,22 +227,33 @@
             this.panel9.Size = new System.Drawing.Size(972, 73);
             this.panel9.TabIndex = 17;
             // 
-            // label9
+            // PSPrice
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(96, 6);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "label9";
+            this.PSPrice.AutoSize = true;
+            this.PSPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PSPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.PSPrice.Location = new System.Drawing.Point(898, 36);
+            this.PSPrice.Name = "PSPrice";
+            this.PSPrice.Size = new System.Drawing.Size(0, 21);
+            this.PSPrice.TabIndex = 10;
+            // 
+            // PSString
+            // 
+            this.PSString.AutoSize = true;
+            this.PSString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PSString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.PSString.Location = new System.Drawing.Point(96, 6);
+            this.PSString.Name = "PSString";
+            this.PSString.Size = new System.Drawing.Size(50, 20);
+            this.PSString.TabIndex = 4;
+            this.PSString.Text = "label9";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox9.Location = new System.Drawing.Point(3, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox9.Size = new System.Drawing.Size(89, 70);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
             // 
@@ -226,7 +263,7 @@
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button17.ForeColor = System.Drawing.Color.Firebrick;
-            this.button17.Location = new System.Drawing.Point(902, 6);
+            this.button17.Location = new System.Drawing.Point(902, 0);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(70, 28);
             this.button17.TabIndex = 1;
@@ -249,7 +286,8 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label8);
+            this.panel8.Controls.Add(this.BFPrice);
+            this.panel8.Controls.Add(this.BFString);
             this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Controls.Add(this.button15);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -258,22 +296,33 @@
             this.panel8.Size = new System.Drawing.Size(972, 73);
             this.panel8.TabIndex = 15;
             // 
-            // label8
+            // BFPrice
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(96, 6);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "label8";
+            this.BFPrice.AutoSize = true;
+            this.BFPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BFPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BFPrice.Location = new System.Drawing.Point(898, 36);
+            this.BFPrice.Name = "BFPrice";
+            this.BFPrice.Size = new System.Drawing.Size(0, 21);
+            this.BFPrice.TabIndex = 9;
+            // 
+            // BFString
+            // 
+            this.BFString.AutoSize = true;
+            this.BFString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BFString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BFString.Location = new System.Drawing.Point(96, 6);
+            this.BFString.Name = "BFString";
+            this.BFString.Size = new System.Drawing.Size(50, 20);
+            this.BFString.TabIndex = 4;
+            this.BFString.Text = "label8";
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox8.Size = new System.Drawing.Size(89, 70);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
@@ -283,7 +332,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.ForeColor = System.Drawing.Color.Firebrick;
-            this.button15.Location = new System.Drawing.Point(902, 6);
+            this.button15.Location = new System.Drawing.Point(902, 0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(70, 28);
             this.button15.TabIndex = 1;
@@ -306,7 +355,8 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.BodyPrice);
+            this.panel7.Controls.Add(this.BodyString);
             this.panel7.Controls.Add(this.pictureBox7);
             this.panel7.Controls.Add(this.button13);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -315,22 +365,33 @@
             this.panel7.Size = new System.Drawing.Size(972, 73);
             this.panel7.TabIndex = 13;
             // 
-            // label7
+            // BodyPrice
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(96, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "label7";
+            this.BodyPrice.AutoSize = true;
+            this.BodyPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BodyPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BodyPrice.Location = new System.Drawing.Point(898, 36);
+            this.BodyPrice.Name = "BodyPrice";
+            this.BodyPrice.Size = new System.Drawing.Size(0, 21);
+            this.BodyPrice.TabIndex = 8;
+            // 
+            // BodyString
+            // 
+            this.BodyString.AutoSize = true;
+            this.BodyString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BodyString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BodyString.Location = new System.Drawing.Point(96, 6);
+            this.BodyString.Name = "BodyString";
+            this.BodyString.Size = new System.Drawing.Size(50, 20);
+            this.BodyString.TabIndex = 4;
+            this.BodyString.Text = "label7";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox7.Size = new System.Drawing.Size(89, 70);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
             // 
@@ -340,7 +401,7 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button13.ForeColor = System.Drawing.Color.Firebrick;
-            this.button13.Location = new System.Drawing.Point(902, 6);
+            this.button13.Location = new System.Drawing.Point(902, 0);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(70, 28);
             this.button13.TabIndex = 1;
@@ -363,7 +424,8 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.RAMPrice);
+            this.panel6.Controls.Add(this.RAMString);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.button11);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -372,22 +434,33 @@
             this.panel6.Size = new System.Drawing.Size(972, 73);
             this.panel6.TabIndex = 11;
             // 
-            // label6
+            // RAMPrice
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(96, 6);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.RAMPrice.AutoSize = true;
+            this.RAMPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RAMPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.RAMPrice.Location = new System.Drawing.Point(898, 36);
+            this.RAMPrice.Name = "RAMPrice";
+            this.RAMPrice.Size = new System.Drawing.Size(0, 21);
+            this.RAMPrice.TabIndex = 7;
+            // 
+            // RAMString
+            // 
+            this.RAMString.AutoSize = true;
+            this.RAMString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.RAMString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.RAMString.Location = new System.Drawing.Point(96, 6);
+            this.RAMString.Name = "RAMString";
+            this.RAMString.Size = new System.Drawing.Size(50, 20);
+            this.RAMString.TabIndex = 4;
+            this.RAMString.Text = "label6";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox6.Location = new System.Drawing.Point(3, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox6.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
@@ -397,7 +470,7 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button11.ForeColor = System.Drawing.Color.Firebrick;
-            this.button11.Location = new System.Drawing.Point(902, 6);
+            this.button11.Location = new System.Drawing.Point(902, 0);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(70, 28);
             this.button11.TabIndex = 1;
@@ -420,7 +493,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.SSDPrice);
+            this.panel4.Controls.Add(this.SSDString);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Controls.Add(this.button9);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -429,22 +503,33 @@
             this.panel4.Size = new System.Drawing.Size(972, 73);
             this.panel4.TabIndex = 9;
             // 
-            // label5
+            // SSDPrice
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(96, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.SSDPrice.AutoSize = true;
+            this.SSDPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SSDPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.SSDPrice.Location = new System.Drawing.Point(898, 36);
+            this.SSDPrice.Name = "SSDPrice";
+            this.SSDPrice.Size = new System.Drawing.Size(0, 21);
+            this.SSDPrice.TabIndex = 8;
+            // 
+            // SSDString
+            // 
+            this.SSDString.AutoSize = true;
+            this.SSDString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.SSDString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.SSDString.Location = new System.Drawing.Point(96, 6);
+            this.SSDString.Name = "SSDString";
+            this.SSDString.Size = new System.Drawing.Size(50, 20);
+            this.SSDString.TabIndex = 4;
+            this.SSDString.Text = "label5";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox5.Location = new System.Drawing.Point(3, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox5.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
             // 
@@ -454,7 +539,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.ForeColor = System.Drawing.Color.Firebrick;
-            this.button9.Location = new System.Drawing.Point(902, 6);
+            this.button9.Location = new System.Drawing.Point(902, 0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 28);
             this.button9.TabIndex = 1;
@@ -477,7 +562,8 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.HDDPrice);
+            this.panel3.Controls.Add(this.HDDString);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -486,22 +572,33 @@
             this.panel3.Size = new System.Drawing.Size(972, 73);
             this.panel3.TabIndex = 7;
             // 
-            // label4
+            // HDDPrice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(96, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.HDDPrice.AutoSize = true;
+            this.HDDPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HDDPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.HDDPrice.Location = new System.Drawing.Point(898, 36);
+            this.HDDPrice.Name = "HDDPrice";
+            this.HDDPrice.Size = new System.Drawing.Size(0, 21);
+            this.HDDPrice.TabIndex = 7;
+            // 
+            // HDDString
+            // 
+            this.HDDString.AutoSize = true;
+            this.HDDString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.HDDString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.HDDString.Location = new System.Drawing.Point(96, 6);
+            this.HDDString.Name = "HDDString";
+            this.HDDString.Size = new System.Drawing.Size(51, 20);
+            this.HDDString.TabIndex = 4;
+            this.HDDString.Text = "label4";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
@@ -511,7 +608,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.ForeColor = System.Drawing.Color.Firebrick;
-            this.button7.Location = new System.Drawing.Point(902, 6);
+            this.button7.Location = new System.Drawing.Point(902, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(70, 28);
             this.button7.TabIndex = 1;
@@ -534,7 +631,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.GPUPrice);
+            this.panel2.Controls.Add(this.GPUString);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -543,22 +641,33 @@
             this.panel2.Size = new System.Drawing.Size(972, 73);
             this.panel2.TabIndex = 5;
             // 
-            // label3
+            // GPUPrice
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(96, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.GPUPrice.AutoSize = true;
+            this.GPUPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GPUPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GPUPrice.Location = new System.Drawing.Point(898, 36);
+            this.GPUPrice.Name = "GPUPrice";
+            this.GPUPrice.Size = new System.Drawing.Size(0, 21);
+            this.GPUPrice.TabIndex = 6;
+            // 
+            // GPUString
+            // 
+            this.GPUString.AutoSize = true;
+            this.GPUString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.GPUString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GPUString.Location = new System.Drawing.Point(96, 6);
+            this.GPUString.Name = "GPUString";
+            this.GPUString.Size = new System.Drawing.Size(50, 20);
+            this.GPUString.TabIndex = 4;
+            this.GPUString.Text = "label3";
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -568,7 +677,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.Firebrick;
-            this.button5.Location = new System.Drawing.Point(902, 6);
+            this.button5.Location = new System.Drawing.Point(902, 0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 28);
             this.button5.TabIndex = 1;
@@ -591,7 +700,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.MotherPrice);
+            this.panel1.Controls.Add(this.MotherString);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -600,22 +710,33 @@
             this.panel1.Size = new System.Drawing.Size(972, 73);
             this.panel1.TabIndex = 3;
             // 
-            // label2
+            // MotherPrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(96, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.MotherPrice.AutoSize = true;
+            this.MotherPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MotherPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.MotherPrice.Location = new System.Drawing.Point(898, 36);
+            this.MotherPrice.Name = "MotherPrice";
+            this.MotherPrice.Size = new System.Drawing.Size(0, 21);
+            this.MotherPrice.TabIndex = 5;
+            // 
+            // MotherString
+            // 
+            this.MotherString.AutoSize = true;
+            this.MotherString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MotherString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.MotherString.Location = new System.Drawing.Point(96, 6);
+            this.MotherString.Name = "MotherString";
+            this.MotherString.Size = new System.Drawing.Size(50, 20);
+            this.MotherString.TabIndex = 4;
+            this.MotherString.Text = "label2";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -625,7 +746,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.Firebrick;
-            this.button3.Location = new System.Drawing.Point(902, 6);
+            this.button3.Location = new System.Drawing.Point(902, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 28);
             this.button3.TabIndex = 1;
@@ -648,7 +769,9 @@
             // 
             // CPUPanel
             // 
-            this.CPUPanel.Controls.Add(this.label1);
+            this.CPUPanel.Controls.Add(this.CPUProp);
+            this.CPUPanel.Controls.Add(this.CPUPrice);
+            this.CPUPanel.Controls.Add(this.CPUString);
             this.CPUPanel.Controls.Add(this.pictureBox1);
             this.CPUPanel.Controls.Add(this.button2);
             this.CPUPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -657,22 +780,44 @@
             this.CPUPanel.Size = new System.Drawing.Size(972, 73);
             this.CPUPanel.TabIndex = 1;
             // 
-            // label1
+            // CPUProp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(96, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.CPUProp.AutoSize = true;
+            this.CPUProp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CPUProp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CPUProp.Location = new System.Drawing.Point(97, 36);
+            this.CPUProp.Name = "CPUProp";
+            this.CPUProp.Size = new System.Drawing.Size(41, 17);
+            this.CPUProp.TabIndex = 5;
+            this.CPUProp.Text = "label1";
+            // 
+            // CPUPrice
+            // 
+            this.CPUPrice.AutoSize = true;
+            this.CPUPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CPUPrice.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.CPUPrice.Location = new System.Drawing.Point(898, 36);
+            this.CPUPrice.Name = "CPUPrice";
+            this.CPUPrice.Size = new System.Drawing.Size(0, 21);
+            this.CPUPrice.TabIndex = 4;
+            // 
+            // CPUString
+            // 
+            this.CPUString.AutoSize = true;
+            this.CPUString.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CPUString.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.CPUString.Location = new System.Drawing.Point(96, 6);
+            this.CPUString.Name = "CPUString";
+            this.CPUString.Size = new System.Drawing.Size(48, 20);
+            this.CPUString.TabIndex = 3;
+            this.CPUString.Text = "label1";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(89, 73);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -682,7 +827,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(902, 6);
+            this.button2.Location = new System.Drawing.Point(902, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 28);
             this.button2.TabIndex = 1;
@@ -706,11 +851,26 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel11.Controls.Add(this.DeleteALL);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(973, 0);
+            this.panel11.Location = new System.Drawing.Point(978, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(658, 697);
+            this.panel11.Size = new System.Drawing.Size(653, 697);
             this.panel11.TabIndex = 15;
+            // 
+            // DeleteALL
+            // 
+            this.DeleteALL.FlatAppearance.BorderSize = 0;
+            this.DeleteALL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteALL.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteALL.ForeColor = System.Drawing.Color.Firebrick;
+            this.DeleteALL.Location = new System.Drawing.Point(3, 5);
+            this.DeleteALL.Name = "DeleteALL";
+            this.DeleteALL.Size = new System.Drawing.Size(100, 38);
+            this.DeleteALL.TabIndex = 2;
+            this.DeleteALL.Text = "Удалить все";
+            this.DeleteALL.UseVisualStyleBackColor = true;
+            this.DeleteALL.Click += new System.EventHandler(this.DeleteALL_Click);
             // 
             // Config
             // 
@@ -753,6 +913,7 @@
             this.CPUPanel.ResumeLayout(false);
             this.CPUPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -800,16 +961,28 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CPUString;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label CoolerString;
+        private System.Windows.Forms.Label PSString;
+        private System.Windows.Forms.Label BFString;
+        private System.Windows.Forms.Label BodyString;
+        private System.Windows.Forms.Label RAMString;
+        private System.Windows.Forms.Label SSDString;
+        private System.Windows.Forms.Label HDDString;
+        private System.Windows.Forms.Label GPUString;
+        private System.Windows.Forms.Label MotherString;
+        private System.Windows.Forms.Label CPUPrice;
+        private System.Windows.Forms.Label CPUProp;
+        private System.Windows.Forms.Label MotherPrice;
+        private System.Windows.Forms.Label GPUPrice;
+        private System.Windows.Forms.Label HDDPrice;
+        private System.Windows.Forms.Label SSDPrice;
+        private System.Windows.Forms.Label RAMPrice;
+        private System.Windows.Forms.Label BFPrice;
+        private System.Windows.Forms.Label BodyPrice;
+        private System.Windows.Forms.Label PSPrice;
+        private System.Windows.Forms.Label CoolerPrice;
+        private System.Windows.Forms.Button DeleteALL;
     }
 }

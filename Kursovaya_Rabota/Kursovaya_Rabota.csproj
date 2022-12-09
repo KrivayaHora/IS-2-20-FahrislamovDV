@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientV.cs" />
+    <Compile Include="DataSave.cs" />
     <Compile Include="DBFGrid.cs" />
     <Compile Include="EmployeeV.cs" />
     <Compile Include="FormsDB\Authorization.cs">
@@ -364,7 +365,6 @@
     <Compile Include="FormsPC\ViewCPU.Designer.cs">
       <DependentUpon>ViewCPU.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkBD.cs" />
     <EmbeddedResource Include="FormsDB\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
