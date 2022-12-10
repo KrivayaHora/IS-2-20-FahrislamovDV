@@ -92,6 +92,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.DeleteALL = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -851,6 +853,8 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel11.Controls.Add(this.label2);
+            this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.DeleteALL);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel11.Location = new System.Drawing.Point(978, 0);
@@ -864,13 +868,34 @@
             this.DeleteALL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteALL.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeleteALL.ForeColor = System.Drawing.Color.Firebrick;
-            this.DeleteALL.Location = new System.Drawing.Point(3, 5);
+            this.DeleteALL.Location = new System.Drawing.Point(550, 3);
             this.DeleteALL.Name = "DeleteALL";
             this.DeleteALL.Size = new System.Drawing.Size(100, 38);
             this.DeleteALL.TabIndex = 2;
             this.DeleteALL.Text = "Удалить все";
             this.DeleteALL.UseVisualStyleBackColor = true;
             this.DeleteALL.Click += new System.EventHandler(this.DeleteALL_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 663);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Итоговая цена:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(158, 665);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 23);
+            this.label2.TabIndex = 4;
             // 
             // Config
             // 
@@ -914,6 +939,7 @@
             this.CPUPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -984,5 +1010,7 @@
         private System.Windows.Forms.Label PSPrice;
         private System.Windows.Forms.Label CoolerPrice;
         private System.Windows.Forms.Button DeleteALL;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

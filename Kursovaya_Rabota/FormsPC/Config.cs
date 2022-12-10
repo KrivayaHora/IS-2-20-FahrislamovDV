@@ -12,6 +12,17 @@ namespace Kursovaya_Rabota.FormsPC
     public partial class Config : Form
     {
         MySqlConnection ConnectStaff;
+        string priceCPU;
+        string priceMother;
+        string priceGPU;
+        string priceHDD;
+        string priceSSD;
+        string priceRAM;
+        string priceBody;
+        string priceCFB;
+        string pricePS;
+        string priceCooler;
+        string Result;
         void LoadImage(string a, PictureBox pictureBox)
         {
             var rec = WebRequest.Create(a);
@@ -24,7 +35,7 @@ namespace Kursovaya_Rabota.FormsPC
             
             string URL;
             string name;
-            string price;
+            
             string manuf;
             ConnectStaff.Open();
 
@@ -34,23 +45,23 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceCPU = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 CPUString.Text = name;
-                CPUPrice.Text = price;
+                CPUPrice.Text = priceCPU;
                 LoadImage(URL, pictureBox1);
             }
             ConnectStaff.Close();
         }
-
+        
         void Mothercfg()
         {
             
             string URL;
             string name;
-            string price;
+            
             string manuf;
             ConnectStaff.Open();
 
@@ -60,12 +71,12 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceMother = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 MotherString.Text = name;
-                MotherPrice.Text = price;
+                MotherPrice.Text = priceMother;
                 LoadImage(URL, pictureBox2);
             }
             ConnectStaff.Close();
@@ -75,7 +86,7 @@ namespace Kursovaya_Rabota.FormsPC
             
             string URL;
             string name;
-            string price;
+            
             string manuf;
             ConnectStaff.Open();
 
@@ -85,12 +96,12 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceGPU = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 GPUString.Text = name;
-                GPUPrice.Text = price;
+                GPUPrice.Text = priceGPU;
                 LoadImage(URL, pictureBox3);
             }
             ConnectStaff.Close();
@@ -100,7 +111,6 @@ namespace Kursovaya_Rabota.FormsPC
             
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -110,12 +120,12 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceHDD = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 HDDString.Text = name;
-                HDDPrice.Text = price;
+                HDDPrice.Text = priceHDD;
                 LoadImage(URL, pictureBox4);
             }
             ConnectStaff.Close();
@@ -124,7 +134,6 @@ namespace Kursovaya_Rabota.FormsPC
         {
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -134,22 +143,20 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceSSD = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 SSDString.Text = name;
-                SSDPrice.Text = price;
+                SSDPrice.Text = priceSSD;
                 LoadImage(URL, pictureBox5);
             }
             ConnectStaff.Close();
         }
         void RAMcfg()
         {
-           
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -159,22 +166,20 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceRAM = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 RAMString.Text = name;
-                RAMPrice.Text = price;
+                RAMPrice.Text = priceRAM;
                 LoadImage(URL, pictureBox6);
             }
             ConnectStaff.Close();
         }
         void Bodycfg()
         {
-           
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -184,22 +189,20 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceBody = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 BodyString.Text = name;
-                BodyPrice.Text = price;
+                BodyPrice.Text = priceBody;
                 LoadImage(URL, pictureBox7);
             }
             ConnectStaff.Close();
         }
         void CFBcfg()
         {
-            
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -209,22 +212,20 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceCFB = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 BFString.Text = name;
-                BFPrice.Text = price;
+                BFPrice.Text = priceCFB;
                 LoadImage(URL, pictureBox8);
             }
             ConnectStaff.Close();
         }
         void PScfg()
         {
-            
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -234,22 +235,20 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                pricePS = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 PSString.Text = name;
-                PSPrice.Text = price;
+                PSPrice.Text = pricePS;
                 LoadImage(URL, pictureBox9);
             }
             ConnectStaff.Close();
         }
         void Coolercfg()
         {
-            
             string URL;
             string name;
-            string price;
             string manuf;
             ConnectStaff.Open();
 
@@ -259,15 +258,32 @@ namespace Kursovaya_Rabota.FormsPC
             while (reader.Read())
             {
                 name = reader[1].ToString();
-                price = reader[2].ToString();
+                priceCooler = reader[2].ToString();
                 manuf = reader[3].ToString();
                 URL = reader[4].ToString();
                 name = manuf + " " + name;
                 CoolerString.Text = name;
-                CoolerPrice.Text = price;
+                CoolerPrice.Text = priceCooler;
                 LoadImage(URL, pictureBox10);
             }
             ConnectStaff.Close();
+        }
+        void PriceResult()
+        {
+            Convert.ToInt32(priceCPU);
+            Convert.ToInt32(pricePS);
+            Convert.ToInt32(priceCooler);
+            Convert.ToInt32(priceGPU);
+            Convert.ToInt32(priceHDD);
+            Convert.ToInt32(priceSSD);
+            Convert.ToInt32(priceRAM);
+            Convert.ToInt32(priceBody);
+            Convert.ToInt32(priceCFB);
+            Convert.ToInt32(Result);
+            int res = Convert.ToInt32(priceCPU) + Convert.ToInt32(pricePS) + Convert.ToInt32(priceCooler) + Convert.ToInt32(priceGPU) + Convert.ToInt32(priceHDD) + Convert.ToInt32(priceSSD) + Convert.ToInt32(priceRAM) + Convert.ToInt32(priceBody) + Convert.ToInt32(priceCFB);
+            Result = res.ToString();
+            string rub = "Рублей";
+            label2.Text = Result + " "+ rub;
         }
         public Config()
         {
@@ -287,11 +303,27 @@ namespace Kursovaya_Rabota.FormsPC
             CFBcfg();
             PScfg();
             Coolercfg();
+            PriceResult();
         }
 
         private void DeleteALL_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                ConnectStaff.Open();
+                string sqlDelete = "DELETE FROM Cfg";
+                MySqlCommand cmdDelete = new MySqlCommand(sqlDelete, ConnectStaff);
+                cmdDelete.ExecuteNonQuery();
+                MessageBox.Show("Очистка прошла успешно!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Очистить не удалось, ошибка:"+ex.Message,"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
         }
     }
 
