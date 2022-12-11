@@ -88,67 +88,94 @@ namespace Kursovaya_Rabota.FormsPC
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 1)
-            {      
+            {
                 try
-            {
-                string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                string socket;
-                string chipset;
-                string typemem;
-                string ssdm;
-                string sata;
-                string video;
-                string Name;
+                {
+                    string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    string socket;
+                    string chipset;
+                    string typemem;
+                    string ssdm;
+                    string sata;
+                    string video;
+                    string Name;
 
-                ConnectStaff.Open();
-                string sqlSocket = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 90 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmd1 = new MySqlCommand(sqlSocket, ConnectStaff);
-                socket = cmd1.ExecuteScalar().ToString();
-                label12.Text = socket;
+                    ConnectStaff.Open();
+                    string sqlSocket = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 90 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmd1 = new MySqlCommand(sqlSocket, ConnectStaff);
+                    socket = cmd1.ExecuteScalar().ToString();
+                    label12.Text = socket;
 
-                string sqlchipset = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 95 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmdchipset = new MySqlCommand(sqlchipset, ConnectStaff);
-                chipset = cmdchipset.ExecuteScalar().ToString();
-                label13.Text = chipset;
+                    string sqlchipset = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 95 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmdchipset = new MySqlCommand(sqlchipset, ConnectStaff);
+                    chipset = cmdchipset.ExecuteScalar().ToString();
+                    label13.Text = chipset;
 
-                string sqltypemem = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 96 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmdtypemem = new MySqlCommand(sqltypemem, ConnectStaff);
-                typemem = cmdtypemem.ExecuteScalar().ToString();
-                label14.Text = typemem;
+                    string sqltypemem = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 96 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmdtypemem = new MySqlCommand(sqltypemem, ConnectStaff);
+                    typemem = cmdtypemem.ExecuteScalar().ToString();
+                    label14.Text = typemem;
 
-                string sqlssdm = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 97 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmdThread = new MySqlCommand(sqlssdm, ConnectStaff);
-                ssdm = cmdThread.ExecuteScalar().ToString();
-                label15.Text = ssdm;
+                    string sqlssdm = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 97 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmdThread = new MySqlCommand(sqlssdm, ConnectStaff);
+                    ssdm = cmdThread.ExecuteScalar().ToString();
+                    label15.Text = ssdm;
 
-                string sqlvideo = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 98 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmdvideo = new MySqlCommand(sqlvideo, ConnectStaff);
-                video = cmdvideo.ExecuteScalar().ToString();
-                label17.Text = video;
+                    string sqlvideo = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 98 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmdvideo = new MySqlCommand(sqlvideo, ConnectStaff);
+                    video = cmdvideo.ExecuteScalar().ToString();
+                    label17.Text = video;
 
-                string sqlsata = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 98 AND Properties_value.Item_ID = " + id;
-                MySqlCommand cmdsata = new MySqlCommand(sqlvideo, ConnectStaff);
-                sata = cmdvideo.ExecuteScalar().ToString();
-                label16.Text = sata;
+                    string sqlsata = "SELECT Properties_value.`Value` FROM Properties_value WHERE Properties_value.Property_ID = 98 AND Properties_value.Item_ID = " + id;
+                    MySqlCommand cmdsata = new MySqlCommand(sqlvideo, ConnectStaff);
+                    sata = cmdvideo.ExecuteScalar().ToString();
+                    label16.Text = sata;
 
-                string sqlImage = "SELECT Items.URLphoto FROM Items where Items.ID = " + id;
-                MySqlCommand cmdpic = new MySqlCommand(sqlImage, ConnectStaff);
-                string pic = cmdpic.ExecuteScalar().ToString();
-                LoadImage(pic);
+                    string sqlImage = "SELECT Items.URLphoto FROM Items where Items.ID = " + id;
+                    MySqlCommand cmdpic = new MySqlCommand(sqlImage, ConnectStaff);
+                    string pic = cmdpic.ExecuteScalar().ToString();
+                    LoadImage(pic);
 
-                string sqlName = "SELECT Items.Title FROM Items where Items.ID = " + id;
-                MySqlCommand cmdName = new MySqlCommand(sqlName, ConnectStaff);
-                Name = cmdName.ExecuteScalar().ToString();
-                label1.Text = Name;
+                    string sqlName = "SELECT Items.Title FROM Items where Items.ID = " + id;
+                    MySqlCommand cmdName = new MySqlCommand(sqlName, ConnectStaff);
+                    Name = cmdName.ExecuteScalar().ToString();
+                    label1.Text = Name;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    ConnectStaff.Close();
+                }
             }
-            catch (Exception ex)
+            if (e.ColumnIndex == 0)
             {
-                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                ConnectStaff.Close();
-            }
+                try
+                {
+                    string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    ConnectStaff.Open();
+                    string sql = $"INSERT INTO `Cfg`(Item_ID) VALUES (@ID)";
+                    MySqlCommand cmd = new MySqlCommand(sql, ConnectStaff);
+                    cmd.Parameters.Add("ID", MySqlDbType.VarChar).Value = id;
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Добавлено в сборку", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибка добавления", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Код ошибки:" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                finally
+                {
+                    ConnectStaff.Close();
+                }
             }
         }
     }

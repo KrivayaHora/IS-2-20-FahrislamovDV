@@ -91,9 +91,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.DeleteALL = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DeleteALL = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -177,9 +177,8 @@
             this.CoolerString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.CoolerString.Location = new System.Drawing.Point(96, 6);
             this.CoolerString.Name = "CoolerString";
-            this.CoolerString.Size = new System.Drawing.Size(56, 20);
+            this.CoolerString.Size = new System.Drawing.Size(0, 20);
             this.CoolerString.TabIndex = 4;
-            this.CoolerString.Text = "label10";
             // 
             // pictureBox10
             // 
@@ -246,9 +245,8 @@
             this.PSString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.PSString.Location = new System.Drawing.Point(96, 6);
             this.PSString.Name = "PSString";
-            this.PSString.Size = new System.Drawing.Size(50, 20);
+            this.PSString.Size = new System.Drawing.Size(0, 20);
             this.PSString.TabIndex = 4;
-            this.PSString.Text = "label9";
             // 
             // pictureBox9
             // 
@@ -315,9 +313,8 @@
             this.BFString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BFString.Location = new System.Drawing.Point(96, 6);
             this.BFString.Name = "BFString";
-            this.BFString.Size = new System.Drawing.Size(50, 20);
+            this.BFString.Size = new System.Drawing.Size(0, 20);
             this.BFString.TabIndex = 4;
-            this.BFString.Text = "label8";
             // 
             // pictureBox8
             // 
@@ -384,9 +381,8 @@
             this.BodyString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.BodyString.Location = new System.Drawing.Point(96, 6);
             this.BodyString.Name = "BodyString";
-            this.BodyString.Size = new System.Drawing.Size(50, 20);
+            this.BodyString.Size = new System.Drawing.Size(0, 20);
             this.BodyString.TabIndex = 4;
-            this.BodyString.Text = "label7";
             // 
             // pictureBox7
             // 
@@ -453,9 +449,8 @@
             this.RAMString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.RAMString.Location = new System.Drawing.Point(96, 6);
             this.RAMString.Name = "RAMString";
-            this.RAMString.Size = new System.Drawing.Size(50, 20);
+            this.RAMString.Size = new System.Drawing.Size(0, 20);
             this.RAMString.TabIndex = 4;
-            this.RAMString.Text = "label6";
             // 
             // pictureBox6
             // 
@@ -522,9 +517,8 @@
             this.SSDString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SSDString.Location = new System.Drawing.Point(96, 6);
             this.SSDString.Name = "SSDString";
-            this.SSDString.Size = new System.Drawing.Size(50, 20);
+            this.SSDString.Size = new System.Drawing.Size(0, 20);
             this.SSDString.TabIndex = 4;
-            this.SSDString.Text = "label5";
             // 
             // pictureBox5
             // 
@@ -591,9 +585,8 @@
             this.HDDString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.HDDString.Location = new System.Drawing.Point(96, 6);
             this.HDDString.Name = "HDDString";
-            this.HDDString.Size = new System.Drawing.Size(51, 20);
+            this.HDDString.Size = new System.Drawing.Size(0, 20);
             this.HDDString.TabIndex = 4;
-            this.HDDString.Text = "label4";
             // 
             // pictureBox4
             // 
@@ -660,9 +653,8 @@
             this.GPUString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.GPUString.Location = new System.Drawing.Point(96, 6);
             this.GPUString.Name = "GPUString";
-            this.GPUString.Size = new System.Drawing.Size(50, 20);
+            this.GPUString.Size = new System.Drawing.Size(0, 20);
             this.GPUString.TabIndex = 4;
-            this.GPUString.Text = "label3";
             // 
             // pictureBox3
             // 
@@ -729,9 +721,8 @@
             this.MotherString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.MotherString.Location = new System.Drawing.Point(96, 6);
             this.MotherString.Name = "MotherString";
-            this.MotherString.Size = new System.Drawing.Size(50, 20);
+            this.MotherString.Size = new System.Drawing.Size(0, 20);
             this.MotherString.TabIndex = 4;
-            this.MotherString.Text = "label2";
             // 
             // pictureBox2
             // 
@@ -789,9 +780,8 @@
             this.CPUProp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CPUProp.Location = new System.Drawing.Point(97, 36);
             this.CPUProp.Name = "CPUProp";
-            this.CPUProp.Size = new System.Drawing.Size(41, 17);
+            this.CPUProp.Size = new System.Drawing.Size(0, 17);
             this.CPUProp.TabIndex = 5;
-            this.CPUProp.Text = "label1";
             // 
             // CPUPrice
             // 
@@ -810,9 +800,8 @@
             this.CPUString.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.CPUString.Location = new System.Drawing.Point(96, 6);
             this.CPUString.Name = "CPUString";
-            this.CPUString.Size = new System.Drawing.Size(48, 20);
+            this.CPUString.Size = new System.Drawing.Size(0, 20);
             this.CPUString.TabIndex = 3;
-            this.CPUString.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -862,6 +851,27 @@
             this.panel11.Size = new System.Drawing.Size(653, 697);
             this.panel11.TabIndex = 15;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(158, 665);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 23);
+            this.label2.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 663);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Итоговая цена:";
+            // 
             // DeleteALL
             // 
             this.DeleteALL.FlatAppearance.BorderSize = 0;
@@ -875,27 +885,6 @@
             this.DeleteALL.Text = "Удалить все";
             this.DeleteALL.UseVisualStyleBackColor = true;
             this.DeleteALL.Click += new System.EventHandler(this.DeleteALL_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 663);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Итоговая цена:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(158, 665);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 23);
-            this.label2.TabIndex = 4;
             // 
             // Config
             // 

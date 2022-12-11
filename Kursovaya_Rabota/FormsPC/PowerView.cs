@@ -149,6 +149,35 @@ namespace Kursovaya_Rabota.FormsPC
                 {
                     ConnectStaff.Close();
                 }
+                
+              
+            }
+            if (e.ColumnIndex == 0)
+            {
+                try
+                {
+                    string id = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    ConnectStaff.Open();
+                    string sql = $"INSERT INTO `Cfg`(Item_ID) VALUES (@ID)";
+                    MySqlCommand cmd = new MySqlCommand(sql, ConnectStaff);
+                    cmd.Parameters.Add("ID", MySqlDbType.VarChar).Value = id;
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Добавлено в сборку", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибка добавления", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Код ошибки:" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                finally
+                {
+                    ConnectStaff.Close();
+                }
             }
         }
     }
