@@ -6,6 +6,7 @@ using System.Net;
 using System.Windows.Forms;
 using SqlKata.Execution;
 using static Humanizer.In;
+using System.Data;
 
 namespace Kursovaya_Rabota.FormsPC
 {
@@ -32,10 +33,8 @@ namespace Kursovaya_Rabota.FormsPC
         }
         void CPUcfg()
         {
-            
             string URL;
             string name;
-            
             string manuf;
             ConnectStaff.Open();
 
@@ -58,10 +57,8 @@ namespace Kursovaya_Rabota.FormsPC
         
         void Mothercfg()
         {
-            
             string URL;
             string name;
-            
             string manuf;
             ConnectStaff.Open();
 
@@ -83,10 +80,8 @@ namespace Kursovaya_Rabota.FormsPC
         }
         void GPUcfg()
         {
-            
             string URL;
             string name;
-            
             string manuf;
             ConnectStaff.Open();
 
@@ -108,7 +103,6 @@ namespace Kursovaya_Rabota.FormsPC
         }
         void HDDcfg()
         {
-            
             string URL;
             string name;
             string manuf;
@@ -220,6 +214,7 @@ namespace Kursovaya_Rabota.FormsPC
                 BFPrice.Text = priceCFB;
                 LoadImage(URL, pictureBox8);
             }
+
             ConnectStaff.Close();
         }
         void PScfg()
@@ -283,7 +278,83 @@ namespace Kursovaya_Rabota.FormsPC
             int res = Convert.ToInt32(priceCPU) + Convert.ToInt32(pricePS) + Convert.ToInt32(priceCooler) + Convert.ToInt32(priceGPU) + Convert.ToInt32(priceHDD) + Convert.ToInt32(priceSSD) + Convert.ToInt32(priceRAM) + Convert.ToInt32(priceBody) + Convert.ToInt32(priceCFB);
             Result = res.ToString();
             string rub = "Рублей";
-            label2.Text = Result + " "+ rub;
+            label2.Text = "Итоговая сумма: "+ " " + Result + " " + rub;
+        }
+        void loadComboBoxEmployees()
+        {
+            DataTable dataTable = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            ConnectStaff.Open();
+            dataTable.Columns.Add(new DataColumn("ID", System.Type.GetType("System.String")));
+            dataTable.Columns.Add(new DataColumn("FullName", System.Type.GetType("System.String")));
+
+            comboBox1.DataSource = dataTable;
+            comboBox1.DisplayMember = "FullName";
+            comboBox1.ValueMember = "ID";
+
+            string sql = "SELECT Employee.ID, Employee.FullName FROM Employee";
+            cmd.CommandText = sql;
+            cmd.Connection = ConnectStaff;
+
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DataRow dataRow = dataTable.NewRow();
+                    dataRow["ID"] = reader[0].ToString();
+                    dataRow["Fullname"] = reader[1].ToString();
+                    dataTable.Rows.Add(dataRow);
+                }
+                reader.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
+        }
+        void loadComboBoxClients()
+        {
+            DataTable dataTable = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            ConnectStaff.Open();
+            dataTable.Columns.Add(new DataColumn("ID", System.Type.GetType("System.String")));
+            dataTable.Columns.Add(new DataColumn("FullName", System.Type.GetType("System.String")));
+
+            comboBox2.DataSource = dataTable;
+            comboBox2.DisplayMember = "FullName";
+            comboBox2.ValueMember = "ID";
+
+            string sql = "SELECT Clients.ID, Clients.FullName FROM Clients";
+            cmd.CommandText = sql;
+            cmd.Connection = ConnectStaff;
+
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DataRow dataRow = dataTable.NewRow();
+                    dataRow["ID"] = reader[0].ToString();
+                    dataRow["Fullname"] = reader[1].ToString();
+                    dataTable.Rows.Add(dataRow);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
         }
         public Config()
         {
@@ -304,6 +375,8 @@ namespace Kursovaya_Rabota.FormsPC
             PScfg();
             Coolercfg();
             PriceResult();
+            loadComboBoxEmployees();
+            loadComboBoxClients();
         }
 
         private void DeleteALL_Click(object sender, EventArgs e)
@@ -324,6 +397,11 @@ namespace Kursovaya_Rabota.FormsPC
             {
                 ConnectStaff.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
