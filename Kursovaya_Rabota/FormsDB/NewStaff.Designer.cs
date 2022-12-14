@@ -39,13 +39,6 @@ namespace Kursovaya_Rabota
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Login = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -148,14 +141,6 @@ namespace Kursovaya_Rabota
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 19;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.FullName,
-            this.Phone,
-            this.Login,
-            this.Password,
-            this.Email,
-            this.Role});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -171,52 +156,9 @@ namespace Kursovaya_Rabota
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(1602, 476);
+            this.dataGridView1.Size = new System.Drawing.Size(1602, 577);
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Visible = false;
-            // 
-            // FullName
-            // 
-            this.FullName.HeaderText = "Полное имя";
-            this.FullName.Name = "FullName";
-            this.FullName.ReadOnly = true;
-            // 
-            // Phone
-            // 
-            this.Phone.HeaderText = "Телефон";
-            this.Phone.Name = "Phone";
-            this.Phone.ReadOnly = true;
-            // 
-            // Login
-            // 
-            this.Login.HeaderText = "Логин";
-            this.Login.Name = "Login";
-            this.Login.ReadOnly = true;
-            // 
-            // Password
-            // 
-            this.Password.HeaderText = "Пароль";
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Электронная почта";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // Role
-            // 
-            this.Role.HeaderText = "Должность";
-            this.Role.Name = "Role";
-            this.Role.ReadOnly = true;
             // 
             // Staff
             // 
@@ -243,13 +185,6 @@ namespace Kursovaya_Rabota
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox Search;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Login;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.Button RegB;
         private System.Windows.Forms.Button Reload;
         private System.Windows.Forms.Button button1;

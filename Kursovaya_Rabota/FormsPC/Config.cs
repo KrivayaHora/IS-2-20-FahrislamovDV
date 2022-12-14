@@ -403,6 +403,11 @@ namespace Kursovaya_Rabota.FormsPC
         {
 
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

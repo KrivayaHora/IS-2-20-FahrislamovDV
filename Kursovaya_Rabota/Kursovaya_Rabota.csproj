@@ -125,10 +125,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientV.cs" />
     <Compile Include="DataSave.cs" />
-    <Compile Include="DBFGrid.cs" />
-    <Compile Include="EmployeeV.cs" />
     <Compile Include="FormsDB\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using MetroFramework.Forms;
-using MaterialSkin.Controls;
-using SqlKata;
-using SqlKata.Execution;
 using Kursovaya_Rabota.FormsDB;
 
 namespace Kursovaya_Rabota
@@ -19,30 +9,53 @@ namespace Kursovaya_Rabota
     public partial class ClientsV : Form
     {
         MySqlConnection ConnectStaff;
+        MySqlDataAdapter da = new MySqlDataAdapter();
+        DataTable DT = new DataTable();
+        BindingSource BS = new BindingSource();
         public void GetClients()
         {
-            dataGridView1.Rows.Clear();
-            var DB = DBFGrid.DataBase();
+            DT.Clear();
+            string view = "SELECT Clients.ID as `Код`, Clients.FullName as `ФИО`, Clients.Email as `Электронная почта`, Clients.Phone as `Телефон`, Clients.Adress as `Адрес проживания` FROM Clients";
+            ConnectStaff.Open();
 
-            IEnumerable<ClientV> res = DB.Query("Clients").Get<ClientV>();
+            da.SelectCommand = new MySqlCommand(view, ConnectStaff);
+            da.Fill(DT);
+            BS.DataSource = DT;
+            dataGridView1.DataSource = BS;
+            ConnectStaff.Close();
 
-            foreach (var client in res)
-            {
-                dataGridView1.Rows.Add(new object[]
-                {
-                    client.ID, client.FullName, client.Adress, client.Phone, client.Email
-                });
-            }
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[1].Visible = true;
+            dataGridView1.Columns[2].Visible = true;
+            dataGridView1.Columns[3].Visible = true;
+            dataGridView1.Columns[4].Visible = true;
+
+
+            dataGridView1.Columns[0].FillWeight = 20;
+            dataGridView1.Columns[1].FillWeight = 15;
+            dataGridView1.Columns[2].FillWeight = 15;
+            dataGridView1.Columns[3].FillWeight = 15;
+            dataGridView1.Columns[4].FillWeight = 15;
+
+            dataGridView1.Columns[0].ReadOnly = true;
+            dataGridView1.Columns[1].ReadOnly = true;
+            dataGridView1.Columns[2].ReadOnly = true;
+            dataGridView1.Columns[3].ReadOnly = true;
+            dataGridView1.Columns[4].ReadOnly = true;
+
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            dataGridView1.RowHeadersVisible = false;
+
+            dataGridView1.ColumnHeadersVisible = true;
         }
         public void SearchCli()
         {
-            dataGridView1.Rows.Clear();
-            var DB = DBFGrid.DataBase();
-            Query q = DB.Query("Clients");
-            if (Search.Text.Trim().Length > 0)
-            {
-                q = q.Where("FullName", Search.Text.Trim());
-            }
+            
         }
 
         
@@ -65,7 +78,24 @@ namespace Kursovaya_Rabota
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SearchCli();
+            try
+            {
+                ConnectStaff.Open();
+                string search = $"SELECT Clients.ID as `Код`, Clients.FullName as `ФИО`, Clients.Email as `Электронная почта`, Clients.Phone as `Телефон`, Clients.Adress as `Адрес проживания` FROM Clients WHERE FullName = '" + Search.Text + "'";
+                DT.Clear();
+                da.SelectCommand = new MySqlCommand(search, ConnectStaff);
+                da.Fill(DT);
+                BS.DataSource = DT;
+                dataGridView1.DataSource = BS;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
+            finally
+            {
+                ConnectStaff.Close();
+            }
         }
 
         private void RegB_Click(object sender, EventArgs e)

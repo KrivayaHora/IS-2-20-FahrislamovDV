@@ -40,11 +40,6 @@ namespace Kursovaya_Rabota
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IDClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullNameClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AdressClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmailClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -145,12 +140,6 @@ namespace Kursovaya_Rabota
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDClient,
-            this.FullNameClient,
-            this.AdressClient,
-            this.PhoneClient,
-            this.EmailClient});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -167,45 +156,6 @@ namespace Kursovaya_Rabota
             this.dataGridView1.Size = new System.Drawing.Size(1602, 587);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // IDClient
-            // 
-            this.IDClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.IDClient.Frozen = true;
-            this.IDClient.HeaderText = "Код";
-            this.IDClient.Name = "IDClient";
-            this.IDClient.ReadOnly = true;
-            this.IDClient.Visible = false;
-            // 
-            // FullNameClient
-            // 
-            this.FullNameClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.FullNameClient.Frozen = true;
-            this.FullNameClient.HeaderText = "Полное имя";
-            this.FullNameClient.Name = "FullNameClient";
-            this.FullNameClient.ReadOnly = true;
-            this.FullNameClient.Width = 355;
-            // 
-            // AdressClient
-            // 
-            this.AdressClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.AdressClient.HeaderText = "Адрес проживания";
-            this.AdressClient.Name = "AdressClient";
-            this.AdressClient.ReadOnly = true;
-            // 
-            // PhoneClient
-            // 
-            this.PhoneClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PhoneClient.HeaderText = "Номер телефона";
-            this.PhoneClient.Name = "PhoneClient";
-            this.PhoneClient.ReadOnly = true;
-            // 
-            // EmailClient
-            // 
-            this.EmailClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.EmailClient.HeaderText = "Электронная почта";
-            this.EmailClient.Name = "EmailClient";
-            this.EmailClient.ReadOnly = true;
             // 
             // ClientsV
             // 
@@ -233,10 +183,5 @@ namespace Kursovaya_Rabota
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Reload;
         private System.Windows.Forms.Button RegB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDClient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullNameClient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AdressClient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneClient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmailClient;
     }
 }

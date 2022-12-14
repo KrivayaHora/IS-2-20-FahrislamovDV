@@ -31,6 +31,10 @@ namespace Kursovaya_Rabota.FormsDB
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterFormC));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,10 +43,6 @@ namespace Kursovaya_Rabota.FormsDB
             this.PhoneRegBoxC = new System.Windows.Forms.TextBox();
             this.AdressRegBoxC = new System.Windows.Forms.TextBox();
             this.FioRegBoxC = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,48 @@ namespace Kursovaya_Rabota.FormsDB
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(511, 313);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 301);
+            this.panel3.TabIndex = 57;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(511, 12);
+            this.panel2.TabIndex = 56;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label5.Location = new System.Drawing.Point(147, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(216, 30);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Регистрация клиента";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.Location = new System.Drawing.Point(118, 234);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(275, 50);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Регистрация";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -142,48 +184,6 @@ namespace Kursovaya_Rabota.FormsDB
             this.FioRegBoxC.Name = "FioRegBoxC";
             this.FioRegBoxC.Size = new System.Drawing.Size(280, 29);
             this.FioRegBoxC.TabIndex = 32;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Location = new System.Drawing.Point(118, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 50);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Регистрация";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label5.Location = new System.Drawing.Point(147, 24);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(216, 30);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "Регистрация клиента";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(511, 12);
-            this.panel2.TabIndex = 56;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(34)))), ((int)(((byte)(15)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 301);
-            this.panel3.TabIndex = 57;
             // 
             // RegisterFormC
             // 
