@@ -9,6 +9,7 @@ namespace Kursovaya_Rabota.FormsDB
     {
         MySqlConnection ConnectStaff;
         Form activeform;
+
         public Employee()
         {
             InitializeComponent();
