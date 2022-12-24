@@ -14,6 +14,7 @@ using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
 using System.Threading;
 using Kursovaya_Rabota.Project.Forms;
+using Kursovaya_Rabota.FormsDB;
 
 namespace Kursovaya_Rabota
 {
@@ -56,12 +57,12 @@ namespace Kursovaya_Rabota
                     T1.Start();
                     break;
                 case "Сборщик":
-                    void PCBuild(object obj)
+                    void Employee(object obj)
                     {
-                        Application.Run(new PcBuild());
+                        Application.Run(new Employee());
                     }
                     this.Close();
-                    T1 = new Thread(PCBuild);
+                    T1 = new Thread(Employee);
                     T1.SetApartmentState(ApartmentState.STA);
                     T1.Start();
                     break;

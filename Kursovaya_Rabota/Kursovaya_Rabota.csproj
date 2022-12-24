@@ -258,6 +258,12 @@
     <Compile Include="FormsDB\Components\SSD.Designer.cs">
       <DependentUpon>SSD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsDB\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsDB\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsDB\Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -427,6 +433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Components\SSD.resx">
       <DependentUpon>SSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsDB\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDB\Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
