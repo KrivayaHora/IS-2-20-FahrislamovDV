@@ -97,7 +97,6 @@ namespace Kursovaya_Rabota.FormsPC
                     string chipset;
                     string typemem;
                     string ssdm;
-                    string sata;
                     string video;
                     string Name;
 
